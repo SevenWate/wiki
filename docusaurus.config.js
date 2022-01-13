@@ -6,8 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  
   title: '7Wate',
-  tagline: 'For Freedom',
+  // tagline: 'For Freedom',
   url: 'https://wiki.7wate.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -23,17 +24,18 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
           editUrl: 'https://git.7wate.com/zhouzhongping/wiki/src/branch/master',
           routeBasePath: '/',
+          // showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
           editUrl:
             'https://git.7wate.com/zhouzhongping/wiki/src/branch/master',
         },
         theme: {
+          // 自定义 css
           customCss: require.resolve('./src/css/custom.css'),
         },
       }),
@@ -43,8 +45,29 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // 公告
+      // announcementBar: {
+      //   id: 'support_us',
+      //   content:
+      //     'We are looking to revamp our docs, please fill <a target="_blank" rel="noopener noreferrer" href="#">this survey</a>',
+      //   backgroundColor: '#fafbfc',
+      //   textColor: '#091E42',
+      //   isCloseable: false,
+      // },
+      
+      // 导航栏
       navbar: {
         title: '7Wate`s Wiki',
+        hideOnScroll: true,
+        // logo: {
+        //   alt: 'Site Logo',
+        //   src: 'img/logo.svg',
+        //   srcDark: 'img/logo_dark.svg',
+        //   href: 'https://docusaurus.io/',
+        //   target: '_self',
+        //   width: 32,
+        //   height: 32,
+        // },
         items: [
           {
             type: 'doc',
@@ -58,18 +81,26 @@ const config = {
             label: 'Gitea',
             position: 'right',
           },
+          
         ],
       },
+      // 页脚
       footer: {
         style: 'dark',
         copyright: `Copyright © ${new Date().getFullYear()} 7Wate, Inc. Built with Docusaurus.`,
       },
+      // 代码块
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        defaultLanguage: 'markdown',
       },
-      
     }),
+    // 国际化 中文
+    i18n: {
+      defaultLocale: "zh-Hans",
+      locales: ["zh-Hans"],
+    },
 };
 
 module.exports = config;
