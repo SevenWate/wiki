@@ -54,7 +54,7 @@ var config = {
     // 导航栏
     navbar: {
       title: '7Wate`s Wiki',
-      hideOnScroll: true,
+      // hideOnScroll: true,
       // logo: {
       //   alt: 'Site Logo',
       //   src: 'img/logo.svg',
