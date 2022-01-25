@@ -1,6 +1,6 @@
 ---
-id: GPG简明笔记
-title: GPG简明笔记
+id: GPG 简明笔记
+title: GPG 简明笔记
 data: 2022年1月25日
 ---
 
