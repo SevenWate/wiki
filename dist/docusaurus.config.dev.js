@@ -82,7 +82,7 @@ var config = {
     // 页脚
     footer: {
       style: 'dark',
-      copyright: "Copyright \xA9 ".concat(new Date().getFullYear(), " 7Wate, Inc. Built with Docusaurus.")
+      copyright: "Copyright \xA9 ".concat(new Date().getFullYear(), " 7Wate, Inc. Built with <a href=\"https://www.docusaurus.cn/\" target=\"_blank\" rel=\"noopener noreferrer\">Docusaurus</a>.<br>Powered by <a href=\"https://webify.cloudbase.net/\" target=\"_blank\" rel=\"noopener noreferrer\">CloudBase Webify</a>")
     },
     // 代码块
     prism: {
