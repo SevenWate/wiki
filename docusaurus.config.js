@@ -26,7 +26,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://git.7wate.com/zhouzhongping/wiki/src/branch/master',
           routeBasePath: '/',
-          // showLastUpdateAuthor: true,
+          showLastUpdateAuthor: true,
           showLastUpdateTime: true,
         },
         blog: {
@@ -41,7 +41,21 @@ const config = {
       }),
     ],
   ],
-
+  themes: [
+    // ... Your other themes.
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        // ... Your options.
+        // `hashed` is recommended as long-term-cache of index file is possible.
+        hashed: true,
+        // For Docs using Chinese, The `language` is recommended to set to:
+        // ```
+        language: ["en", "zh"],
+        // ```
+      },
+    ],
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -94,6 +108,7 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
         defaultLanguage: 'markdown',
+        additionalLanguages: ['java','git'],
       },
     }),
     // 国际化 中文
