@@ -1,45 +1,99 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  
-  title: '7Wate',
-  // tagline: 'For Freedom',
-  url: 'https://wiki.7wate.com',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: '7wate', // Usually your GitHub org/user name.
-  projectName: 'wiki', // Usually your repo name.
+  title: "7Wate",
+  tagline: "For Freedom",
+  url: "https://wiki.7wate.com",
+  baseUrl: "/",
+  onBrokenLinks: "log",
+  onBrokenMarkdownLinks: "log",
+  favicon: "img/favicon.ico",
+
+  // GitHub pages deployment config.
+  // If you aren't using GitHub pages, you don't need these.
+  // organizationName: '7wate', // Usually your GitHub org/user name.
+  // projectName: 'wiki', // Usually your repo name.
+
+  // Even if you don't use internalization, you can use this field to set useful
+  // metadata like html lang. For example, if your site is Chinese, you may want
+  // to replace "en" with "zh-Hans".
+  i18n: {
+    defaultLocale: "zh-Hans",
+    locales: ["zh-Hans"],
+  },
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://git.7wate.com/zhouzhongping/wiki/src/branch/master',
-          routeBasePath: '/',
-          showLastUpdateAuthor: true,
-          showLastUpdateTime: true,
+          sidebarPath: require.resolve("./sidebars.js"),
+          editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
+          showLastUpdateAuthor:true,
+          showLastUpdateTime:true,
+          breadcrumbs:false,
         },
         blog: {
+          blogTitle:"7Wate`s Blog",
+          blogDescription:"7Wate 的个人生活和工作记录",
+          blogSidebarCount:7,
+          blogSidebarTitle:"文章",
           showReadingTime: true,
-          editUrl:
-            'https://git.7wate.com/zhouzhongping/wiki/src/branch/master',
+          editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
         },
         theme: {
-          // 自定义 css
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
+  ],
+  plugins: [
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "life",
+        path: "life",
+        routeBasePath: "life",
+        sidebarPath: require.resolve("./sidebars.js"),
+        editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
+        showLastUpdateAuthor:true,
+        showLastUpdateTime:true,
+        breadcrumbs:false,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "art",
+        path: "art",
+        routeBasePath: "art",
+        sidebarPath: require.resolve("./sidebars.js"),
+        editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
+        showLastUpdateAuthor:true,
+        showLastUpdateTime:true,
+        breadcrumbs:false,
+      },
+    ],
+    [
+      "@docusaurus/plugin-sitemap",
+      {
+        changefreq: "weekly",
+        priority: 0.5,
+      },
+    ],
+    [
+      "@docusaurus/plugin-google-analytics",
+      {
+        trackingID: "G-MHMEL0F832",
+      },
+    ],
+    "plugin-image-zoom",
   ],
   themes: [
     // ... Your other themes.
@@ -68,11 +122,15 @@ const config = {
       //   textColor: '#091E42',
       //   isCloseable: false,
       // },
-      
-      // 导航栏
+      metadata: [
+        {
+          name: "keywords",
+          content: "7wate, wiki, blog, c, c++, java, python, linux",
+        },
+      ],
       navbar: {
-        title: '7Wate`s Wiki',
-        // hideOnScroll: true,
+        title: "7Wate`s Wiki",
+        hideOnScroll: true,
         // logo: {
         //   alt: 'Site Logo',
         //   src: 'img/logo.svg',
@@ -83,39 +141,42 @@ const config = {
         //   height: 32,
         // },
         items: [
+          { to: "/blog", label: "博客", position: "right" },
           {
-            type: 'doc',
-            docId: 'home',
-            position: 'right',
-            label: '知识库',
+            type: "doc",
+            docId: "home",
+            position: "right",
+            label: "维基",
           },
-          {to: '/blog', label: '博客', position: 'right'},
-          {
-            href: 'https://git.7wate.com/zhouzhongping/wiki',
-            label: 'Gitea',
-            position: 'right',
-          },
-          
+          { to: "/life", label: "生活", position: "right" },
+          { to: "/art", label: "艺术", position: "right" },
         ],
       },
-      // 页脚
       footer: {
-        style: 'dark',
+        style: "dark",
+
         copyright: `Copyright © ${new Date().getFullYear()} 7Wate, Inc. Built with <a href="https://www.docusaurus.cn/" target="_blank" rel="noopener noreferrer">Docusaurus</a>.<br>Powered by <a href="https://webify.cloudbase.net/" target="_blank" rel="noopener noreferrer">CloudBase Webify</a>`,
       },
-      // 代码块
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-        defaultLanguage: 'markdown',
-        additionalLanguages: ['java','git'],
+        defaultLanguage: "markdown",
+        additionalLanguages: ["java", "git"],
+      },
+      imageZoom: {
+        // CSS selector to apply the plugin to, defaults to '.markdown img'
+        selector: ".markdown img",
+        // Optional medium-zoom options
+        // see: https://www.npmjs.com/package/medium-zoom#options
+        options: {
+          margin: 24,
+          background: "#BADA55",
+          scrollOffset: 0,
+          container: "#zoom-container",
+          template: "#zoom-template",
+        },
       },
     }),
-    // 国际化 中文
-    i18n: {
-      defaultLocale: "zh-Hans",
-      locales: ["zh-Hans"],
-    },
 };
 
 module.exports = config;
