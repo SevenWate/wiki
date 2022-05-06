@@ -23,8 +23,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "zh-CN",
-    locales: ["zh-CN"],
+    defaultLocale: "zh-Hans",
+    locales: ["zh-Hans"],
   },
 
   presets: [
@@ -90,10 +90,11 @@ const config = {
         trackingID: "G-MHMEL0F832",
       },
     ],
-    "plugin-image-zoom",
+    
+      // "plugin-image-zoom",
+    
   ],
   themes: [
-    // ... Your other themes.
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
       {
@@ -159,19 +160,19 @@ const config = {
         defaultLanguage: "markdown",
         additionalLanguages: ["java", "git"],
       },
-      imageZoom: {
-        // CSS selector to apply the plugin to, defaults to '.markdown img'
-        selector: ".markdown img",
-        // Optional medium-zoom options
-        // see: https://www.npmjs.com/package/medium-zoom#options
-        options: {
-          margin: 24,
-          background: "#BADA55",
-          scrollOffset: 0,
-          container: "#zoom-container",
-          template: "#zoom-template",
-        },
-      },
+      // imageZoom: {
+      //   // CSS selector to apply the plugin to, defaults to '.markdown img'
+      //   selector: ".markdown img",
+      //   // Optional medium-zoom options
+      //   // see: https://www.npmjs.com/package/medium-zoom#options
+      //   options: {
+      //     margin: 24,
+      //     background: "#BADA55",
+      //     scrollOffset: 0,
+      //     container: "#zoom-container",
+      //     template: "#zoom-template",
+      //   },
+      // },
     }),
 };
 
