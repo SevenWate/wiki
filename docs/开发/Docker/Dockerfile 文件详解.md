@@ -16,8 +16,6 @@ Docker 可以通过读取 Dockerfile 中的指令自动构建镜像。 Dockerfil
 
 变量前加 `\` 可以转义成普通字符串：``\$foo` or `\${foo}`，表示转换为`$foo`和`${foo}`文本字符串。
 
-
-
 ## 二、FROM
 
 初始化一个新的构建阶段，并设置基础映像：
@@ -33,8 +31,6 @@ FROM [--platform=<platform>] <image>[@<digest>] [AS <name>]
 - `digest`其实就是就是根据镜像内容产生的一个 ID，只要镜像的内容不变 **digest** 也不会变。
 - `tag`或`digest`值是可选的。如果您省略其中任何一个，构建器默认使用一个`latest`标签。如果找不到该`tag`值，构建器将返回错误。
 - `--platform`标志可用于在`FROM`引用多平台镜像的情况下指定平台。例如：`linux/amd64`、`linux/arm64`、 或`windows/amd64`
-
-
 
 ## 三、RUN
 
@@ -56,8 +52,6 @@ RUN 有两种形式：
 - `RUN`在下一次构建期间，指令缓存不会自动失效。可以使用`--no-cache`标志使指令缓存无效。
 - Dockerfile 的指令每执行一次都会在 docker 上新建一层。所以过多无意义的层，会造成镜像膨胀过大，可以使用 **&&** 符号连接命令，这样执行后，只会创建 **1层** 镜像。
 
-
-
 ## 四、CMD
 
 运行程序，在 docker run 时运行，但是和 run 命令不同，RUN 是在 docker build 时运行。
@@ -77,8 +71,6 @@ CMD ["/usr/bin/wc","--help"]
 
 如果用户启动容器时候指定了运行的命令，则会覆盖掉 `CMD` 指定的命令。
 
-
-
 ## 五、LABEL
 
 添加元数据：
@@ -88,8 +80,6 @@ LABEL multi.label1="value1" \
       multi.label2="value2" \
       other="value3"
 ```
-
-
 
 ## 六、EXPOSE
 
@@ -106,8 +96,6 @@ Docker 容器在运行时侦听指定的网络端口。可以指定端口是监�
 ```text
 EXPOSE 80/udp
 ```
-
-
 
 ## 七、ENV
 
@@ -132,8 +120,6 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y ...
 ```
 
-
-
 ## 八、ADD
 
 复制新文件、目录或远程文件 URL `<src>` ，并将它们添加到`<dest>`中。
@@ -154,8 +140,6 @@ ADD hom?.txt /mydir/
 
 `<dest>`是一个绝对路径，或相对`WORKDIR`的相对路径。
 
-
-
 ## 九、COPY
 
 语法同 ADD 一致，复制拷贝文件。
@@ -163,8 +147,6 @@ ADD hom?.txt /mydir/
 COPY 指令和 ADD 指令的唯一区别在于：是否支持从远程 URL 获取资源。COPY 指令只能从执行 docker build 所在的主机上读取资源并复制到镜像中。而 ADD 指令还支持通过 URL 从远程服务器读取资源并复制到镜像中。
 
 相同需求时，推荐使用 COPY 指令。ADD 指令更擅长读取本地 tar 文件并解压缩。
-
-
 
 ## 十、ENTRYPOINT
 
@@ -182,8 +164,6 @@ ENTRYPOINT command param1 param2
 ```text
 <ENTRYPOINT> <CMD>
 ```
-
-
 
 ## 十一、VOLUME
 
@@ -224,8 +204,6 @@ Docker 有一组预定义的`ARG`变量，您可以在 Dockerfile 中没有相�
  docker build --build-arg HTTPS_PROXY=https://my-proxy.example.com .
 ```
 
-
-
 ## 十三、ONBUILD
 
 将一个触发指令添加到镜像中，以便稍后在该镜像用作另一个构建的基础时执行。也就是另外一个 dockerfile FROM 了这个镜像的时候执行。
@@ -234,8 +212,6 @@ Docker 有一组预定义的`ARG`变量，您可以在 Dockerfile 中没有相�
 ONBUILD ADD . /app/src
 ONBUILD RUN /usr/local/bin/python-build --dir /app/src
 ```
-
-
 
 ## 十四、STOPSIGNAL
 
@@ -247,16 +223,12 @@ STOPSIGNAL signal
 
 默认的 stop-signal 是 **SIGTERM**，在 docker stop 的时候会给容器内 PID 为 1 的进程发送这个 signal，通过 --stop-signal 可以设置自己需要的 signal，主要目的是为了让容器内的应用程序在接收到 signal 之后可以先处理一些事物，实现容器的平滑退出，如果不做任何处理，容器将在一段时间之后强制退出，会造成业务的强制中断，默认时间是 10s。
 
-
-
 ## 十五、HEALTHCHECK
 
 用于指定某个程序或者指令来监控 docker 容器服务的运行状态。该`HEALTHCHECK`指令有两种形式：
 
 - `HEALTHCHECK [OPTIONS] CMD command` （通过在容器内运行命令来检查容器健康状况）
 - `HEALTHCHECK NONE` （禁用从基础镜像继承的任何健康检查）
-
-
 
 ## 十六、SHELL
 
@@ -267,8 +239,6 @@ SHELL ["executable", "parameters"]
 ```
 
 该`SHELL`指令在 Windows 上特别有用，因为 Windows 有两种常用且截然不同的本机 shell：`cmd`和`powershell`，以及可用的备用 shell，包括`sh`。该 SHELL 指令可以出现多次。每条 SHELL 指令都会覆盖所有先前的 SHELL 指令，并影响所有后续指令。
-
-
 
 ## 十七、WORKDIR
 
@@ -297,8 +267,6 @@ RUN pwd
 
 最终`pwd`命令的输出是`/path/$DIRNAME`。
 
-
-
 ## 十八、USER
 
 设置用户名（或 UID）和可选的用户组（或 GID）
@@ -308,4 +276,4 @@ USER <user>[:<group>]
 USER <UID>[:<GID>]
 ```
 
-> Dockerfile文件全面详解 - 青火的文章 - 知乎 https://zhuanlan.zhihu.com/p/387855002
+> Dockerfile文件全面详解 - 青火的文章 - 知乎 <https://zhuanlan.zhihu.com/p/387855002>

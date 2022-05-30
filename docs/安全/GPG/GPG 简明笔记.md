@@ -18,7 +18,7 @@ linux 默认安装 GPG，windows 和 mac 安装方法大同小异。
 
 ### 配置
 
-```
+```shell
 # GPG 配置文件介绍
 ~/.gnupg - 配置目录
 ~/.gnupg/gpg.conf – 配置文件
@@ -29,11 +29,11 @@ linux 默认安装 GPG，windows 和 mac 安装方法大同小异。
 
 ### 生成密钥
 
-```
+```shell
 gpg --gen-key
 ```
 
-```
+```shell
 1.请选择您要使用的密钥种类：
    (1) RSA and RSA (default)
    (2) DSA and Elgamal
@@ -82,13 +82,14 @@ from the Real Name, Comment and Email Address in this form:
 
 公钥
 
-```
+```shell
 gpg --list-keys
 gpg -k
 ```
+
 私钥
 
-```
+```shell
 gpg --list-secret-keys
 gpg -K
 ```
@@ -97,29 +98,29 @@ gpg -K
 
 公钥
 
-```
+```shell
 gpg --armor --output public-key.txt --export [用户ID]
 ```
 
 私钥
 
-```
+```shell
 gpg --armor --output private-key.txt --export-secret-keys [用户ID]
 ```
 
-*--armor 生成 asc 后缀的 ASCII 类型的文本文件，否则生成 gpg 后缀的二进制文件*
+--armor 生成 asc 后缀的 ASCII 类型的文本文件，否则生成 gpg 后缀的二进制文件
 
 ### 导入
 
 本地公钥文件
 
-```
+```shell
 gpg --import [密钥文件]
 ```
 
 服务器公钥文件
 
-```
+```shell
 gpg --keyserver [服务器] --search-keys [用户ID]
 ```
 
@@ -127,12 +128,13 @@ gpg --keyserver [服务器] --search-keys [用户ID]
 
 发布至公开服务器
 
-```
+```shell
 gpg --send-keys [用户ID] --keyserver [服务器]
 ```
 
 发布用户指纹
-```
+
+```shell
 gpg --fingerprint [用户ID]
 ```
 
@@ -140,13 +142,13 @@ gpg --fingerprint [用户ID]
 
 删除指定公钥
 
-```
+```shell
 gpg --delete-key [用户id]
 ```
 
 删除指定密钥
 
-```
+```shell
 gpg --delete-secret-keys [用户id]
 ```
 
@@ -156,40 +158,39 @@ gpg --delete-secret-keys [用户id]
 
 加密文件
 
-```
+```shell
 gpg --recipient [用户ID] --output demo.en.txt --encrypt demo.txt
 ```
 
 解密文件
 
-```
+```shell
 gpg --decrypt demo.en.txt --output demo.de.txt
 gpg demo.en.txt
 ```
 
 签名文件（GPG 格式）
 
-```
+```shell
 gpg --sign test.txt
 ```
 
 签名文件（ASCII 格式）
 
-```
+```shell
 gpg --clearsign test.txt
 ```
 
 生成单独签名
 
-```
+```shell
 gpg -a --detach-sign test.txt
 ```
 
-*-a 生成 ASCII 格式*
+-a 生成 ASCII 格式
 
 验证签名
 
-```
+```shell
 gpg --verify test.txt.asc test.txt
 ```
-

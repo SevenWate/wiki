@@ -11,10 +11,10 @@ data: 2022年4月13日
 下面的命令连接 FTP 主机。
 
 ```bash
-$ sftp username@hostname
+sftp username@hostname
 ```
 
-执行上面的命令，会要求输入 FTP 的密码。密码验证成功以后，就会出现 FTP 的提示符`sftp> `，下面是一个例子。
+执行上面的命令，会要求输入 FTP 的密码。密码验证成功以后，就会出现 FTP 的提示符`sftp>`，下面是一个例子。
 
 ```bash
 $ sftp USER@penguin.example.com
@@ -35,4 +35,3 @@ FTP 的提示符下面，就可以输入各种 FTP 命令了，这部分完全�
 - `bye`：退出 sftp。
 - `quit`：退出 sftp。
 - `exit`：退出 sftp。
-

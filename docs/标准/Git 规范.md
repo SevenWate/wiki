@@ -6,7 +6,6 @@ data: 2022年1月25日
 
 统一团队的 Git 工作流，包括分支工作流、Git commit 日志、tag 规范、README 模板、issue 模板，便于后续代码 review，版本发布以及日志自动化生成等等。
 
-
 ## 分支工作流
 
 ![Git 分支工作流.png](https://static.7wate.com/img/2021/08/24/c5a50e99dde5f.png)
@@ -21,7 +20,7 @@ commit 包括三个部分：**Header**、**Body**、**Footer**。
 
 commit 格式如下：
 
-```
+```text
 <type>([scope]): <subject>
 
 [body]
@@ -31,7 +30,7 @@ commit 格式如下：
 
 示例：
 
-```
+```text
 feature(auth): increase length of new API key
 
 the length is increased from 24 to 32 for new API keys
@@ -59,7 +58,7 @@ close #12
 
 示例
 
-```
+```text
 feature!(api): limit array length to 256 elements
 
 BREAKING: Array length limit is added to further limit request size. A

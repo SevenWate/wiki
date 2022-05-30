@@ -24,13 +24,13 @@ data: 2022年4月13日
 `scp`的语法类似`cp`的语法。
 
 ```bash
-$ scp source destination
+scp source destination
 ```
 
 上面命令中，`source`是文件当前的位置，`destination`是文件所要复制到的位置。它们都可以包含用户名和主机名。
 
 ```bash
-$ scp user@host:foo.txt bar.txt
+scp user@host:foo.txt bar.txt
 ```
 
 上面命令将远程主机（`user@host`）用户主目录下的`foo.txt`，复制为本机当前目录的`bar.txt`。可以看到，主机与文件之间要使用冒号（`:`）分隔。
@@ -42,7 +42,7 @@ $ scp user@host:foo.txt bar.txt
 `scp`支持一次复制多个文件。
 
 ```bash
-$ scp source1 source2 destination
+scp source1 source2 destination
 ```
 
 上面命令会将`source1`和`source2`两个文件，复制到`destination`。
@@ -121,7 +121,7 @@ $ scp user1@host1.com:/files/file.txt user2@host2.com:/files
 `-c`参数用来指定文件拷贝数据传输的加密算法。
 
 ```bash
-$ scp -c blowfish some_file your_username@remotehost.edu:~
+scp -c blowfish some_file your_username@remotehost.edu:~
 ```
 
 上面代码指定加密算法为`blowfish`。
@@ -131,7 +131,7 @@ $ scp -c blowfish some_file your_username@remotehost.edu:~
 `-C`参数表示是否在传输时压缩文件。
 
 ```bash
-$ scp -c blowfish -C local_file your_username@remotehost.edu:~
+scp -c blowfish -C local_file your_username@remotehost.edu:~
 ```
 
 **（3）`-F`**
@@ -139,7 +139,7 @@ $ scp -c blowfish -C local_file your_username@remotehost.edu:~
 `-F`参数用来指定 ssh_config 文件，供 ssh 使用。
 
 ```bash
-$ scp -F /home/pungki/proxy_ssh_config Label.pdf root@172.20.10.8:/root
+scp -F /home/pungki/proxy_ssh_config Label.pdf root@172.20.10.8:/root
 ```
 
 **（4）`-i`**
@@ -147,7 +147,7 @@ $ scp -F /home/pungki/proxy_ssh_config Label.pdf root@172.20.10.8:/root
 `-i`参数用来指定密钥。
 
 ```bash
-$ scp -vCq -i private_key.pem ~/test.txt root@192.168.1.3:/some/path/test.txt
+scp -vCq -i private_key.pem ~/test.txt root@192.168.1.3:/some/path/test.txt
 ```
 
 **（5）`-l`**
@@ -155,7 +155,7 @@ $ scp -vCq -i private_key.pem ~/test.txt root@192.168.1.3:/some/path/test.txt
 `-l`参数用来限制传输数据的带宽速率，单位是 Kbit/sec。对于多人分享的带宽，这个参数可以留出一部分带宽供其他人使用。
 
 ```bash
-$ scp -l 80 yourusername@yourserver:/home/yourusername/* .
+scp -l 80 yourusername@yourserver:/home/yourusername/* .
 ```
 
 上面代码中，`scp`命令占用的带宽限制为每秒 80K 比特位，即每秒 10K 字节。
@@ -165,7 +165,7 @@ $ scp -l 80 yourusername@yourserver:/home/yourusername/* .
 `-p`参数用来保留修改时间（modification time）、访问时间（access time）、文件状态（mode）等原始文件的信息。
 
 ```bash
-$ scp -p ~/test.txt root@192.168.1.3:/some/path/test.txt
+scp -p ~/test.txt root@192.168.1.3:/some/path/test.txt
 ```
 
 **（7）`-P`**
@@ -173,7 +173,7 @@ $ scp -p ~/test.txt root@192.168.1.3:/some/path/test.txt
 `-P`参数用来指定远程主机的 SSH 端口。如果远程主机使用默认端口22，可以不用指定，否则需要用`-P`参数在命令中指定。
 
 ```bash
-$ scp -P 2222 user@host:directory/SourceFile TargetFile
+scp -P 2222 user@host:directory/SourceFile TargetFile
 ```
 
 **（8）`-q`**
@@ -181,7 +181,7 @@ $ scp -P 2222 user@host:directory/SourceFile TargetFile
 `-q`参数用来关闭显示拷贝的进度条。
 
 ```bash
-$ scp -q Label.pdf mrarianto@202.x.x.x:.
+scp -q Label.pdf mrarianto@202.x.x.x:.
 ```
 
 **（9）`-r`**
@@ -193,6 +193,5 @@ $ scp -q Label.pdf mrarianto@202.x.x.x:.
 `-v`参数用来显示详细的输出。
 
 ```bash
-$ scp -v ~/test.txt root@192.168.1.3:/root/help2356.txt
+scp -v ~/test.txt root@192.168.1.3:/root/help2356.txt
 ```
-
