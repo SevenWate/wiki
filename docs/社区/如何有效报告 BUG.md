@@ -1,3 +1,9 @@
+---
+id: 如何有效报告 BUG
+title: 如何有效报告 BUG
+sidebar_position: 3
+data: 2022年5月30日
+---
 
 作者：Simon Tatham 专业的自由软件程序员
 
