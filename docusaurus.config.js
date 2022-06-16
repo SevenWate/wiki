@@ -85,6 +85,97 @@ const config = {
       },
     ],
     [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "dev",
+        path: "dev",
+        routeBasePath: "dev",
+        sidebarPath: require.resolve("./sidebars.js"),
+        editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
+        showLastUpdateAuthor:true,
+        showLastUpdateTime:true,
+        breadcrumbs:false,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "algo",
+        path: "algo",
+        routeBasePath: "algo",
+        sidebarPath: require.resolve("./sidebars.js"),
+        editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
+        showLastUpdateAuthor:true,
+        showLastUpdateTime:true,
+        breadcrumbs:false,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "ops",
+        path: "ops",
+        routeBasePath: "ops",
+        sidebarPath: require.resolve("./sidebars.js"),
+        editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
+        showLastUpdateAuthor:true,
+        showLastUpdateTime:true,
+        breadcrumbs:false,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "safe",
+        path: "safe",
+        routeBasePath: "safe",
+        sidebarPath: require.resolve("./sidebars.js"),
+        editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
+        showLastUpdateAuthor:true,
+        showLastUpdateTime:true,
+        breadcrumbs:false,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "othe",
+        path: "othe",
+        routeBasePath: "othe",
+        sidebarPath: require.resolve("./sidebars.js"),
+        editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
+        showLastUpdateAuthor:true,
+        showLastUpdateTime:true,
+        breadcrumbs:false,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "org",
+        path: "org",
+        routeBasePath: "org",
+        sidebarPath: require.resolve("./sidebars.js"),
+        editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
+        showLastUpdateAuthor:true,
+        showLastUpdateTime:true,
+        breadcrumbs:false,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "work",
+        path: "work",
+        routeBasePath: "work",
+        sidebarPath: require.resolve("./sidebars.js"),
+        editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
+        showLastUpdateAuthor:true,
+        showLastUpdateTime:true,
+        breadcrumbs:false,
+      },
+    ],
+    [
       "@docusaurus/plugin-google-analytics",
       {
         trackingID: "G-MHMEL0F832",
@@ -127,7 +218,7 @@ const config = {
         },
       ],
       navbar: {
-        title: "7Wate`s Wiki",
+        title: "📚 7Wate`s Wiki",
         hideOnScroll: true,
         // logo: {
         //   alt: 'Site Logo',
@@ -139,15 +230,40 @@ const config = {
         //   height: 32,
         // },
         items: [
-          { to: "/blog", label: "博客", position: "right" },
+          { to: "/blog", label: "👨🏻‍🌾 博客", position: "right" },
           {
-            type: "doc",
-            docId: "home",
             position: "right",
-            label: "维基",
+            label: "👨🏻‍🎓 维基",
+            items: [
+              {
+                label: "开发",
+                to: "/dev",
+              },
+              {
+                label: "算法",
+                to: "/algo",
+              },
+              {
+                label: "运维",
+                to: "/ops",
+              },
+              {
+                label: "安全",
+                to: "/safe",
+              },
+              {
+                label: "其他",
+                to: "/docs",
+              },
+              
+            ],
           },
-          { to: "/life", label: "生活", position: "right" },
-          { to: "/art", label: "艺术", position: "right" },
+          { to: "/org", label: "🤶 社区", position: "right" },
+          { to: "/work", label: "👨‍💻 职业", position: "right" },
+          { to: "/life", label: "🚴🏻‍♀️ 生活", position: "right" },
+          { to: "/art", label: "👨‍🎨 艺术", position: "right" },
+          
+          
         ],
       },
       footer: {
