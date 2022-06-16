@@ -1,16 +1,8 @@
 ---
-id: Git 规范
-title: Git 规范
-data: 2022年1月25日
+id: Commit
+title: Commit
+data: 2022年6月15日
 ---
-
-统一团队的 Git 工作流，包括分支工作流、Git commit 日志、tag 规范、README 模板、issue 模板，便于后续代码 review，版本发布以及日志自动化生成等等。
-
-## 分支工作流
-
-![Git 分支工作流.png](https://static.7wate.com/img/2021/08/24/c5a50e99dde5f.png)
-
-**根据项目实际情况安排分支工作流！**
 
 ## Commit 日志
 
@@ -69,15 +61,3 @@ error.
 ### 脚注（Footer）
 
 正文与脚注间隔一个空行。
-
-## Tag 规范
-
-![语义化版本.png](https://static.7wate.com/img/2021/08/24/ad4999467e192.png)
-
-## Issue 模板
-
-![Issue.png](https://static.7wate.com/img/2021/08/24/0e572570b1f3f.png)
-
-## README 模板
-
-![Issue.png](https://static.7wate.com/img/2021/08/24/bdbf509e6b414.png)
