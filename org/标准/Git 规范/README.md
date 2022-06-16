@@ -1,6 +1,6 @@
 ---
-id: README
-title: README
+id: Readme
+title: Readme
 data: 2022年6月15日
 ---
 
