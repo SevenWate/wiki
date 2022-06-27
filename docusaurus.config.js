@@ -35,15 +35,15 @@ const config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
-          showLastUpdateAuthor:true,
-          showLastUpdateTime:true,
-          breadcrumbs:false,
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
+          breadcrumbs: false,
         },
         blog: {
-          blogTitle:"7Wate`s Blog",
-          blogDescription:"7Wate 的个人生活和工作记录",
-          blogSidebarCount:7,
-          blogSidebarTitle:"文章",
+          blogTitle: "7Wate`s Blog",
+          blogDescription: "7Wate 的个人生活和工作记录",
+          blogSidebarCount: 7,
+          blogSidebarTitle: "文章",
           showReadingTime: true,
           editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
         },
@@ -51,7 +51,7 @@ const config = {
           customCss: require.resolve("./src/css/custom.css"),
         },
         sitemap: {
-          changefreq: 'weekly',
+          changefreq: "weekly",
           priority: 0.5,
         },
       }),
@@ -66,9 +66,9 @@ const config = {
         routeBasePath: "life",
         sidebarPath: require.resolve("./sidebars.js"),
         editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
-        showLastUpdateAuthor:true,
-        showLastUpdateTime:true,
-        breadcrumbs:false,
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        breadcrumbs: false,
       },
     ],
     [
@@ -79,9 +79,9 @@ const config = {
         routeBasePath: "art",
         sidebarPath: require.resolve("./sidebars.js"),
         editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
-        showLastUpdateAuthor:true,
-        showLastUpdateTime:true,
-        breadcrumbs:false,
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        breadcrumbs: false,
       },
     ],
     [
@@ -92,9 +92,9 @@ const config = {
         routeBasePath: "dev",
         sidebarPath: require.resolve("./sidebars.js"),
         editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
-        showLastUpdateAuthor:true,
-        showLastUpdateTime:true,
-        breadcrumbs:false,
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        breadcrumbs: false,
       },
     ],
     [
@@ -105,9 +105,9 @@ const config = {
         routeBasePath: "algo",
         sidebarPath: require.resolve("./sidebars.js"),
         editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
-        showLastUpdateAuthor:true,
-        showLastUpdateTime:true,
-        breadcrumbs:false,
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        breadcrumbs: false,
       },
     ],
     [
@@ -118,9 +118,9 @@ const config = {
         routeBasePath: "ops",
         sidebarPath: require.resolve("./sidebars.js"),
         editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
-        showLastUpdateAuthor:true,
-        showLastUpdateTime:true,
-        breadcrumbs:false,
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        breadcrumbs: false,
       },
     ],
     [
@@ -131,9 +131,9 @@ const config = {
         routeBasePath: "safe",
         sidebarPath: require.resolve("./sidebars.js"),
         editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
-        showLastUpdateAuthor:true,
-        showLastUpdateTime:true,
-        breadcrumbs:false,
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        breadcrumbs: false,
       },
     ],
     [
@@ -144,9 +144,9 @@ const config = {
         routeBasePath: "othe",
         sidebarPath: require.resolve("./sidebars.js"),
         editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
-        showLastUpdateAuthor:true,
-        showLastUpdateTime:true,
-        breadcrumbs:false,
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        breadcrumbs: false,
       },
     ],
     [
@@ -157,9 +157,9 @@ const config = {
         routeBasePath: "org",
         sidebarPath: require.resolve("./sidebars.js"),
         editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
-        showLastUpdateAuthor:true,
-        showLastUpdateTime:true,
-        breadcrumbs:false,
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        breadcrumbs: false,
       },
     ],
     [
@@ -170,9 +170,9 @@ const config = {
         routeBasePath: "work",
         sidebarPath: require.resolve("./sidebars.js"),
         editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
-        showLastUpdateAuthor:true,
-        showLastUpdateTime:true,
-        breadcrumbs:false,
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        breadcrumbs: false,
       },
     ],
     [
@@ -181,24 +181,21 @@ const config = {
         trackingID: "G-MHMEL0F832",
       },
     ],
-    
-      // "plugin-image-zoom",
-    
   ],
-  themes: [
-    [
-      require.resolve("@easyops-cn/docusaurus-search-local"),
-      {
-        // ... Your options.
-        // `hashed` is recommended as long-term-cache of index file is possible.
-        hashed: true,
-        // For Docs using Chinese, The `language` is recommended to set to:
-        // ```
-        language: ["en", "zh"],
-        // ```
-      },
-    ],
-  ],
+  // themes: [
+  //   [
+  //     require.resolve("@easyops-cn/docusaurus-search-local"),
+  //     {
+  //       // ... Your options.
+  //       // `hashed` is recommended as long-term-cache of index file is possible.
+  //       hashed: true,
+  //       // For Docs using Chinese, The `language` is recommended to set to:
+  //       // ```
+  //       language: ["en", "zh"],
+  //       // ```
+  //     },
+  //   ],
+  // ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -255,16 +252,18 @@ const config = {
                 label: "其他",
                 to: "/docs",
               },
-              
             ],
           },
           { to: "/org", label: "🤶 社区", position: "right" },
           { to: "/work", label: "👨‍💻 职业", position: "right" },
           { to: "/life", label: "🚴🏻‍♀️ 生活", position: "right" },
           { to: "/art", label: "👨‍🎨 艺术", position: "right" },
-          
-          
         ],
+      },
+      algolia: {
+        apiKey: "5d5a02bdf02df700355c8ccd84b78d13",
+        appId: "8W3YJXJGF2",
+        indexName: "wiki",
       },
       footer: {
         style: "dark",
