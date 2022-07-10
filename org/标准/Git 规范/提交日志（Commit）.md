@@ -1,6 +1,7 @@
 ---
-id: Commit
-title: Commit
+id: 提交日志（Commit）
+title: 提交日志（Commit）
+sidebar_position: 2
 data: 2022年6月15日
 ---
 

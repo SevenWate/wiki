@@ -1,6 +1,7 @@
 ---
-id: Branch
-title: Branch
+id: 分支模型（Branch）
+title: 分支模型（Branch）
+sidebar_position: 1
 data: 2022年6月15日
 ---
 
