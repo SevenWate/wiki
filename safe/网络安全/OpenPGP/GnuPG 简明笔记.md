@@ -1,6 +1,6 @@
 ---
-id: GPG 简明笔记
-title: GPG 简明笔记
+id: GnuPG 简明笔记
+title: GnuPG 简明笔记
 data: 2022年1月25日
 ---
 
