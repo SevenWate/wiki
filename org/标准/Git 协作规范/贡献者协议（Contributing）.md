@@ -1,9 +1,19 @@
 ---
 id: 贡献者协议（Contributing）
 title: 贡献者协议（Contributing）
-sidebar_position: 3
+sidebar_position: 6
 data: 2022年6月15日
 ---
+
+## 规范
+
+- 文件命名：CONTRIBUTING.md
+
+目前参考大厂协议，可根据项目自定义。
+
+[阿里巴巴 CLA 协议](https://github.com/aliyun/cla)
+
+[谷歌 CLA 协议](https://cla.developers.google.com/clas)
 
 ## 贡献协议简介
 
@@ -54,10 +64,3 @@ DCO 是 Developer Certificate of Origin 的缩写，由 Linux Foundation 于 200
 3. 该贡献由1、2、或 3 证明的其他人直接提供给我，而我没有对其进行修改。
 4. 我理解并同意该项目和贡献是公开的，并且该贡献的记录（包括我随之提交的所有个人信息，包括我的签字）将无限期保留，并且可以与本项目或涉及的开源许可证保持一致或者重新分配。
 
-## 协议标准
-
-目前参考大厂协议，可根据项目自定义。
-
-[阿里巴巴 CLA 协议](https://github.com/aliyun/cla)
-
-[谷歌 CLA 协议](https://cla.developers.google.com/clas)

@@ -1,11 +1,25 @@
 ---
-id: 分支模型（Branch）
-title: 分支模型（Branch）
+id: 分支（Branch）
+title: 分支（Branch）
 sidebar_position: 1
 data: 2022年6月15日
 ---
 
+## 规范
+
 ![Git 分支工作流.png](https://static.7wate.com/img/2021/08/24/c5a50e99dde5f.png)
+
+主分支命名：`master `、`main`
+
+开发分支命名：`develop`
+
+功能分支命名：除 `master`、`main`、`develop`、`release-*`、`hotfix-*` 以外的任何名字
+
+预发布分支命名：`release-*`
+
+热修复分支命名：`hotfix-*`
+
+防止产生歧义，**建议禁止简拼。**
 
 ## 主要分支
 
@@ -61,17 +75,3 @@ data: 2022年6月15日
 当完成了紧急 bug 的修复时，要将该热修复分支合并回 `master` 分支，**并且同时也要将其合并回 `develop` 分支**，以确保对该 bug 的修复也同时包含在下一次发版中。**如果此时同时存在一个预发布分支，那么要把该热修复分支合并回该预发布分支，而不是 `develop` 分支**。
 
 最后就可以删掉该热修复分支了。
-
-## 命名规范
-
-主分支：`master / main`
-
-开发分支：`develop`
-
-功能分支：除 `master`、`develop`、`release-*`、`hotfix-*` 以外的任何名字
-
-预发布分支：`release-*`
-
-热修复分支：`hotfix-*`
-
-**防止产生歧义，禁止简拼。**

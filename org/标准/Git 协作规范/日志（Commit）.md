@@ -1,11 +1,11 @@
 ---
-id: 提交日志（Commit）
-title: 提交日志（Commit）
+id: 日志（Commit）
+title: 日志（Commit）
 sidebar_position: 2
 data: 2022年6月15日
 ---
 
-## Commit 日志
+## 规范
 
 项目日志所有内容务必使用 **ASCII** 字符，尽量不要使用中文或 emoji，要求**最大化兼容**，便于程序处理。
 
