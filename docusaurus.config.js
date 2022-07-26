@@ -46,6 +46,10 @@ const config = {
           blogSidebarTitle: "文章",
           showReadingTime: true,
           editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
+          feedOptions: {
+            type: 'all',
+            copyright: `Copyright © ${new Date().getFullYear()} 7Wate, Inc.`,
+          },
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -53,6 +57,15 @@ const config = {
         sitemap: {
           changefreq: "weekly",
           priority: 0.5,
+          filename: 'sitemap.xml',
+        },
+        googleAnalytics: {
+          trackingID: "G-MHMEL0F832",
+          anonymizeIP: true,
+        },
+        gtag: {
+          trackingID: 'G-MHMEL0F832',
+          anonymizeIP: true,
         },
       }),
     ],
@@ -174,13 +187,7 @@ const config = {
         showLastUpdateTime: true,
         breadcrumbs: false,
       },
-    ],
-    [
-      "@docusaurus/plugin-google-analytics",
-      {
-        trackingID: "G-MHMEL0F832",
-      },
-    ],
+    ]
   ],
   // themes: [
   //   [
