@@ -74,6 +74,85 @@ const config = {
     [
       "@docusaurus/plugin-content-docs",
       {
+        id: "dev",
+        path: "wiki/dev",
+        routeBasePath: "dev",
+        sidebarPath: require.resolve("./sidebars.js"),
+        editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        breadcrumbs: false,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "algo",
+        path: "wiki/algo",
+        routeBasePath: "algo",
+        sidebarPath: require.resolve("./sidebars.js"),
+        editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        breadcrumbs: false,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "ops",
+        path: "wiki/ops",
+        routeBasePath: "ops",
+        sidebarPath: require.resolve("./sidebars.js"),
+        editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        breadcrumbs: false,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "safe",
+        path: "wiki/safe",
+        routeBasePath: "safe",
+        sidebarPath: require.resolve("./sidebars.js"),
+        editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        breadcrumbs: false,
+      },
+    ],
+
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "org",
+        path: "group/organization",
+        routeBasePath: "org",
+        sidebarPath: require.resolve("./sidebars.js"),
+        editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        breadcrumbs: false,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "com",
+        path: "group/company",
+        routeBasePath: "com",
+        sidebarPath: require.resolve("./sidebars.js"),
+        editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        breadcrumbs: false,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
         id: "life",
         path: "life",
         routeBasePath: "life",
@@ -97,84 +176,7 @@ const config = {
         breadcrumbs: false,
       },
     ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "dev",
-        path: "dev",
-        routeBasePath: "dev",
-        sidebarPath: require.resolve("./sidebars.js"),
-        editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
-        showLastUpdateAuthor: true,
-        showLastUpdateTime: true,
-        breadcrumbs: false,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "algo",
-        path: "algo",
-        routeBasePath: "algo",
-        sidebarPath: require.resolve("./sidebars.js"),
-        editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
-        showLastUpdateAuthor: true,
-        showLastUpdateTime: true,
-        breadcrumbs: false,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "ops",
-        path: "ops",
-        routeBasePath: "ops",
-        sidebarPath: require.resolve("./sidebars.js"),
-        editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
-        showLastUpdateAuthor: true,
-        showLastUpdateTime: true,
-        breadcrumbs: false,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "safe",
-        path: "safe",
-        routeBasePath: "safe",
-        sidebarPath: require.resolve("./sidebars.js"),
-        editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
-        showLastUpdateAuthor: true,
-        showLastUpdateTime: true,
-        breadcrumbs: false,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "othe",
-        path: "othe",
-        routeBasePath: "othe",
-        sidebarPath: require.resolve("./sidebars.js"),
-        editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
-        showLastUpdateAuthor: true,
-        showLastUpdateTime: true,
-        breadcrumbs: false,
-      },
-    ],
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "org",
-        path: "org",
-        routeBasePath: "org",
-        sidebarPath: require.resolve("./sidebars.js"),
-        editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
-        showLastUpdateAuthor: true,
-        showLastUpdateTime: true,
-        breadcrumbs: false,
-      },
-    ],
+
     [
       "@docusaurus/plugin-content-docs",
       {
@@ -189,20 +191,6 @@ const config = {
       },
     ]
   ],
-  // themes: [
-  //   [
-  //     require.resolve("@easyops-cn/docusaurus-search-local"),
-  //     {
-  //       // ... Your options.
-  //       // `hashed` is recommended as long-term-cache of index file is possible.
-  //       hashed: true,
-  //       // For Docs using Chinese, The `language` is recommended to set to:
-  //       // ```
-  //       language: ["en", "zh"],
-  //       // ```
-  //     },
-  //   ],
-  // ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -261,7 +249,20 @@ const config = {
               },
             ],
           },
-          { to: "/org", label: "🤶 社区", position: "right" },
+          {
+            position: "right",
+            label: "💼 组织",
+            items: [
+              {
+                label: "社区",
+                to: "/org",
+              },
+              {
+                label: "企业",
+                to: "/com",
+              },
+            ]
+          },
           { to: "/work", label: "👨‍💻 职业", position: "right" },
           { to: "/life", label: "🚴🏻‍♀️ 生活", position: "right" },
           { to: "/art", label: "👨‍🎨 艺术", position: "right" },

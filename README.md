@@ -4,17 +4,23 @@
 
 ## 目录
 
-- 博客(blog)
-- 维基
-    - 开发(dev)
-    - 算法(algo)
-    - 运维(ops)
-    - 安全(safe)
-    - 其他(docs)
-- 社区(org)
-- 职业(work)
-- 生活(life)
-- 艺术(art)
+```markdown
+Docuasurus
+├─ art（艺术）
+├─ blog（博客）
+├─ docs（文档）
+├─ group（组织）
+│    ├─ 公司
+│    └─ 社区
+├─ life（生活）
+├─ wiki（维基）
+│    ├─ algo（算法）
+│    ├─ dev（开发）
+│    ├─ docs（其他）
+│    ├─ ops（运维）
+│    └─ safe（安全）
+└─ work（职业）
+```
 
 ## 协议
 
