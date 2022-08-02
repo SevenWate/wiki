@@ -1,7 +1,6 @@
 ---
 id: CRM（客户关系管理）
 title: CRM（客户关系管理）
-sidebar_position: 2
 data: 2022年8月1日
 ---
 

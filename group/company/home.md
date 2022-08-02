@@ -2,7 +2,7 @@
 slug: /
 sidebar_position: 1
 id: home
-title: 企业
+title: 现代企业
 ---
 
 
