@@ -153,6 +153,19 @@ const config = {
     [
       "@docusaurus/plugin-content-docs",
       {
+        id: "gov",
+        path: "group/government",
+        routeBasePath: "gov",
+        sidebarPath: require.resolve("./sidebars.js"),
+        editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        breadcrumbs: false,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
         id: "life",
         path: "life",
         routeBasePath: "life",
@@ -194,11 +207,10 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // 公告
       // announcementBar: {
       //   id: 'support_us',
       //   content:
-      //     'We are looking to revamp our docs, please fill <a target="_blank" rel="noopener noreferrer" href="#">this survey</a>',
+      //     'Always For Freedom. The site by 7Wate.',
       //   backgroundColor: '#fafbfc',
       //   textColor: '#091E42',
       //   isCloseable: false,
@@ -210,7 +222,7 @@ const config = {
         },
       ],
       navbar: {
-        title: "📚 7Wate`s Wiki",
+        title: "📚 7Wate's Wiki",
         hideOnScroll: true,
         // logo: {
         //   alt: 'Site Logo',
@@ -228,23 +240,23 @@ const config = {
             label: "👨🏻‍🎓 维基",
             items: [
               {
-                label: "开发",
+                label: "      程序语言",
                 to: "/dev",
               },
               {
-                label: "算法",
+                label: "逻辑算法",
                 to: "/algo",
               },
               {
-                label: "运维",
+                label: "网络运维",
                 to: "/ops",
               },
               {
-                label: "安全",
+                label: "信息安全",
                 to: "/safe",
               },
               {
-                label: "其他",
+                label: "其他文档",
                 to: "/docs",
               },
             ],
@@ -254,12 +266,16 @@ const config = {
             label: "💼 组织",
             items: [
               {
-                label: "社区",
+                label: "开源社区",
                 to: "/org",
               },
               {
-                label: "企业",
+                label: "现代企业",
                 to: "/com",
+              },
+              {
+                label: "国家政府",
+                to: "/gov",
               },
             ]
           },
