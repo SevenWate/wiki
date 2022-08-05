@@ -1,7 +1,6 @@
 ---
 id: Windows 下 Linux 子系统
 title: Windows 下 Linux 子系统
-sidebar_position: 1
 data: 2022年7月22日
 ---
 
