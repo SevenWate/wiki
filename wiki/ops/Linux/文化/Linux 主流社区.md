@@ -1,6 +1,6 @@
 ---
-id: Linux 社区
-title: Linux 社区
+id: Linux 主流社区
+title: Linux 主流社区
 sidebar_position: 2
 data: 2022年8月8日
 ---
