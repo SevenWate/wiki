@@ -297,7 +297,7 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
         defaultLanguage: "markdown",
-        additionalLanguages: ["java", "git"],
+        additionalLanguages: ["java", "git","nginx"],
       },
     }),
 };
