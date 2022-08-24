@@ -5,5 +5,5 @@ sidebar_position: 1
 
 # Home
 
-记录日志
+记录生活日志 ~
 

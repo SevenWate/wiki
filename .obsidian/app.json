@@ -1,0 +1,19 @@
+{
+  "legacyEditor": false,
+  "livePreview": true,
+  "showLineNumber": true,
+  "spellcheck": false,
+  "spellcheckLanguages": [],
+  "trashOption": "system",
+  "promptDelete": true,
+  "communityPluginSortOrder": "download",
+  "attachmentFolderPath": "",
+  "userIgnoreFilters": [
+    "node_modules/",
+    "build/",
+    "src/",
+    "static/",
+    "templates/"
+  ],
+  "newFileLocation": "current"
+}
