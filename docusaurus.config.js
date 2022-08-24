@@ -179,9 +179,9 @@ const config = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "art",
-        path: "art",
-        routeBasePath: "art",
+        id: "journal",
+        path: "journal",
+        routeBasePath: "journal",
         sidebarPath: require.resolve("./sidebars.js"),
         editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
         showLastUpdateAuthor: true,
@@ -281,7 +281,7 @@ const config = {
           },
           { to: "/work", label: "👨‍💻 职业", position: "right" },
           { to: "/life", label: "🚴🏻‍♀️ 生活", position: "right" },
-          { to: "/art", label: "👨‍🎨 艺术", position: "right" },
+          { to: "/journal", label: "📽️ 日志", position: "right" },
         ],
       },
       algolia: {
