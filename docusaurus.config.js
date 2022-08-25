@@ -244,7 +244,7 @@ const config = {
                 to: "/dev",
               },
               {
-                label: "逻辑算法",
+                label: "算法逻辑",
                 to: "/algo",
               },
               {

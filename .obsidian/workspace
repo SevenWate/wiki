@@ -7,8 +7,13 @@
         "id": "742c808ba884e60f",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "wiki/algo/概述/算法.md",
+            "mode": "source",
+            "backlinks": false,
+            "source": false
+          }
         }
       }
     ],
@@ -92,7 +97,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "wiki/algo/概述/算法.md"
+              }
             }
           },
           {
@@ -111,23 +118,24 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
     "width": 238.5
   },
-  "active": "73ad29197a6e1773",
+  "active": "ed729260027c7607",
   "lastOpenFiles": [
+    "wiki/algo/概述/数据结构.md",
+    "wiki/algo/概述/算法.md",
+    "templates/文档 - 完全模板.md",
+    "templates/文档 - 快速模板.md",
+    "wiki/algo/常见算法.md",
+    "templates/日志 - 季度模板.md",
     "blog/写十万字的博客是一种什么感觉.md",
     "blog/未命名.md",
     "templates/博客 - 快速模板.md",
-    "templates/文档 - 快速模板.md",
-    "templates/文档 - 完全模板.md",
-    "templates/日志 - 周记模板.md",
-    "templates/日志 - 日记模板.md",
-    "templates/日志 - 季度模板.md",
-    "templates/博客 - 完全模板.md",
-    "未命名.md"
+    "templates/日志 - 周记模板.md"
   ]
 }
