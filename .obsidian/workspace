@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "742c808ba884e60f",
+        "id": "9fa99411757b9349",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "wiki/algo/概述/算法.md",
+            "file": "未命名.md",
             "mode": "source",
             "backlinks": false,
             "source": false
@@ -63,7 +63,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 210
+    "width": 295
   },
   "right": {
     "id": "3d677101148143c0",
@@ -98,7 +98,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "wiki/algo/概述/算法.md"
+                "file": "未命名.md"
               }
             }
           },
@@ -127,15 +127,15 @@
   },
   "active": "ed729260027c7607",
   "lastOpenFiles": [
-    "wiki/algo/概述/数据结构.md",
-    "wiki/algo/概述/算法.md",
-    "templates/文档 - 完全模板.md",
-    "templates/文档 - 快速模板.md",
-    "wiki/algo/常见算法.md",
-    "templates/日志 - 季度模板.md",
-    "blog/写十万字的博客是一种什么感觉.md",
-    "blog/未命名.md",
+    "blog/写博客的正确姿势 - 测试版.md",
+    "blog/写博客的正确姿势 - 先行版.md",
+    "templates/博客 - 完全模板.md",
+    "journal/2022/W34/2022-08-25.md",
     "templates/博客 - 快速模板.md",
-    "templates/日志 - 周记模板.md"
+    "blog/写十万字的博客是一种什么感觉.md",
+    "wiki/algo/概述/算法.md",
+    "wiki/algo/概述/数据结构.md",
+    "README.md",
+    "templates/文档 - 完全模板.md"
   ]
 }

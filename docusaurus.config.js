@@ -47,6 +47,8 @@ const config = {
           showReadingTime: true,
           editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
           feedOptions: {
+            title: "7Wate`s Blog",
+            description: "7Wate 的个人生活和工作记录",
             type: 'all',
             copyright: `Copyright © ${new Date().getFullYear()} 7Wate, Inc.`,
           },
