@@ -102,6 +102,19 @@ const config = {
     [
       "@docusaurus/plugin-content-docs",
       {
+        id: "struct",
+        path: "wiki/struct",
+        routeBasePath: "struct",
+        sidebarPath: require.resolve("./sidebars.js"),
+        editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        breadcrumbs: false,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
         id: "ops",
         path: "wiki/ops",
         routeBasePath: "ops",
@@ -242,11 +255,15 @@ const config = {
             label: "👨🏻‍🎓 维基",
             items: [
               {
-                label: "      程序语言",
+                label: "程序语言",
                 to: "/dev",
               },
               {
-                label: "算法逻辑",
+                label: "数据结构",
+                to: "/struct",
+              },
+              {
+                label: "常用算法",
                 to: "/algo",
               },
               {
