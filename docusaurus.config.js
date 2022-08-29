@@ -263,7 +263,7 @@ const config = {
                 to: "/struct",
               },
               {
-                label: "常用算法",
+                label: "逻辑算法",
                 to: "/algo",
               },
               {
