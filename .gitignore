@@ -23,5 +23,3 @@ yarn-error.log*
 /dist
 /.vscode
 /.trash
-.obsidian/workspace
-.obsidian/workspaces.json

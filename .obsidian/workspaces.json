@@ -1,0 +1,109 @@
+{
+  "workspaces": {
+    "wiki": {
+      "main": {
+        "id": "1f445337c2d6e92a",
+        "type": "split",
+        "children": [
+          {
+            "id": "839e2665bf4e243d",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "807eda8c7f9d39d6",
+        "type": "split",
+        "children": [
+          {
+            "id": "127edee3cbe2de12",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "32e3954140b6c675",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {}
+                }
+              },
+              {
+                "id": "0aacbc5bc1b33126",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 218
+      },
+      "right": {
+        "id": "b6d0f50ff4f93745",
+        "type": "split",
+        "children": [
+          {
+            "id": "72bfceaff7d9617c",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "216a95b1562d56d5",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {}
+                }
+              },
+              {
+                "id": "9701940d4d2f1bc6",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  }
+                }
+              },
+              {
+                "id": "c5fde77b8d301a14",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {}
+                }
+              },
+              {
+                "id": "93a288f062a4606b",
+                "type": "leaf",
+                "state": {
+                  "type": "git-view",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 264.5
+      },
+      "active": "839e2665bf4e243d"
+    }
+  },
+  "active": "wiki"
+}

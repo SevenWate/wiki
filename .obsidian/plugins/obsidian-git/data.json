@@ -1,6 +1,6 @@
 {
   "commitMessage": "backup: {{date}}",
-  "autoCommitMessage": "backup: {{date}}",
+  "autoCommitMessage": "",
   "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
   "autoSaveInterval": 0,
   "autoPushInterval": 0,
