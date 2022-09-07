@@ -263,11 +263,11 @@ const config = {
                 to: "/struct",
               },
               {
-                label: "逻辑算法",
+                label: "算法逻辑",
                 to: "/algo",
               },
               {
-                label: "网络运维",
+                label: "开发运维",
                 to: "/ops",
               },
               {
