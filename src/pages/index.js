@@ -94,6 +94,22 @@ export default function Home() {
       title='Home'
       description='Wiki知识库/vscode/javascript/软件/工具'>
       {/* <HomepageHeader /> */}
+      <Head>
+      // 百度
+      <meta name="baidu-site-verification" content="code-7VeTrprZVx" />
+      // 360
+      <meta name="360-site-verification" content="0b0e3331bbf6d4f5bf369201bb326123" />
+      // Bing
+      <meta name="msvalidate.01" content="5723E6B938F5EE2738E056F2A58E1DB7" />
+      // 搜狗
+      <meta name="sogou_site_verification" content="ZwDQxSe70Y" />
+      // 神马
+      <meta name="shenma-site-verification" content="fed71b373d433c21d139f454bd1409b4_1663059054"></meta>
+      // 头条
+      <meta name="bytedance-verification-code" content="G6kAPFmjdnZWEKwOqHzU" />
+      // Google
+      <meta name="google-site-verification" content="_rHzOjHo4rSNNcdH1Pyby6bwPqXCZWZ4qWPXRGj11kw" />
+      </Head>
       <main>
         <MyHero />
         {/* <HomepageFeatures /> */}
