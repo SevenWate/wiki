@@ -15,5 +15,7 @@
     "static/",
     "templates/"
   ],
-  "newFileLocation": "current"
+  "newFileLocation": "current",
+  "defaultViewMode": "source",
+  "showFrontmatter": false
 }
