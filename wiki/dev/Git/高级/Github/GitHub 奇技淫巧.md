@@ -1,8 +1,14 @@
 ---
-id: GitHub 技巧
-title: GitHub 技巧
-sidebar_position: 5
-data: 2022年5月30日
+title: GitHub 奇技淫巧
+description: GitHub 奇技淫巧
+keywords:
+- GitHub
+- 技巧
+tags:
+- GitHub
+sidebar_position: 1
+author: 7Wate
+date: 2022-09-23
 ---
 
 ## 镜像站
