@@ -7,7 +7,7 @@ data: 2022年6月15日
 
 ## 规范
 
-![Git 分支工作流.png](https://static.7wate.com/img/2021/08/24/c5a50e99dde5f.png)
+![git-flow](https://static.7wate.com/img/2022/10/09/a24754d19f904.png)
 
 主分支命名：`master `、`main`
 
