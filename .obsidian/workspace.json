@@ -1,0 +1,134 @@
+{
+  "main": {
+    "id": "1f445337c2d6e92a",
+    "type": "split",
+    "children": [
+      {
+        "id": "92d55d495ed63201",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "63b55a8eb1738113",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "journal/2022/W41/2022-10-14.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "807eda8c7f9d39d6",
+    "type": "split",
+    "children": [
+      {
+        "id": "127edee3cbe2de12",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "32e3954140b6c675",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0aacbc5bc1b33126",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 235.5
+  },
+  "right": {
+    "id": "b6d0f50ff4f93745",
+    "type": "split",
+    "children": [
+      {
+        "id": "72bfceaff7d9617c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "216a95b1562d56d5",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "9701940d4d2f1bc6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "c5fde77b8d301a14",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "journal/2022/W41/2022-10-14.md"
+              }
+            }
+          },
+          {
+            "id": "bf8d2979ce1401e1",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 294.5
+  },
+  "ribbon": {
+    "mostRecentAction": ""
+  },
+  "active": "63b55a8eb1738113",
+  "lastOpenFiles": [
+    "journal/2022/W41/未命名.md",
+    "journal/2022/W41/2022-10-13.md",
+    "journal/2022/W41/2022-10-11.md",
+    "journal/2022/W38/2022-09-21.md",
+    "wiki/safe/系统权限/权限设计方案/主流权限系统的设计.md",
+    "wiki/safe/系统权限/系统权限简明指南.md",
+    "wiki/dev/Git/进阶/命令示例.md",
+    "wiki/dev/Git/进阶/工作流.md",
+    "wiki/dev/Git/进阶/常用技巧.md",
+    "wiki/dev/Git/进阶/参考手册.md"
+  ]
+}

@@ -6,5 +6,6 @@
   "translucency": false,
   "textFontFamily": "霞鹜文楷等宽,微软雅黑",
   "monospaceFontFamily": "霞鹜文楷等宽,微软雅黑",
-  "baseFontSizeAction": true
+  "baseFontSizeAction": true,
+  "accentColor": ""
 }
