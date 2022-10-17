@@ -43,7 +43,7 @@ const config = {
           blogTitle: "7Wate`s Blog",
           blogDescription: "7Wate 的个人生活和工作记录",
           blogSidebarCount: 7,
-          blogSidebarTitle: "文章",
+          blogSidebarTitle: "近期文章",
           showReadingTime: true,
           editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
           feedOptions: {

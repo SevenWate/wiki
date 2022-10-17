@@ -170,3 +170,17 @@ div[class^='announcementBar_'] {
 .dropdown__menu{
   min-width: 7rem!important;
 }
+
+.margin-vert--lg > .container > .row {
+  flex-direction: column-reverse!important;
+}
+
+.margin-vert--lg > .container > .row > div > h3{
+  font-size: 1.8rem;
+}
+
+.margin-vert--lg > .container > .row > div > ul > li{
+  line-height: 2.0rem;
+  letter-spacing: 0.1rem;
+  width: 49vw!important;
+}
