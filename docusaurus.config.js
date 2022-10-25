@@ -76,9 +76,9 @@ const config = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "dev",
-        path: "wiki/dev",
-        routeBasePath: "dev",
+        id: "getting-started",
+        path: "wiki/getting-started",
+        routeBasePath: "getting-started",
         sidebarPath: require.resolve("./sidebars.js"),
         editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
         showLastUpdateAuthor: true,
@@ -89,9 +89,9 @@ const config = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "algo",
-        path: "wiki/algo",
-        routeBasePath: "algo",
+        id: "programming-language",
+        path: "wiki/programming-language",
+        routeBasePath: "programming-language",
         sidebarPath: require.resolve("./sidebars.js"),
         editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
         showLastUpdateAuthor: true,
@@ -102,9 +102,9 @@ const config = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "struct",
-        path: "wiki/struct",
-        routeBasePath: "struct",
+        id: "structures-algorithms",
+        path: "wiki/structures-algorithms",
+        routeBasePath: "structures-algorithms",
         sidebarPath: require.resolve("./sidebars.js"),
         editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
         showLastUpdateAuthor: true,
@@ -115,9 +115,9 @@ const config = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "ops",
-        path: "wiki/ops",
-        routeBasePath: "ops",
+        id: "computer-composition",
+        path: "wiki/computer-composition",
+        routeBasePath: "computer-composition",
         sidebarPath: require.resolve("./sidebars.js"),
         editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
         showLastUpdateAuthor: true,
@@ -128,9 +128,9 @@ const config = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "safe",
-        path: "wiki/safe",
-        routeBasePath: "safe",
+        id: "computer-network",
+        path: "wiki/computer-network",
+        routeBasePath: "computer-network",
         sidebarPath: require.resolve("./sidebars.js"),
         editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
         showLastUpdateAuthor: true,
@@ -138,7 +138,72 @@ const config = {
         breadcrumbs: false,
       },
     ],
-
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "operating-system",
+        path: "wiki/operating-system",
+        routeBasePath: "operating-system",
+        sidebarPath: require.resolve("./sidebars.js"),
+        editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        breadcrumbs: false,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "database-system",
+        path: "wiki/database-system",
+        routeBasePath: "database-system",
+        sidebarPath: require.resolve("./sidebars.js"),
+        editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        breadcrumbs: false,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "computer-security",
+        path: "wiki/computer-security",
+        routeBasePath: "computer-security",
+        sidebarPath: require.resolve("./sidebars.js"),
+        editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        breadcrumbs: false,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "software-engineering",
+        path: "wiki/software-engineering",
+        routeBasePath: "software-engineering",
+        sidebarPath: require.resolve("./sidebars.js"),
+        editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        breadcrumbs: false,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "compilation-principle",
+        path: "wiki/compilation-principle",
+        routeBasePath: "compilation-principle",
+        sidebarPath: require.resolve("./sidebars.js"),
+        editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        breadcrumbs: false,
+      },
+    ],
+// -----------------------------------------------------------------------------------
     [
       "@docusaurus/plugin-content-docs",
       {
@@ -178,6 +243,47 @@ const config = {
         breadcrumbs: false,
       },
     ],
+// -----------------------------------------------------------------------------------
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "roadmap",
+        path: "work/roadmap",
+        routeBasePath: "roadmap",
+        sidebarPath: require.resolve("./sidebars.js"),
+        editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        breadcrumbs: false,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "devops",
+        path: "work/devops",
+        routeBasePath: "devops",
+        sidebarPath: require.resolve("./sidebars.js"),
+        editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        breadcrumbs: false,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "devsec",
+        path: "work/devsec",
+        routeBasePath: "devsec",
+        sidebarPath: require.resolve("./sidebars.js"),
+        editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        breadcrumbs: false,
+      },
+    ],
+// -----------------------------------------------------------------------------------
     [
       "@docusaurus/plugin-content-docs",
       {
@@ -191,6 +297,7 @@ const config = {
         breadcrumbs: false,
       },
     ],
+// -----------------------------------------------------------------------------------
     [
       "@docusaurus/plugin-content-docs",
       {
@@ -204,20 +311,6 @@ const config = {
         breadcrumbs: false,
       },
     ],
-
-    [
-      "@docusaurus/plugin-content-docs",
-      {
-        id: "work",
-        path: "work",
-        routeBasePath: "work",
-        sidebarPath: require.resolve("./sidebars.js"),
-        editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
-        showLastUpdateAuthor: true,
-        showLastUpdateTime: true,
-        breadcrumbs: false,
-      },
-    ]
   ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -255,30 +348,64 @@ const config = {
             label: "👨🏻‍🎓 维基",
             items: [
               {
-                label: "程序语言",
-                to: "/dev",
+                label: "基础入门",
+                to: "/getting-started",
               },
               {
-                label: "数据结构",
-                to: "/struct",
+                label: "程序设计语言",
+                to: "/programming-language",
               },
               {
-                label: "算法逻辑",
-                to: "/algo",
+                label: "数据结构与算法",
+                to: "/structures-algorithms",
               },
               {
-                label: "开发运维",
-                to: "/ops",
+                label: "计算机组成",
+                to: "/computer-composition",
               },
               {
-                label: "信息安全",
-                to: "/safe",
+                label: "计算机网络",
+                to: "/computer-network",
               },
               {
-                label: "其他文档",
-                to: "/docs",
+                label: "操作系统",
+                to: "/operating-system",
+              },
+              {
+                label: "数据库系统",
+                to: "/database-system",
+              },
+              {
+                label: "计算机系统安全",
+                to: "/computer-security",
+              },
+              {
+                label: "软件工程",
+                to: "/software-engineering",
+              },       
+              {
+                label: "编译原理",
+                to: "/compilation-principle",
               },
             ],
+          },
+          {
+            position: "right",
+            label: "👨‍💻 职业",
+            items: [
+              {
+                label: "求职之路",
+                to: "/roadmap",
+              },
+              {
+                label: "运维开发工程师",
+                to: "/devops",
+              },
+              {
+                label: "信息安全工程师",
+                to: "/devsec",
+              },
+            ]
           },
           {
             position: "right",
@@ -298,7 +425,6 @@ const config = {
               },
             ]
           },
-          { to: "/work", label: "👨‍💻 职业", position: "right" },
           { to: "/life", label: "🚴🏻‍♀️ 生活", position: "right" },
           { to: "/journal", label: "📽️ 日志", position: "right" },
         ],
