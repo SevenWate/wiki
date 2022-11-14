@@ -45,18 +45,18 @@ Main 主分支
 
 ## 贡献
 
-欢迎各位 Fork 贡献 👊
+欢迎各位 Fork 贡献，并提供指导纠错。 👊
 
 ## 协议
 
-- 本站所有**原创**内容，采用 [GPL-3.0](http://www.thebigfly.com/gnu/FDLv1.3/) 协议。
+- 所有**原创代码**采用 [GPL-3.0](http://www.thebigfly.com/gnu/FDLv1.3/) 协议，**原创非代码内容**采用[署名-相同方式共享 4.0 国际](http://creativecommons.org/licenses/by-sa/4.0/)。
 
-- 本站所有**引用第三方**原创内容，所属**版权均归原作者**所有。如有冒犯侵权，请[邮件联系](mailto:admin@7wate.com)删除。
+- 所有**引用第三方**内容仅为学术使用。其所属**著作权、版权均归原作者**所有，如有冒犯侵权，请[邮件联系](mailto:admin@7wate.com)删除。
 
 - **Docusaurus** is [MIT licensed.](https://github.com/facebook/docusaurus/blob/main/LICENSE)
 
 ## 致谢
 
-感谢第三方原创作者的共享！
+感谢第三方原创作者的无私贡献！
 
-感觉 Docusaurus 官方的维护开发！
+感觉 Docusaurus 项目官方的维护开发！
