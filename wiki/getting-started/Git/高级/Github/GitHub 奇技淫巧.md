@@ -11,14 +11,6 @@ author: 7Wate
 date: 2022-09-23
 ---
 
-## 镜像站
-
-| 域名                                                 | https | 克隆加速 | zip 加速 | releases 加速 | 主机服务商 | 服务器所在地 |
-| ---------------------------------------------------- | ----- | -------- | -------- | ------------- | ---------- | ------------ |
-| [https://doc.fastgit.org](https://doc.fastgit.org/)  | ✓     | ✓        | ✓        | ✓             | fastgit    | 香港         |
-| [https://hub.fastgit.xyz/](https://hub.fastgit.xyz/) | ✓     | ✓        | ✓        | ✓             | fastgit    | 香港         |
-| [https://gitclone.com](https://gitclone.com/)        | ✓     | ✓        | ✗        | ✗             | Aliyun     | 杭州         |
-
 ## 搜索
 
 - 按 `s` 键直接聚焦倒搜索框输入
