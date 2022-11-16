@@ -412,7 +412,7 @@ const config = {
             label: "💼 组织",
             items: [
               {
-                label: "开源社区",
+                label: "自由社区",
                 to: "/org",
               },
               {
