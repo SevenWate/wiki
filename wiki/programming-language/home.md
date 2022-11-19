@@ -149,3 +149,9 @@ sidebar_position: 1
 > SVG 格式图片，新窗口打开可以无失真缩放查看。
 >
 > 来源：[Computer Languages History](https://www.levenez.com/lang/)；非商业引用，著作权归作者所有。
+
+## 程序设计语言生命周期
+
+不仅可以在每个程序设计语言的官方可以了解其生命周期，还可以在如下网址查询：
+
+ - [endoflife.date](https://endoflife.date/)
