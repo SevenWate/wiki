@@ -9,13 +9,13 @@
   "communityPluginSortOrder": "download",
   "attachmentFolderPath": "",
   "userIgnoreFilters": [
-    "node_modules/",
-    "build/",
     "src/",
     "static/",
     "templates/"
   ],
   "newFileLocation": "current",
   "defaultViewMode": "source",
-  "showFrontmatter": false
+  "showFrontmatter": true,
+  "vimMode": false,
+  "newLinkFormat": "absolute"
 }
