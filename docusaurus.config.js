@@ -13,9 +13,6 @@ const config = {
   onBrokenLinks: "log",
   onBrokenMarkdownLinks: "log",
   favicon: "img/favicon.ico",
-  headTags: [
-    { src: 'js/umami.js', type: 'text/javascript' }
-  ],
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -314,6 +311,8 @@ const config = {
         breadcrumbs: false,
       },
     ],
+
+    "docusaurus-plugin-umami",
   ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -436,6 +435,10 @@ const config = {
         apiKey: "5d5a02bdf02df700355c8ccd84b78d13",
         appId: "8W3YJXJGF2",
         indexName: "wiki",
+      },
+      umami: {
+        websiteid: "7efcd733-c232-43db-9f17-10a00c53b152",
+        src: "https://umami.7wate.org/umami.js",
       },
       footer: {
         style: "dark",
