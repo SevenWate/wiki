@@ -1,0 +1,1 @@
+<script async defer data-website-id="7efcd733-c232-43db-9f17-10a00c53b152" src="https://umami.7wate.org/umami.js"></script>

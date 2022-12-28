@@ -13,6 +13,9 @@ const config = {
   onBrokenLinks: "log",
   onBrokenMarkdownLinks: "log",
   favicon: "img/favicon.ico",
+  headTags: [
+    { src: 'js/umami.js', type: 'text/javascript' }
+  ],
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
