@@ -43,6 +43,14 @@ Main 主分支
 └─ phone 移动分支
 ```
 
+## CI&CD
+
+ - build.yml：main 分支自动构建静态网站，并部署至 html 分支。
+ - algolia.yml：每周三凌晨 02：00 自动爬取并推送至 Algolia。
+	 1. 设置 `ALGOLIA_ADMIN_API_KEY`、`ALGOLIA_APP_ID` 仓库环境密钥，密钥获取具体步骤请阅读 [使用 Docusaurus 搭建优秀个人wiki](https://blog.7wate.com/?p=75)。
+	 2. 修改 `.github\workflows\docsearch.json` 目录下 `start_urls` 和 `sitemap_urls` 键值为对应网站。
+
+
 ## 贡献
 
 欢迎各位 Fork 贡献，并提供指导纠错。 👊

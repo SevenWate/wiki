@@ -1,4 +1,4 @@
-name: build
+name: Build HTML
 on:
   push:
     branches:
@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: 18
 
-      - name: Build
+      - name: Build HTML
         run: |
           npm install 
           npm run build
