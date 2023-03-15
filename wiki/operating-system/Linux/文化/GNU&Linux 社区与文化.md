@@ -1,8 +1,16 @@
 ---
-id: Linux 主流社区
-title: Linux 主流社区
+title: GNU&Linux 社区与文化
+description: GNU&Linux 社区与文化
+keywords:
+- GNU
+- Linux
+- 社区
+- 文化
+tags:
+- Linux
 sidebar_position: 2
-data: 2022年8月8日
+author: 7Wate
+date: 2023-03-15
 ---
 
 ## 官方社区
@@ -10,6 +18,10 @@ data: 2022年8月8日
 官方讨论社区：[https://www.linux.org](https://www.linux.org/)
 
 内核归档社区：[https://www.kernel.org](https://www.kernel.org/)
+
+GNU 项目社区：[https://www.gnu.org](https://www.gnu.org/)
+
+自由软件基金会：[https://www.fsf.org](https://www.fsf.org/)
 
 ## 开源社区
 
@@ -111,7 +123,7 @@ Arch 拥有丰富的 [wiki](https://wiki.archlinux.org/) 文档供使用，几�
 | `pacman -Qi <package>`            | 检索包的详细信息                                  |
 | `pacman -Ql <package>`            | 检索包的文件列表                                  |
 | `pacman -Sw <package>`            | 下载包（不安装）                                  |
-| `pacman -Sc`                     | 清理未安装的包文件（/var/cache/pacman/pkg/ 目录） |
+| `pacman -Sc`                      | 清理未安装的包文件（/var/cache/pacman/pkg/ 目录） |
 | `pacman -Scc`                     | 清理所有的缓存文件                                |
 
 #### 社区评价
@@ -185,16 +197,16 @@ RPM 软件包分为**二进制包（Binary）、源代码包（Source）和 Delt
 | DNF                       | yum                       | 说明                         |
 | ------------------------- | ------------------------- | ---------------------------- |
 | `dnf repolist all`        | `yum repolist all`        | 显示所有仓库                 |
-| `dnf search <package>`   | `yum search <package>`    | 检索包                       |
+| `dnf search <package>`    | `yum search <package>`    | 检索包                       |
 | `dnf list installed`      | `yum list installed`      | 列出所有安装的包             |
-| `dnf info <package>`      | `yum info <package>`     | 查看软件包详情               |
+| `dnf info <package>`      | `yum info <package>`      | 查看软件包详情               |
 | `dnf install <package>`   | `yum install <package>`   | 安装软件包及其所需的所有依赖 |
-| `dnf update <package>`   | `yum update <package>`   | 升级软件包                   |
-| `dnf remove <package>`   | `yum remove <package>`   | 删除软件包                   |
+| `dnf update <package>`    | `yum update <package>`    | 升级软件包                   |
+| `dnf remove <package>`    | `yum remove <package>`    | 删除软件包                   |
 | `dnf reinstall <package>` | `yum reinstall <package>` | 重新安装特定软件包           |
 | `dnf distro-sync`         | `yum distro-sync`         | 更新软件包到最新的稳定发行版 |
 | `dnf check-update`        | `yum check-update`        | 检查系统所有软件包的更新     |
-| `dnf update`             | `yum update`             | 升级所有系统软件包           |
+| `dnf update`              | `yum update`              | 升级所有系统软件包           |
 | `dnf clean all`           | `yum clean all`           | 删除缓存                     |
 
 ### Ubuntu 社区
