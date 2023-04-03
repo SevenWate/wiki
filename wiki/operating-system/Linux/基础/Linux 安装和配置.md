@@ -1,5 +1,5 @@
 ---
-title: Linux的安装和配置
+title: Linux 安装和配置
 description: Linux的安装和配置
 keywords:
 - Linux
