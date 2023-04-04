@@ -55,22 +55,6 @@ Debian 稳定版本通常每隔两年发布一个版本，自发行后会得到�
 
 ![Debian 发行版本](https://static.7wate.com/img/2022/08/08/94cc0f104ba00.png)
 
-#### APT 包管理
-
-高级打包工具（Advanced Packaging Tools，APT）是 Debian 及其派生的 Linux 软件包管理器。APT 可以自动下载，配置，安装二进制或者源代码格式的软件包，因此简化了 Unix 系统上管理软件的过程。APT 最早被设计成dpkg 的前端，用来处理 deb 格式的软件包。现在经过 APT-RPM 组织修改，APT 已经可以安装在支持 RPM 的系统管理 RPM 包。
-
-| apt 命令                | apt-get 命令                 | 说明                           |
-| ----------------------- | ---------------------------- | ------------------------------ |
-| `apt install <package>` | `apt-get install <package>`  | 安装新包                       |
-| `apt remove <package>`  | `apt-get remove <package>`   | 卸载已安装的包（保留配置文件） |
-| `apt purge <package>`   | `apt-get purge <package>`    | 卸载已安装的包（删除配置文件） |
-| `apt update`            | `apt-get update`             | 更新软件包列表                 |
-| `apt upgrade`           | `apt-get upgrade`            | 更新所有已安装的包             |
-| `apt autoremove`        | `apt-get autoremove`         | 卸载已不需要的包依赖           |
-| `apt full-upgrade`      | `apt-get dist-upgrade`       | 自动处理依赖包升级             |
-| `apt search <package>`  | `apt-cache search <package>` | 查找软件包                     |
-| `apt show <package>`    | `apt-cache show <package>`   | 显示指定软件包的详情           |
-
 #### 社区评价
 
 ##### 优点
@@ -100,31 +84,6 @@ Debian 的**发行周期较长**，稳定版本的包可能已经过时。由于
 - 以用户为中心：Arch Linux 则一直是，永远会是“以用户为中心”。此发行版是为了**满足贡献者的需求，而不是为了吸引尽可能多的用户**。
 
 Arch 之道由**简洁、现代、实用、以用户为中心**构成，或许最好的结词是 **Keep It Simple, Stupid。**
-
-#### Pacman 包管理
-
-Pacman 是一个软件包管理器，作为 Arch Linux 发行版的一部分。它最早由 Arch Linux 的 Judd Vinet 开发。Pacman 可以解决安装过程中的依赖问题，自动下载并且安装所有需要的软件包。
-
-Arch 拥有丰富的 [wiki](https://wiki.archlinux.org/) 文档供使用，几乎可以解决 99% 的问题，这也是其特色之一。
-
-| pacman 命令                       | 说明                                              |
-| --------------------------------- | ------------------------------------------------- |
-| `pacman -Syu`                     | 升级系统及所有已经安装的包                        |
-| `pacman -S <package>`             | 安装新包                                          |
-| `pacman -Sy <package>`            | 同步包数据库后再执行安装新包                      |
-| `pacman -U <local-file-package>`  | 安装本地包                                        |
-| `pacman -U <romote-file-package>` | 安装远程包                                        |
-| `pacman -R <package>`             | 删除已安装的包（保留依赖关系的包）                |
-| `pacman -Rs <package>`            | 删除已安装的包（删除无依赖关系的包）              |
-| `pacman -Rsc <package>`           | 删除已安装的包（删除依赖的包）                    |
-| `pacman -Rd <package>`            | 删除已安装的包（不检查依赖关系）                  |
-| `pacman -Ss <key-words>`          | 检索包的关键字                                    |
-| `pacman -Qs <key-words>`          | 检索已安装的包的关键字                            |
-| `pacman -Qi <package>`            | 检索包的详细信息                                  |
-| `pacman -Ql <package>`            | 检索包的文件列表                                  |
-| `pacman -Sw <package>`            | 下载包（不安装）                                  |
-| `pacman -Sc`                      | 清理未安装的包文件（/var/cache/pacman/pkg/ 目录） |
-| `pacman -Scc`                     | 清理所有的缓存文件                                |
 
 #### 社区评价
 
@@ -187,27 +146,6 @@ RHEL、CentOS 和 Fedora 的相似之处都是**基于 2004 年停产的 Red Hat
 |  RHEL  |    否    |    否    | 付费            |
 | CentOS |    是    |    是    | 不提供          |
 | Fedora |    是    |    是    | 不提供          |
-
-#### RPM 包管理
-
-RPM 包管理员（The RPM Package Manager，RPM）是在 Linux 下广泛使用的软件包管理器。RPM 此名词可能是指 .rpm 的文件格式的软件包，也可能是指其本身的软件包管理器（RPM Package Manager）。**最早由 Red Hat 研制，现在也由开源社区开发。**
-
-RPM 软件包分为**二进制包（Binary）、源代码包（Source）和 Delta 包**三种。二进制包可以直接安装在计算机中，而源代码包将会由 RPM 自动编译、安装。源代码包经常以 src.rpm 作为后缀名。
-
-| DNF                       | yum                       | 说明                         |
-| ------------------------- | ------------------------- | ---------------------------- |
-| `dnf repolist all`        | `yum repolist all`        | 显示所有仓库                 |
-| `dnf search <package>`    | `yum search <package>`    | 检索包                       |
-| `dnf list installed`      | `yum list installed`      | 列出所有安装的包             |
-| `dnf info <package>`      | `yum info <package>`      | 查看软件包详情               |
-| `dnf install <package>`   | `yum install <package>`   | 安装软件包及其所需的所有依赖 |
-| `dnf update <package>`    | `yum update <package>`    | 升级软件包                   |
-| `dnf remove <package>`    | `yum remove <package>`    | 删除软件包                   |
-| `dnf reinstall <package>` | `yum reinstall <package>` | 重新安装特定软件包           |
-| `dnf distro-sync`         | `yum distro-sync`         | 更新软件包到最新的稳定发行版 |
-| `dnf check-update`        | `yum check-update`        | 检查系统所有软件包的更新     |
-| `dnf update`              | `yum update`              | 升级所有系统软件包           |
-| `dnf clean all`           | `yum clean all`           | 删除缓存                     |
 
 ### Ubuntu 社区
 
