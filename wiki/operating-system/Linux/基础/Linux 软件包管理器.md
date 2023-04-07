@@ -57,17 +57,17 @@ dpkg 的主要设计理念是简单、稳定、可扩展。它旨在为 Debian �
 
 | 命令                            | 说明                                                       |
 | ------------------------------- | ---------------------------------------------------------- |
-| dpkg -i <package.deb>           | 安装一个 DEB 软件包                                        |
-| dpkg -r <package_name>          | 移除一个已安装的软件包，但保留配置文件                     |
-| dpkg -P <package_name>          | 完全移除一个已安装的软件包，包括配置文件                   |
-| dpkg -L <package_name>          | 列出已安装软件包的所有文件                                 |
+| dpkg -i package.deb          | 安装一个 DEB 软件包                                        |
+| dpkg -r package_name          | 移除一个已安装的软件包，但保留配置文件                     |
+| dpkg -P package_name          | 完全移除一个已安装的软件包，包括配置文件                   |
+| dpkg -L package_name          | 列出已安装软件包的所有文件                                 |
 | dpkg -l                         | 列出所有已安装的软件包                                     |
-| dpkg -s <package_name>          | 显示已安装软件包的状态信息                                 |
-| dpkg -S <file_path>             | 查询指定文件属于哪个软件包                                 |
+| dpkg -s package_name          | 显示已安装软件包的状态信息                                 |
+| dpkg -S file_path             | 查询指定文件属于哪个软件包                                 |
 | dpkg --get-selections           | 获取当前系统上所有软件包的安装状态                         |
 | dpkg --set-selections           | 从文件或标准输入中读取软件包状态信息，设置相应软件包的状态 |
-| dpkg --configure <package_name> | 配置一个尚未配置的软件包                                   |
-| dpkg --unpack <package.deb>     | 解包 DEB 文件，但不配置软件包                              |
+| dpkg --configure package_name | 配置一个尚未配置的软件包                                   |
+| dpkg --unpack package.deb     | 解包 DEB 文件，但不配置软件包                              |
 | dpkg --print-architecture       | 显示当前系统的架构                                         |
 
 ### 选项
@@ -89,7 +89,7 @@ dpkg 的主要设计理念是简单、稳定、可扩展。它旨在为 Debian �
 | --force-<选项>                  | 强制执行某些操作，如 --force-depends 强制忽略依赖问题      |
 | --no-act                        | 模拟操作，不实际执行                                       |
 | --refuse-<选项>                 | 拒绝执行某些操作                                           |
-| --ignore-depends=<package_name> | 安装或删除软件包时忽略指定的依赖关系                       |
+| --ignore-depends=package_name | 安装或删除软件包时忽略指定的依赖关系                       |
 
 ## APT
 
@@ -174,19 +174,19 @@ RPM未来发展方向主要包括提高与其他软件包管理系统的兼容�
 
 | 命令                            | 功能描述                        |
 | ------------------------------- | ------------------------------- |
-| rpm -i <package.rpm>            | 安装指定的 RPM 软件包           |
-| rpm -U <package.rpm>            | 升级指定的 RPM 软件包           |
-| rpm -e <package_name>           | 卸载指定的 RPM 软件包           |
+| rpm -i package.rpm            | 安装指定的 RPM 软件包           |
+| rpm -U package.rpm            | 升级指定的 RPM 软件包           |
+| rpm -e package_name           | 卸载指定的 RPM 软件包           |
 | rpm -qa                         | 查询所有已安装的 RPM 软件包     |
-| rpm -q <package_name>           | 查询指定 RPM 软件包的安装状态   |
-| rpm -qi <package_name>          | 显示指定 RPM 软件包的详细信息   |
-| rpm -qf <file_path>             | 查询指定文件属于哪个 RPM 软件包 |
-| rpm -ql <package_name>          | 列出指定 RPM 软件包中的所有文件 |
-| rpm -qp <package.rpm> --scripts | 显示指定 RPM 软件包的脚本信息   |
-| rpm -qR <package_name>          | 显示指定 RPM 软件包的依赖关系   |
-| rpm -V <package_name>           | 验证指定 RPM 软件包的完整性     |
-| rpm -ivh <package.rpm>          | 安装指定的 RPM 软件包并显示进度 |
-| rpm -Uvh <package.rpm>          | 升级指定的 RPM 软件包并显示进度 |
+| rpm -q package_name           | 查询指定 RPM 软件包的安装状态   |
+| rpm -qi package_name          | 显示指定 RPM 软件包的详细信息   |
+| rpm -qf file_path             | 查询指定文件属于哪个 RPM 软件包 |
+| rpm -ql package_name          | 列出指定 RPM 软件包中的所有文件 |
+| rpm -qp package.rpm --scripts | 显示指定 RPM 软件包的脚本信息   |
+| rpm -qR package_name          | 显示指定 RPM 软件包的依赖关系   |
+| rpm -V package_name           | 验证指定 RPM 软件包的完整性     |
+| rpm -ivh package.rpm          | 安装指定的 RPM 软件包并显示进度 |
+| rpm -Uvh package.rpm          | 升级指定的 RPM 软件包并显示进度 |
 
 ### 选项
 
@@ -237,18 +237,18 @@ Yum 的设计理念是易用、灵活、可扩展。Yum 提供了一个简单的
 | -------------------------------- | -------------------------------- |
 | yum check-update                 | 检查可用更新                     |
 | yum update                       | 更新已安装的软件包               |
-| yum install <package_name>       | 安装指定软件包                   |
-| yum remove <package_name>        | 卸载指定软件包                   |
-| yum search <keywords>            | 搜索包含指定关键字的软件包       |
-| yum info <package_name>          | 显示指定软件包的详细信息         |
+| yum install package_name       | 安装指定软件包                   |
+| yum remove package_name        | 卸载指定软件包                   |
+| yum search keywords            | 搜索包含指定关键字的软件包       |
+| yum info package_name          | 显示指定软件包的详细信息         |
 | yum list                         | 列出所有可安装软件包的信息       |
 | yum clean all                    | 清理软件包缓存和元数据           |
-| yum deplist <package_name>       | 显示指定软件包的依赖关系         |
+| yum deplist package_name       | 显示指定软件包的依赖关系         |
 | yum history                      | 显示软件包操作历史记录           |
-| yum downgrade <package_name>     | 降级指定软件包到较旧的版本       |
-| yum provides <file_path>         | 查找提供指定文件的软件包         |
-| yum groupinstall <package_group> | 安装指定的软件包组               |
-| yum groupremove <package_group>  | 卸载指定的软件包组               |
+| yum downgrade package_name     | 降级指定软件包到较旧的版本       |
+| yum provides file_path         | 查找提供指定文件的软件包         |
+| yum groupinstall package_group | 安装指定的软件包组               |
+| yum groupremove package_group  | 卸载指定的软件包组               |
 | yum repolist                     | 显示已启用的所有软件包仓库的列表 |
 
 ## DNF
