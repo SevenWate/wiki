@@ -450,7 +450,14 @@ const config = {
         defaultLanguage: "markdown",
         additionalLanguages: ["java", "git","nginx","http"],
       },
+      mermaid: {
+        theme: {light: 'neutral', dark: 'forest'},
+      },
     }),
+    markdown: {
+      mermaid: true,
+    },
+    themes: ['@docusaurus/theme-mermaid'],
 };
 
 module.exports = config;
