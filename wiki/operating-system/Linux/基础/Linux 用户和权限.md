@@ -74,24 +74,6 @@ sudo useradd john
 
 ### 管理
 
-#### id
-
-`id` 命令用于显示用户和用户组的标识信息。它可以用于查看当前用户或指定用户的 UID（用户标识符）、GID（组标识符）和所属用户组的名称。
-
-```shell
-debian@SevenWate-PC:$ id
-uid=1000(debian) gid=1000(debian) groups=1000(debian),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev)
-```
-
-#### whoami
-
-`whoami` 命令用于显示当前登录用户的用户名。它是一个非常简单的命令，通常用于 shell 脚本和命令行中，以便在需要当前用户的用户名时快速获取它。
-
-```shell
-debian@SevenWate-PC:$ whoami
-debian
-```
-
 #### chfn
 
 `chfn`（Change Finger）命令用于修改用户信息。该命令可以用来更改用户的全名、办公室电话、家庭电话、其他说明等信息。
@@ -288,7 +270,44 @@ su debian
 
 ### sudo
 
-在 Linux 系统中，`sudo` 命令可以让普通用户以超级用户的权限执行某些命令。要使用 `sudo` 命令，首先需要创建一个具有 `sudo` 权限的用户。以下是创建 `sudo` 用户的步骤：
+在 Unix 和类 Unix 系统中，`sudo` 是一个强大的工具，允许普通用户以超级用户（root）的权限来执行特定的命令或访问受限资源。`sudo` 命令的行为是由一个配置文件来定义的，这个文件通常称为 `sudoers` 文件。
+
+`sudoers` 文件位于 `/etc/sudoers` 或 `/etc/sudoers.d` 目录中，并且只有超级用户（root）有权限进行编辑。下面是一个 `sudoers` 文件的示例内容：
+
+```shell
+# 允许 `sudo` 组的成员以任何用户身份（ALL:ALL）执行任何命令（ALL）。
+%sudo   ALL=(ALL:ALL) ALL
+
+# 允许 `admin` 组的成员以任何用户身份（ALL:ALL）执行任何命令（ALL）。
+%admin  ALL=(ALL:ALL) ALL
+
+# 允许 `root` 用户以任何用户身份（ALL:ALL）执行任何命令（ALL）。
+root    ALL=(ALL:ALL) ALL
+
+# 允许 `sudo` 组的成员以任何用户身份（ALL:ALL）执行任何命令（ALL），并且无需输入密码（NOPASSWD）。
+%sudo   ALL=(ALL:ALL) NOPASSWD: ALL
+```
+
+在 `sudoers` 文件中，每个规则的一般格式如下：
+
+```shell
+user/group  hosts=(users:groups) commands
+```
+
+- `user/group`：指定用户或用户组，可以使用用户名或组名。
+- `hosts`：指定可以使用 `sudo` 命令的主机列表，可以是主机名、IP 地址或特殊的通配符。
+- `users:groups`：指定要执行命令的用户和组，以冒号分隔。
+- `commands`：指定允许执行的命令。
+
+`sudoers` 文件中的规则可以使用特殊符号和关键字来增加灵活性。例如：
+
+- `ALL`：表示匹配所有主机、用户或命令。
+- `ALL=(ALL:ALL)`：表示以任何用户身份在任何主机上执行任何命令。
+- `NOPASSWD`：表示无需输入密码。
+
+**需要注意的是，对 `sudoers` 文件的修改应当谨慎进行，并且建议使用 `visudo` 命令来编辑 `sudoers` 文件，以确保语法正确并避免意外的访问限制。**`visudo` 会对文件进行验证并在保存前进行检查，以防止可能导致系统故障的错误配置。
+
+以下是创建 `sudo` 用户的步骤：
 
 ```shell
 1.创建用户
@@ -405,3 +424,148 @@ sudo chpasswd -m < users.txt
 
 - 提高系统的安全性：使用 shadow 格式将用户密码单独存储在 `/etc/shadow` 文件中，可以防止未经授权的用户访问密码信息，提高系统的安全性。
 - 管理用户和组的身份验证：通过转换和恢复密码和组文件格式，可以更轻松地管理用户和组的身份验证信息，例如更改密码、添加或删除用户和组等操作。
+
+## 其他
+
+### w
+
+`w` 命令在 Unix 和 Unix 类操作系统中用于显示有关系统活动的信息。这个命令可以显示当前系统中登录的用户、他们所做的事情、从哪里登录、他们登录的时间以及系统负载等。
+
+```shell
+root@LinuxTest:~# w
+ 14:16:51 up 22:16,  2 users,  load average: 0.00, 0.00, 0.00
+USER     TTY      来自           LOGIN@   IDLE   JCPU   PCPU WHAT
+sevenwat tty1     -                二16   22:15m  0.16s  0.05s -bash
+sevenwat pts/0    172.17.0.100     13:55    0.00s  0.51s  0.13s sshd: sevenwate [priv]
+```
+
+### id
+
+`id` 命令用于显示用户和用户组的标识信息。它可以用于查看当前用户或指定用户的 UID（用户标识符）、GID（组标识符）和所属用户组的名称。
+
+```shell
+sevenwate@LinuxTest:~$ id
+用户id=1000(sevenwate) 组id=1000(sevenwate) 组=1000(sevenwate),24(cdrom),25(floppy),27(sudo),29(audio),30(dip),44(video),46(plugdev),108(netdev),1001(grpdemo)
+```
+
+### whoami
+
+`whoami` 命令用于显示当前登录用户的用户名。它是一个非常简单的命令，通常用于 shell 脚本和命令行中，以便在需要当前用户的用户名时快速获取它。
+
+```shell
+sevenwate@LinuxTest:~$ whoami
+sevenwate
+```
+
+### last
+
+`last` 命令在Linux中用于显示系统的登录记录。这个命令列出了系统登录和启动的详细信息，如登录用户、登录的 IP 地址、登录时间以及登录持续的时间。
+
+```shell
+root@LinuxTest:~# last
+sevenwat pts/0        172.17.0.100     Wed May 31 13:55   still logged in
+sevenwat pts/1        172.17.0.100     Wed May 31 11:07 - 11:21  (00:14)
+sevenwat pts/0        172.17.0.100     Wed May 31 11:07 - 13:00  (01:53)
+sevenwat pts/0        172.17.0.100     Wed May 31 10:55 - 11:04  (00:09)
+sevenwat pts/0        172.17.0.100     Wed May 31 10:49 - 10:51  (00:02)
+sevenwat pts/0        172.17.0.100     Tue May 30 17:03 - 17:35  (00:32)
+sevenwat pts/0        172.17.0.100     Tue May 30 16:03 - 16:53  (00:50)
+sevenwat pts/2        172.17.0.100     Tue May 30 16:02 - 16:02  (00:00)
+sevenwat pts/1        172.17.0.100     Tue May 30 16:02 - 16:02  (00:00)
+sevenwat pts/0        172.17.0.100     Tue May 30 16:02 - 16:02  (00:00)
+sevenwat tty1                          Tue May 30 16:01   still logged in
+reboot   system boot  5.10.0-23-amd64  Tue May 30 16:00   still running
+
+wtmp begins Tue May 30 16:00:47 2023
+```
+
+### lastlog
+
+`lastlog`命令用于查看所有用户最后一次登录的时间和登录的终端。这个命令检查 `/var/log/lastlog` 文件以确定每个用户的最后一次登录信息。此命令的输出包含用户名、最后登录的端口和最后登录的时间。
+
+```shell
+root@LinuxTest:~# lastlog
+用户名           端口     来自                最后登录时间
+root                                       **从未登录过**
+……
+sevenwate        pts/0    172.17.0.100     三 5月 31 13:55:15 +0800 2023
+newuser                                    **从未登录过**
+```
+
+## 实例
+
+```mermaid
+graph LR
+    SwitchToRoot[切换到 root 用户]
+    SwitchToRoot --> CreateUser[创建新用户]
+    CreateUser --> SetPassword[设置新用户的密码]
+    SetPassword --> ChangeUserInfo{更新新用户信息?}
+    ChangeUserInfo -- Yes --> RunChfn[chfn]
+    ChangeUserInfo -- No --> AssignHomeDir{指定用户目录?}
+    RunChfn --> AssignHomeDir
+    AssignHomeDir -- Yes --> RunUseraddWithD[useradd -d]
+    AssignHomeDir -- No --> SetLoginShell{指定登录 shell?}
+    RunUseraddWithD --> SetLoginShell
+    SetLoginShell -- Yes --> RunUseraddWithS[useradd -s]
+    SetLoginShell -- No --> AddToExtraGroups{添加到额外的组?}
+    RunUseraddWithS --> AddToExtraGroups
+    AddToExtraGroups -- Yes --> RunUsermod[usermod -aG]
+    AddToExtraGroups -- No --> End(结束)
+    RunUsermod --> End
+```
+
+1. **打开终端**：快捷键 Ctrl+Alt+T 打开终端。
+2. **切换到 root 用户**：使用 `su -` 命令切换到 root 用户。
+3. **使用 useradd 命令创建新用户**：使用 `useradd` 命令和新用户的用户名来创建新用户。例如创建一个名为 `newuser` 的新用户：
+
+```shell
+root@LinuxTest:~# useradd newuser
+```
+
+4. **设置新用户的密码**：使用 `passwd` 命令和新用户的用户名来设置密码。
+
+```shell
+root@LinuxTest:~# passwd newuser
+新的 密码：
+重新输入新的 密码：
+passwd：已成功更新密码
+```
+
+5. **更改新用户的信息**（可选）：可以使用 `chfn` 命令更改新用户的全名、房间号、工作电话和家庭电话。
+
+```shell
+root@LinuxTest:~# chfn newuser
+正在改变 newuser 的用户信息
+请输入新值，或直接敲回车键以使用默认值
+        全名 []: newuser
+        房间号码 []: 888
+        工作电话 []: 18688888888
+        家庭电话 []: 0371
+        其它 []: 
+```
+
+6. **给新用户分配家目录**（可选）：默认情况下 `useradd` 命令会为新用户创建一个在 `/home` 下的家目录。`usermod` 可以使用 `-d` 选项为新用户指定一个不同的家目录。例如，指定 `newuser` 的家目录是 `/opt/newuser`：
+
+```shell
+root@LinuxTest:~# usermod -d /opt/newuser -m newuser
+```
+
+7. **指定不同的登录 shell**（可选）：`usermod`可以使用 `-s` 选项指定一个不同的登录 shell。例如为 `newuser` 指定 `/bin/sbin/noligin` 作为登录 shell，你可以运行：
+
+```shell
+# 使用 usermod 命令
+root@LinuxTest:~# usermod -s /usr/bin/nologin newuser
+# 使用 chsh 命令
+root@LinuxTest:~# chsh -s /bin/bash newuser
+```
+
+8. **将新用户添加到一个或多个额外的组**（可选）：可以使用 `usermod` 命令的 `-G` 选项将新用户添加到一个或多个额外的组。例如将 `newuser` 添加到 `sudo` 和 `users` 组，你可以运行：
+
+```shell
+root@LinuxTest:~# usermod -aG sudo,users newuser
+root@LinuxTest:~# id newuser
+用户id=1003(newuser) 组id=1003(newuser) 组=1003(newuser),27(sudo),100(users)
+# 用户最终信息
+root@LinuxTest:~# cat /etc/passwd | grep newuser
+newuser:x:1003:1003:newuser,888-1,18688888888,0371-88888888:/opt/newuser2:/usr/bin/nologin
+```
