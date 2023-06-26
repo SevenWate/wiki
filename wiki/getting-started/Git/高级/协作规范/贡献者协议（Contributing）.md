@@ -1,29 +1,49 @@
 ---
-id: 贡献者协议（Contributing）
 title: 贡献者协议（Contributing）
+description: Git 协作贡献者协议（Contributing）
+keywords:
+- Git 
+- 协作规范
+- 贡献者协议
+tags:
+- 协作规范
 sidebar_position: 6
-data: 2022年6月15日
+author: 7Wate
+date: 2023-06-26
 ---
+开源项目的成功在很大程度上取决于社区的参与和贡献。然而，这种参与经常涉及到一些复杂的法律问题，尤其是与知识产权有关的问题。为了解决这些问题，开源社区引入了两种主要的贡献者协议：CLA (Contributor License Agreement) 和 DCO (Developer Certificate of Origin)。这两种协议在法律义务和责任方面有着显著的不同。
 
-## 规范
+## CLA
 
-- 文件命名：CONTRIBUTING.md
+CLA (Contributor License Agreement)是开源协议的补充，它明确了贡献者和项目所有者之间的法律关系。CLA 协议包括公司级别和个人级别的 CLA，公司级别的 CLA 允许一个公司代表其所有员工签署，而个人级别的 CLA 则只针对个人贡献者。
 
-目前参考大厂协议，可根据项目自定义。
+CLA 协议主要涵盖以下几点：
 
-[阿里巴巴 CLA 协议](https://github.com/aliyun/cla)
+- 签署该 CLA 的主体和贡献的定义；
+- 授予著作权给拥有该软件知识产权的公司或组织；
+- 专利许可的授予；
+- 签署者保证依法有权授予上述许可；
+- 签署者确保所有的贡献内容均为原创作品；
+- 签署者为贡献内容支持的免责描述；
+- 说明贡献者提交非原创作品应该采用的方式；
+- 保证在获悉任何方面不准确的事实或情况之时通知签约方。
 
-[谷歌 CLA 协议](https://cla.developers.google.com/clas)
+对于在中国的企业，他们还会在 CLA 协议中加入一些本地化的内容，比如阿里巴巴的 [Alibaba Open Source Individual CLA](https://github.com/aliyun/cla)。
 
-## 贡献协议简介
+## DCO
 
-- 开源贡献协议有 CLA（Contributor License Agreement）和 [DCO](https://developercertificate.org/) （Developer Certificate of Origin）两种；
-- DCO 由 Linux Foundation 提出，是固定的简短条文（只有4条），旨在让贡献者保证遵守开源 license；
-- CLA 是对开源 license 的法律性质补充，由法务制定；
-- CLA 可以自定义，不论是个人还是企业级签署的时候都需要提供详细的信息，如姓名、公司、邮箱、地址、电话等；
-- 下表中对比了 CLA 和 DCO 的特性，推荐大型跨公司开源项目使用 CLA，利用项目更加正规和长久发展；
+DCO (Developer Certificate of Origin)是由 Linux Foundation 制定的，它并不是一个法律协议，而是一种证明。开源贡献者只需要在提交时签署邮件地址，就相当于确认了他们对提交的贡献拥有相应的权利，并同意该贡献在该项目或涉及的开源许可下公开发布。
 
-开源社区的贡献者协议一般分为两种 CLA 和 DCO，这两种协议各有优缺点如下。
+DCO 包含以下四点保证：
+
+1. 贡献全部或部分由我创建，我有权根据文件中指明的开源许可提交；
+2. 贡献是基于以前的工作，这些工作属于适当的开源许可，无论这些工作全部还是部分由我完成，我有权根据相同的开源许可证（除非我被允许根据不同的许可证提交）提交修改后的工作；
+3. 贡献由1、2、或 3 证明的其他人直接提供给我，而我没有对其进行修改。
+4. 我理解并同意该项目和贡献是公开的，并且该贡献的记录（包括我随之提交的所有个人信息，包括我的签字）将无限期保留，并且可以与本项目或涉及的开源许可证保持一致或者重新分配。
+
+## CLA 与 DCO 的比较
+
+下表对比了 CLA 和 DCO 的特性，可以看出两者在法律责任、社区属性、签署方式等方面都有不同。这就需要根据项目的特点和需求来选择合适的贡献协议。
 
 | 特性         | CLA                                                | DCO                                                        |
 | :----------- | :------------------------------------------------- | :--------------------------------------------------------- |
@@ -34,33 +54,48 @@ data: 2022年6月15日
 | 使用案例     | Google、Pivotal、CNCF、阿里巴巴、Apache SkyWalking | GitLab、Chef、Harbor、TiKV                                 |
 | 公司属性     | 强，可以签署公司级别的 CLA                         | 弱                                                         |
 
-### CLA
+在选择合适的贡献协议时，不仅要考虑法律问题，也要考虑社区的文化和参与者的需求。例如，对于大型跨公司开源项目来说，CLA 可能更适合，因为它可以让项目更加正规，并且更符合长期发展的需求。而对于那些更依赖社区的项目来说，DCO 由于其简洁和易于理解的优点，可能会是更好的选择。
 
-CLA 是 Contributor License Agreement 的缩写，CLA 可以看做是对开源软件本身采用的开源协议的补充。一般分为公司级和个人级别的 CLA，所谓公司级即某公司代表签署 CLA 后即可代表该公司所有员工都签署了该 CLA，而个人级别 CLA 只代表个人认可该 CLA。
+## 贡献者协议
 
-因为 CLA 是每个公司或组织自定义的，在细节上可能稍有不同，不过总体都包含以下内容：
+文件通常被命名为 `CONTRIBUTING.md`，这个文件通常位于项目的根目录中。有一些项目可能会使用不同的文件名，例如 `CONTRIBUTORS.txt` 或 `CONTRIBUTE.md`，但是 `CONTRIBUTING.md` 是最常见的约定。
 
-- 关于签署该 CLA 的主体和贡献的定义；
-- 授予著作权给拥有该软件知识产权的公司或组织；
-- 专利许可的授予；
-- 签署者保证依法有权授予上述许可；
-- 签署者确保所有的贡献内容均为原创作品；
-- 签署者为贡献内容支持的免责描述；
-- 说明贡献者提交非原创作品应该采用的方式；
-- 保证在获悉任何方面不准确的事实或情况之时通知签约方；
+### 中文模板
 
-对于主体在中国的企业，还加入了一些本地化的内容，如 [Alibaba Open Source Individual CLA](https://github.com/aliyun/cla) 。
+```markdown
+贡献者许可协议
 
-因为 CLA 分别为个人级和公司级，所以对于不同名义签署时需要提供不同的信息。签署个人级 CLA 的时候需要提供个人信息（姓名、地址、邮箱、电话等），签署公司级 CLA 还需要提供公司信息（名称、地址、联系电话、邮箱、传真等）；
+本贡献者许可协议（以下简称“协议”）由签署下列的一方（以下简称“贡献者”）同意，并向[项目名称]授予对由[项目名称]管理的软件项目的某些许可权。本协议自下列最新的签名日期起生效。
 
-### DCO
+1. 定义：
+    “代码”指的是在此协议下由贡献者交付给[项目名称]的计算机软件代码，无论是以人类可读形式还是机器可执行形式。
 
-DCO 是 Developer Certificate of Origin 的缩写，由 Linux Foundation 于 2004 年制定。DCO 最大的优点是可以减轻开发者贡献的阻碍，不用阅读冗长的 CLA 法律条文，只需要在提交的时候签署邮件地址即可。Chef 和 GitLab 已分别于 2016 年和 2017 年从 CLA 迁移到 DCO。
+2. 版权授予：在此协议的条款和条件下，贡献者特此向[项目名称]和[项目名称]分发的软件的接收者授予永久的，全球性的，非独占的，免费的，免版税的，不可撤销的版权许可，用于复制，准备衍生作品，公开展示，公开表演，再许可，和分发代码及其衍生作品。
 
-[DCO](https://developercertificate.org/) 目前是 1.1 版本，内容很简单，开源项目的贡献者只需要保证以下四点：
+贡献者声明贡献者有法律权利授予上述许可。
 
-1. 该贡献全部或部分由我创建，我有权根据文件中指明的开源许可提交；要么
-2. 该贡献是基于以前的工作，这些工作属于适当的开源许可，无论这些工作全部还是部分由我完成，我有权根据相同的开源许可证（除非我被允许根据不同的许可证提交）提交修改后的工作；要么
-3. 该贡献由1、2、或 3 证明的其他人直接提供给我，而我没有对其进行修改。
-4. 我理解并同意该项目和贡献是公开的，并且该贡献的记录（包括我随之提交的所有个人信息，包括我的签字）将无限期保留，并且可以与本项目或涉及的开源许可证保持一致或者重新分配。
+贡献者名称：__________
+签名：__________
+日期：__________
 
+```
+
+### 英文模板
+
+```markdown
+Contributor License Agreement
+
+This Contributor License Agreement ("Agreement") is agreed to by the party signing below ("Contributor"), and conveys certain license rights to [Project Name] for software projects managed by [Project Name]. This Agreement is effective as of the latest signature date below.
+
+1. Definitions:
+    "Code" means the computer software code, whether in human-readable or machine-executable form, that is delivered by Contributor to [Project Name] under this Agreement.
+
+2. Copyright Grant: Subject to the terms and conditions of this Agreement, Contributor hereby grants to [Project Name] and to recipients of software distributed by [Project Name], a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare derivative works of, publicly display, publicly perform, sublicense, and distribute Code and such derivative works.
+
+Contributor represents that Contributor is legally entitled to grant the above license.
+
+Contributor Name: __________
+Signature: __________
+Date: __________
+
+```

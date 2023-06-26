@@ -1,69 +1,133 @@
 ---
-id: 关于（Readme）
 title: 关于（Readme）
-data: 2022年6月15日
+description: Git 协作关于（Readme）
+keywords:
+- Git 
+- 协作规范
+- README
+tags:
+- 协作规范
 sidebar_position: 4
+author: 7Wate
+date: 2023-06-26
 ---
 
-## 规范
 
-- 文件命名：README.md、README_EN.md，根据项目受众群体标定关于文档的默认语言。
-- 徽章：[https://shields.io/](https://shields.io/)
+README 文件的命名应以项目的受众群体为依据。命名 README.md、README_EN.md、README_ZH.md。
 
-### 中文模板
+## 中文模板
 
 ```markdown
-## 项目
+# 项目名称
 
- ### 徽章
- ### 简介
- ### 演示
- ### 原理图 / 流程图
- 
-## 用法
+## 徽章
 
- ### 安装
- ### 文档
- ### F&Q
+[![Badge](https://img.shields.io/badge/Badge-Text-blue)](链接)
 
-## 路线
+## 简介
 
- ### 开发路线
- ### 更新历史（可单独文件）
+在这部分，提供对你的项目的简短描述，包括其功能，目标和主要特性。
 
-## 贡献
- 
-## 致谢
+## 演示
 
-## 协议
+如果可能的话，提供一个项目演示的链接或者是屏幕录像。这可以让用户直观地了解项目的功能和使用方式。
 
+## 原理图 / 流程图
+
+如果项目的工作原理复杂或者涉及到一些特定的流程，可以在这里提供一个原理图或者流程图来帮助理解。
+
+# 用法
+
+## 安装
+
+提供详细的安装指南，包括所有必要的步骤和要求。
+
+## 文档
+
+提供关于如何使用项目的详细信息，或者链接到详细的文档。
+
+## FAQ
+
+列出一些常见的问题和答案，以帮助用户解决可能遇到的问题。
+
+# 路线
+
+## 开发路线
+
+描述项目的未来发展计划，包括新功能和改进。
+
+## 更新历史
+
+提供一个项目的更新历史，包括版本号、更新日期以及主要的修改。
+
+# 贡献
+
+说明如何为项目做出贡献，包括代码、文档或者报告问题。
+
+# 致谢
+
+向为项目提供帮助的人或者组织表示感谢。
+
+# 协议
+
+列出项目的许可协议，或者提供一个链接到全文。
 ```
 
-### 英文模板
+## 英文模板
 
 ```markdown
-## Project
+# Project Name
 
- ### Badges
- ### Introduction
- ### Demo
- ### Schematic / Flowchart
- 
-## Usage
+## Badges
 
- ### Install
- ### Documentation
- ### F&Q
+[![Badge](https://img.shields.io/badge/Badge-Text-blue)](Link)
 
-## Map
+## Introduction
 
- ### Development map
- ### Update history (can be a separate file)
+In this section, provide a brief description of your project, including its functions, goals, and main features.
 
-## Contribute
- 
-## Thanks
+## Demo
 
-## License
+If possible, provide a link to a project demo or a screencast. This can give users a direct understanding of the project's functionality and usage.
+
+## Schematic / Flowchart
+
+If the working principle of the project is complex or involves specific processes, provide a schematic or flowchart to aid understanding here.
+
+# Usage
+
+## Install
+
+Provide detailed installation guides, including all necessary steps and requirements.
+
+## Documentation
+
+Provide detailed information on how to use the project, or link to detailed documentation.
+
+## FAQ
+
+List some common questions and answers to help users solve possible problems.
+
+# Map
+
+## Development map
+
+Describe the future development plan of the project, including new features and improvements.
+
+## Update history
+
+Provide a history of project updates, including version numbers, update dates, and major modifications.
+
+# Contribute
+
+Explain how to contribute to the project, including code, documentation, or reporting issues.
+
+# Thanks
+
+Express gratitude to individuals or organizations that have provided help for the project.
+
+# License
+
+List the project's license, or provide a link to the full text.
+
 ```
-
