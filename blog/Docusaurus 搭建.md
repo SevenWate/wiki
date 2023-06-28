@@ -1,8 +1,16 @@
 ---
-id: Docusaurus 搭建
 title: Docusaurus 搭建
-data: 2022年7月27日
+description: Docusaurus 搭建
+keywords:
+- Docusaurus 
+- 搭建
+tags: 
+- Docusaurus
+authors:
+- 7Wate
+date: 2023-06-28
 ---
+
 Docusaurus 是一款**静态站点生成器**。 可以搭建带有快速客户端导航的**单页应用**，充分利用了 **React**，让你的网站具有交互能力。 它提供了开箱即用的**文档功能**，不过也可用于搭建**各种网站**：个人网站、产品、博客、营销主页等等。
 
 当下个人知识的整理归纳已经及其重要了，废话不多说。可以先体验一下我的个人 wiki：<https://wiki.7wate.com/>，相信我你一定会爱上它！
@@ -10,6 +18,7 @@ Docusaurus 是一款**静态站点生成器**。 可以搭建带有快速客户�
 ## 安装
 
 - [Docusaurus 官网](https://docusaurus.io/)
+
 - [Docusaurus 官网（中文版）](https://docusaurus.io/zh-CN/docs)
 
 因为**中国官网文档更新相对滞后**，所以这里**推荐使用英文官网**，进入后**选择中文**。
@@ -17,6 +26,7 @@ Docusaurus 是一款**静态站点生成器**。 可以搭建带有快速客户�
 ### 环境
 
 - [Node.js （中文网）](http://nodejs.cn/download/) **v16.14** 或以上版本
+
 - 本文使用 **Docusaurus 2.0.0-rc.1** 作为演示
 
 ### 初始化
@@ -32,29 +42,31 @@ npx create-docusaurus@latest my-website classic
 命令行工具成功运行后，你将会在新目录 `my-website/` 下看到下列文件：
 
 ```markdown
+
 my-website
 ├── blog
-│   ├── 2019-05-28-hola.md
-│   ├── 2019-05-29-hello-world.md
-│   └── 2020-05-30-welcome.md
+│   ├── 2019-05-28-hola.md
+│   ├── 2019-05-29-hello-world.md
+│   └── 2020-05-30-welcome.md
 ├── docs
-│   ├── doc1.md
-│   ├── doc2.md
-│   ├── doc3.md
-│   └── mdx.md
+│   ├── doc1.md
+│   ├── doc2.md
+│   ├── doc3.md
+│   └── mdx.md
 ├── src
-│   ├── css
-│   │   └── custom.css
-│   └── pages
-│       ├── styles.module.css
-│       └── index.js
+│   ├── css
+│   │   └── custom.css
+│   └── pages
+│       ├── styles.module.css
+│       └── index.js
 ├── static
-│   └── img
+│   └── img
 ├── docusaurus.config.js
 ├── package.json
 ├── README.md
 ├── sidebars.js
 └── yarn.lock
+
 ```
 
 - `/blog/`：包含博客的 Markdown 文件。
@@ -62,8 +74,9 @@ my-website
 - `/docs/`：包含文档的 Markdown 文件。
 
 - `/src/`：如页面或自定义 React 组件一类的非文档文件。
-  - `/src/pages` - 所有放在此目录中的 JSX/TSX/MDX 文件都会被转换成网站页面。
-  
+
+  - `/src/pages` - 所有放在此目录中的 JSX/TSX/MDX 文件都会被转换成网站页面。
+
 - `/static/` - 静态目录。
 
 - `/docusaurus.config.js` - 站点配置文件。
@@ -106,18 +119,20 @@ docusaurus.config.js 中找到 i18n 配置节点，如下是原配置（其实�
 // metadata like html lang. For example, if your site is Chinese, you may want
 // to replace "en" with "zh-Hans".
 i18n: {
-  defaultLocale: 'en',
-  locales: ['en'],
+  defaultLocale: 'en',
+  locales: ['en'],
 },
+
 ```
 
 修改为如下配置设置为中文：
 
 ```json
 i18n: {
-  defaultLocale: "zh-Hans",
-  locales: ["zh-Hans"],
+  defaultLocale: "zh-Hans",
+  locales: ["zh-Hans"],
 },
+
 ```
 
 ## 搜索
@@ -125,7 +140,9 @@ i18n: {
 在使用官方插件中 Algolia DocSearch 搜索时候，会有几率踩坑，可以参考我的部署经验。
 
 1. 正确启用 sitemap 插件，参考文档：[sitemap 插件](https://docusaurus.io/zh-CN/docs/api/plugins/@docusaurus/plugin-sitemap)。
+
 2. 正确启用 Algolia DocSearch 插件，参考文档：[Algolia DocSearch 插件](https://docusaurus.io/zh-CN/docs/api/themes/@docusaurus/theme-search-algolia)。
+
 3. 构建项目，**确认插件是否显示**。
 
 ### 注册账号
@@ -150,15 +167,15 @@ i18n: {
 
 ```json
 module.exports = {
-  // ...
-  themeConfig: {
-    // ...
- algolia: {
-  apiKey: "Search-Only API Key",
-  appId: "Application ID",
-  indexName: "数据源名称",
- },
-  }
+  // ...
+  themeConfig: {
+    // ...
+ algolia: {
+  apiKey: "Search-Only API Key",
+  appId: "Application ID",
+  indexName: "数据源名称",
+ },
+  }
 }
 ```
 
@@ -167,6 +184,7 @@ module.exports = {
 由于 Algolia 限制开源项目才可以免费试用爬虫，所以我们要自己推送数据。需要如下环境：
 
 - Docker（谷歌一堆安装教程）
+
 - jq（使用包管理器直接安装）
 
 环境安装好以后，按照如下步骤操作：
@@ -182,55 +200,55 @@ API_KEY=Admin API Key
 
 ```json
 {
-  "index_name": "wiki",
-  "start_urls": [
-    "https://wiki.7wate.com/"     # wiki 网址
-  ],
-  "sitemap_urls": [
-    "https://wiki.7wate.com/sitemap.xml"  # sitemap.xml 地址
-  ],
-  "stop_urls": [
-    "/search",
-    "/v3me",
-    "/playground",
-    "/inspector"
-  ],
-  "sitemap_alternate_links": true,
-  "selectors": {
-    "lvl0": {
-      "selector": "(//ul[contains(@class,'menu__list')]//a[contains(@class, 'menu__link menu__link--sublist menu__link--active')]/text() | //nav[contains(@class, 'navbar')]//a[contains(@class, 'navbar__link--active')]/text())[last()]",
-      "type": "xpath",
-      "global": true,
-      "default_value": "Documentation"
-    },
-    "lvl1": "header h1",
-    "lvl2": "article h2",
-    "lvl3": "article h3",
-    "lvl4": "article h4",
-    "lvl5": "article h5, article td:first-child",
-    "lvl6": "article h6",
-    "text": "article p, article li, article td:last-child"
-  },
-  "strip_chars": " .,;:#",
-  "custom_settings": {
-    "separatorsToIndex": "_",
-    "attributesForFaceting": [
-      "language",
-      "version",
-      "type",
-      "docusaurus_tag"
-    ],
-    "attributesToRetrieve": [
-      "hierarchy",
-      "content",
-      "anchor",
-      "url",
-      "url_without_anchor",
-      "type"
-    ]
-  },
-  "js_render": true,
-  "nb_hits": 856
+  "index_name": "wiki",
+  "start_urls": [
+    "https://wiki.7wate.com/"     # wiki 网址
+  ],
+  "sitemap_urls": [
+    "https://wiki.7wate.com/sitemap.xml"  # sitemap.xml 地址
+  ],
+  "stop_urls": [
+    "/search",
+    "/v3me",
+    "/playground",
+    "/inspector"
+  ],
+  "sitemap_alternate_links": true,
+  "selectors": {
+    "lvl0": {
+      "selector": "(//ul[contains(@class,'menu__list')]//a[contains(@class, 'menu__link menu__link--sublist menu__link--active')]/text() | //nav[contains(@class, 'navbar')]//a[contains(@class, 'navbar__link--active')]/text())[last()]",
+      "type": "xpath",
+      "global": true,
+      "default_value": "Documentation"
+    },
+    "lvl1": "header h1",
+    "lvl2": "article h2",
+    "lvl3": "article h3",
+    "lvl4": "article h4",
+    "lvl5": "article h5, article td:first-child",
+    "lvl6": "article h6",
+    "text": "article p, article li, article td:last-child"
+  },
+  "strip_chars": " .,;:#",
+  "custom_settings": {
+    "separatorsToIndex": "_",
+    "attributesForFaceting": [
+      "language",
+      "version",
+      "type",
+      "docusaurus_tag"
+    ],
+    "attributesToRetrieve": [
+      "hierarchy",
+      "content",
+      "anchor",
+      "url",
+      "url_without_anchor",
+      "type"
+    ]
+  },
+  "js_render": true,
+  "nb_hits": 856
 }
 ```
 

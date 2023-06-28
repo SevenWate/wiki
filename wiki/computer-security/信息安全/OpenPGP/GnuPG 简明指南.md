@@ -1,7 +1,14 @@
 ---
-id: GnuPG 简明笔记
-title: GnuPG 简明笔记
-data: 2022年1月25日
+title: GnuPG 简明指南
+description: GnuPG 简明指南
+keywords:
+- GnuPG
+- 简明指南
+tags:
+- GnuPG
+sidebar_position: 1
+author: 7Wate
+date: 2023-06-28
 ---
 
 ## 简介

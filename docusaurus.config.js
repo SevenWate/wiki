@@ -273,9 +273,9 @@ const config = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "devsec",
-        path: "work/devsec",
-        routeBasePath: "devsec",
+        id: "sre",
+        path: "work/sre",
+        routeBasePath: "sre",
         sidebarPath: require.resolve("./sidebars.js"),
         editUrl: "https://git.7wate.com/zhouzhongping/wiki/src/branch/master",
         showLastUpdateAuthor: true,
@@ -370,16 +370,16 @@ const config = {
                 to: "/computer-network",
               },
               {
+                label: "计算机安全",
+                to: "/computer-security",
+              },
+              {
                 label: "操作系统",
                 to: "/operating-system",
               },
               {
                 label: "数据库系统",
                 to: "/database-system",
-              },
-              {
-                label: "计算机系统安全",
-                to: "/computer-security",
               },
               {
                 label: "软件工程",
@@ -400,12 +400,12 @@ const config = {
                 to: "/roadmap",
               },
               {
-                label: "运维开发工程师",
-                to: "/devops",
+                label: "SRE 工程师",
+                to: "/sre",
               },
               {
-                label: "信息安全工程师",
-                to: "/devsec",
+                label: "DevOps 工程师",
+                to: "/devops",
               },
             ]
           },
