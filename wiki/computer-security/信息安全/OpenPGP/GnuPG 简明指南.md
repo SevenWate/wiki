@@ -13,25 +13,24 @@ date: 2023-06-28
 
 ## 简介
 
-GnuPG（GNU Privacy Guard，GPG）是一款非对称加密的开源软件，它是PGP加密软件的满足GPL协议的实现。GnuPG依照由IETF制定的en:OpenPGP技术标准设计。GnuPG是用于**加密、数字签章**及产生非对称匙对的软件。GPG 兼容 PGP（Pretty Good Privacy）的功能。
+[GnuPG](https://gnupg.org/)（GNU Privacy Guard，GPG）是一款开源软件，用于非对称加密。它是满足 GPL 协议的 PGP（Pretty Good Privacy）加密软件实现。GnuPG 依照由 IETF 制定的 OpenPGP 技术标准设计，用于加密、数字签章及产生非对称密钥对。GPG 与 PGP 功能兼容。
 
-如果你想发送加密信息，首先你要得到接收者的公钥，然后通过该公钥加密传输，接收者使用私钥就可解密并读取文件，同时也可以在公共网络用数字签章表明身份和安全性。
+如果你想发送加密信息，首先你需要得到接收者的公钥，然后通过该公钥对信息进行加密传输，接收者使用私钥就可解密并读取文件。同时，你也可以在公共网络用数字签章表明身份和安全性。
 
 ## GPG
 
 ### 安装
 
-linux 默认安装 GPG，windows 和 mac 安装方法大同小异。
+在 Linux 系统中，GnuPG 通常已经被默认安装。在 Windows 和 macOS 系统中，你可以从 [GnuPG 官方网站](https://gnupg.org/)下载安装。
 
 ### 配置
 
 ```shell
-# GPG 配置文件介绍
-~/.gnupg - 配置目录
-~/.gnupg/gpg.conf – 配置文件
-~/.gnupg/trustdb.gpg – 信任库
-~/.gnupg/pubring.gpg – 公钥库
-~/.gnupg/secring.gpg – 私钥库
+~/.gnupg - GPG 配置目录
+~/.gnupg/gpg.conf – GPG 配置文件
+~/.gnupg/trustdb.gpg – GPG 信任库，用于存储你信任的其他 GPG 密钥
+~/.gnupg/pubring.gpg – GPG 公钥库，用于存储你的公钥和他人的公钥
+~/.gnupg/secring.gpg – GPG 私钥库，用于存储你的私钥
 ```
 
 ### 生成密钥
@@ -81,123 +80,82 @@ from the Real Name, Comment and Email Address in this form:
 鼠标、读写硬盘之类的)，这会让随机数字发生器有更好的机会获得足够的熵数。
 ```
 
-根据提示结合需求填写，生成 GPG 密钥。
-
 ## 常用命令
 
-### 查看
-
-公钥
+### 查看密钥
 
 ```shell
+# 查看公钥
 gpg --list-keys
 gpg -k
-```
 
-私钥
-
-```shell
+# 查看私钥
 gpg --list-secret-keys
 gpg -K
 ```
 
-### 导出
-
-公钥
+### 导出密钥
 
 ```shell
+# 导出公钥
 gpg --armor --output public-key.txt --export [用户ID]
-```
 
-私钥
-
-```shell
+# 导出私钥
 gpg --armor --output private-key.txt --export-secret-keys [用户ID]
 ```
 
---armor 生成 asc 后缀的 ASCII 类型的文本文件，否则生成 gpg 后缀的二进制文件
+在这里，`--armor`选项会生成.asc后缀的ASCII类型的文本文件，如果不使用该选项，则会生成.gpg后缀的二进制文件。
 
-### 导入
-
-本地公钥文件
+### 导入密钥
 
 ```shell
+# 从本地文件导入密钥
 gpg --import [密钥文件]
-```
 
-服务器公钥文件
-
-```shell
+# 从服务器导入密钥
 gpg --keyserver [服务器] --search-keys [用户ID]
 ```
 
-### 公布
-
-发布至公开服务器
+### 公布密钥
 
 ```shell
+# 将密钥发布到公开服务器
 gpg --send-keys [用户ID] --keyserver [服务器]
-```
 
-发布用户指纹
-
-```shell
+# 发布用户指纹
 gpg --fingerprint [用户ID]
 ```
 
 ### 删除
 
-删除指定公钥
-
 ```shell
+# 删除指定公钥
 gpg --delete-key [用户id]
-```
 
-删除指定密钥
-
-```shell
+# 删除指定私钥
 gpg --delete-secret-keys [用户id]
 ```
 
-吊销指定密钥
-
-## 加密/解密
-
-加密文件
+## 加密和解密
 
 ```shell
+# 加密文件
 gpg --recipient [用户ID] --output demo.en.txt --encrypt demo.txt
-```
 
-解密文件
-
-```shell
+# 解密文件
 gpg --decrypt demo.en.txt --output demo.de.txt
 gpg demo.en.txt
-```
 
-签名文件（GPG 格式）
-
-```shell
+# 签名文件（GPG格式）
 gpg --sign test.txt
-```
 
-签名文件（ASCII 格式）
-
-```shell
+# 签名文件（ASCII格式）
 gpg --clearsign test.txt
-```
 
-生成单独签名
-
-```shell
+# 生成单独签名
+# -a 选项会生成 ASCII 格式的签名
 gpg -a --detach-sign test.txt
-```
 
--a 生成 ASCII 格式
-
-验证签名
-
-```shell
+# 验证签名
 gpg --verify test.txt.asc test.txt
 ```
