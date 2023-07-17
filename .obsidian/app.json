@@ -7,7 +7,7 @@
   "trashOption": "system",
   "promptDelete": true,
   "communityPluginSortOrder": "download",
-  "attachmentFolderPath": "",
+  "attachmentFolderPath": "static/upload",
   "userIgnoreFilters": [
     "src/",
     "static/",

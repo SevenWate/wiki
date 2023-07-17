@@ -1,4 +1,6 @@
 {
   "snapToObjects": true,
-  "snapToGrid": true
+  "snapToGrid": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "canvas"
 }
