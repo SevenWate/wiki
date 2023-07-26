@@ -29954,21 +29954,21 @@ var SimpleGit = class extends GitManager {
       (err) => this.onError(err)
     );
     return res.all.map((e) => {
-      var _a2, _b;
+      var _a2, _b, _c, _d;
       return {
         ...e,
         refs: e.refs.split(", "),
         diff: {
           ...e.diff,
-          files: e.diff.files.map((f) => ({
+          files: (_b = (_a2 = e.diff) == null ? void 0 : _a2.files.map((f) => ({
             ...f,
             status: f.status,
             path: f.file,
             hash: e.hash,
             vault_path: this.getVaultPath(f.file)
-          }))
+          }))) != null ? _b : []
         },
-        fileName: (_b = (_a2 = e.diff) == null ? void 0 : _a2.files.first()) == null ? void 0 : _b.file
+        fileName: (_d = (_c = e.diff) == null ? void 0 : _c.files.first()) == null ? void 0 : _d.file
       };
     });
   }
