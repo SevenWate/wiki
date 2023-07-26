@@ -36,7 +36,11 @@ date: 2023-06-28
 ### 生成密钥
 
 ```shell
+# 正常模式
 gpg --gen-key
+
+# 专家模式
+gpg --expert --full-gen-key
 ```
 
 ```shell
@@ -82,7 +86,7 @@ from the Real Name, Comment and Email Address in this form:
 
 ## 常用命令
 
-### 查看密钥
+### 查看
 
 ```shell
 # 查看公钥
@@ -94,19 +98,56 @@ gpg --list-secret-keys
 gpg -K
 ```
 
-### 导出密钥
+### 编辑
+
+```shell
+# 编辑密钥页面
+gpg --edit-key [密钥ID]
+```
+
+**GPG 以下命令需要进入编辑密钥页面。**
+
+| 命令     | 描述                                           | 示例                                             |
+| -------- | ---------------------------------------------- | ------------------------------------------------ |
+| quit     | 退出此菜单                                     | 无需示例，直接输入 `quit` 即可                   |
+| save     | 保存并退出                                     | 无需示例，直接输入 `save` 即可                   |
+| help     | 显示此帮助                                     | 无需示例，直接输入 `help` 即可                   |
+| fpr      | 显示密钥指纹                                   | `fpr`                                            |
+| list     | 列出密钥和用户标识                             | `list`                                           |
+| uid      | 选择用户标识 N                                 | `uid 1`                                          |
+| key      | 选择子密钥 N                                   | `key 1`                                          |
+| check    | 检查签名                                       | `check`                                          |
+| sign     | 为所选用户标识添加签名                         | `uid 1`, 然后 `sign`                             |
+| lsign    | 为所选用户标识添加本地签名                     | `uid 1`, 然后 `lsign`                            |
+| tsign    | 为所选用户标识添加信任签名                     | `uid 1`, 然后 `tsign`                            |
+| adduid   | 增加一个用户标识                               | `adduid`, 然后按提示操作                         |
+| deluid   | 删除选定的用户标识                             | `uid 1`, 然后 `deluid`                           |
+| addkey   | 增加一个子密钥                                 | `addkey`, 然后按提示操作                         |
+| delkey   | 删除选定的子密钥                               | `key 1`, 然后 `delkey`                           |
+| expire   | 变更密钥或所选子密钥的使用期限                 | `key 1`, 然后 `expire`, 接着按提示输入新的到期日 |
+| passwd   | 变更密码                                       | `passwd`, 然后按提示输入新密码                   |
+| trust    | 变更信任度                                     | `trust`, 然后按提示选择新的信任级别              |
+| revsig   | 吊销所选用户标识上的签名                       | `uid 1`, 然后 `revsig`                           |
+| revuid   | 吊销选定的用户标识                             | `uid 1`, 然后 `revuid`                           |
+| revkey   | 吊销密钥或选定的子密钥                         | `key 1`, 然后 `revkey`                           |
+| enable   | 启用密钥                                       | `enable`                                         |
+| disable  | 禁用密钥                                       | `disable`                                        |
+| clean    | 压缩不可用的用户标识并从密钥上移除不可用的签名 | `clean`                                          |
+| minimize | 压缩不可用的用户标识并从密钥上移除所有签名     | `minimize`                                       |
+
+### 导出
 
 ```shell
 # 导出公钥
-gpg --armor --output public-key.txt --export [用户ID]
+gpg --armor --output public-key.txt --export [密钥ID]
 
 # 导出私钥
-gpg --armor --output private-key.txt --export-secret-keys [用户ID]
+gpg --armor --output private-key.txt --export-secret-keys [密钥ID]
 ```
 
 在这里，`--armor`选项会生成.asc后缀的ASCII类型的文本文件，如果不使用该选项，则会生成.gpg后缀的二进制文件。
 
-### 导入密钥
+### 导入
 
 ```shell
 # 从本地文件导入密钥
@@ -116,31 +157,53 @@ gpg --import [密钥文件]
 gpg --keyserver [服务器] --search-keys [用户ID]
 ```
 
-### 公布密钥
+### 公布
 
 ```shell
 # 将密钥发布到公开服务器
-gpg --send-keys [用户ID] --keyserver [服务器]
+gpg --send-keys [密钥ID] --keyserver [服务器]
 
 # 发布用户指纹
-gpg --fingerprint [用户ID]
+gpg --fingerprint [密钥ID]
 ```
 
 ### 删除
 
 ```shell
 # 删除指定公钥
-gpg --delete-key [用户id]
+gpg --delete-key [密钥ID]
 
 # 删除指定私钥
-gpg --delete-secret-keys [用户id]
+gpg --delete-secret-keys [密钥ID]
 ```
+
+## 常用选项
+
+| 命令选项             | 描述                                                  | 示例                                        |
+| -------------------- | ----------------------------------------------------- | ------------------------------------------- |
+| \--list-keys         | 列出所有的密钥                                        | `gpg --list-keys`                           |
+| \--gen-key           | 生成新的密钥对                                        | `gpg --gen-key`                             |
+| \--delete-key        | 删除密钥                                              | `gpg --delete-key [key-id]`                 |
+| \--import            | 导入密钥                                              | `gpg --import [key-file]`                   |
+| \--export            | 导出公钥                                              | `gpg --export -a "User Name" > public.key`  |
+| \--armor             | 创建 ASCII 字符格式的输出（用于在邮件等场合）         | `gpg --armor --export [key-id]`             |
+| \--encrypt           | 加密文件                                              | `gpg --encrypt --recipient [key-id] [file]` |
+| \--decrypt           | 解密文件                                              | `gpg --decrypt [file]`                      |
+| \--sign              | 生成只有你自己可以识别的签名文件                      | `gpg --sign [file]`                         |
+| \--verify            | 验证签名文件                                          | `gpg --verify [file]`                       |
+| \--edit-key          | 编辑密钥的详细设置，例如添加/删除别名、设置过期时间等 | `gpg --edit-key [key-id]`                   |
+| \--send-keys         | 将密钥发送到 keyserver                                | `gpg --send-keys [key-id]`                  |
+| \--recv-keys         | 从 keyserver 接收密钥                                 | `gpg --recv-keys [key-id]`                  |
+| \--refresh-keys      | 从 keyserver 更新所有密钥的信息                       | `gpg --refresh-keys`                        |
+| \--full-generate-key | 使用全面设置来生成新的密钥对                          | `gpg --full-generate-key`                   |
+| \--quick-add-uid     | 快速添加新的用户 ID 到现有的密钥                      | `gpg --quick-add-uid [key-id] [User ID]`    |
+| \--change-passphrase | 改变密钥的保护密码                                    | `gpg --change-passphrase [key-id]`          |
 
 ## 加密和解密
 
 ```shell
 # 加密文件
-gpg --recipient [用户ID] --output demo.en.txt --encrypt demo.txt
+gpg --recipient [密钥ID] --output demo.en.txt --encrypt demo.txt
 
 # 解密文件
 gpg --decrypt demo.en.txt --output demo.de.txt
