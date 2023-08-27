@@ -260,9 +260,9 @@ const config = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "devops",
-        path: "work/devops",
-        routeBasePath: "devops",
+        id: "data-engineer",
+        path: "work/data-engineer",
+        routeBasePath: "data-engineer",
         sidebarPath: require.resolve("./sidebars.js"),
         editUrl: "https://git.7wate.org/zhouzhongping/wiki/src/branch/master",
         showLastUpdateAuthor: true,
@@ -273,9 +273,9 @@ const config = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "sre",
-        path: "work/sre",
-        routeBasePath: "sre",
+        id: "sre-engineer",
+        path: "work/sre-engineer",
+        routeBasePath: "sre-engineer",
         sidebarPath: require.resolve("./sidebars.js"),
         editUrl: "https://git.7wate.org/zhouzhongping/wiki/src/branch/master",
         showLastUpdateAuthor: true,
@@ -328,7 +328,7 @@ const config = {
       metadata: [
         {
           name: "keywords",
-          content: "7wate, wiki, blog, c, c++, java, python, linux",
+          content: "7wate, wiki, blog, python, linux",
         },
       ],
       navbar: {
@@ -401,11 +401,11 @@ const config = {
               },
               {
                 label: "SRE 工程师",
-                to: "/sre",
+                to: "/sre-engineer",
               },
               {
-                label: "DevOps 工程师",
-                to: "/devops",
+                label: "Data 工程师",
+                to: "/data-engineer",
               },
             ]
           },
