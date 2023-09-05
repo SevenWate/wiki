@@ -1,16 +1,56 @@
 {
   "cookies": [
+    {
+      "name": "wr_fp",
+      "value": "3610854600"
+    },
+    {
+      "name": "wr_gid",
+      "value": "238733667"
+    },
+    {
+      "name": "wr_vid",
+      "value": "389106381"
+    },
+    {
+      "name": "wr_pf",
+      "value": "0"
+    },
+    {
+      "name": "wr_rt",
+      "value": "web@IewbrecPwPFRuK_KzTh_AL"
+    },
+    {
+      "name": "wr_localvid",
+      "value": "5e932210817314acd5e938d"
+    },
+    {
+      "name": "wr_name",
+      "value": "仲平"
+    },
+    {
+      "name": "wr_avatar",
+      "value": "https://thirdwx.qlogo.cn/mmopen/vi_32/Ws8ibkHcBXXw09Fpz2FpJJgHWdN6Em7FNxjPTU1C1icGR8CYC67TUicEWzaXDq1YDcpGDrMkQeyNYHWk8S94icJcyQ/132"
+    },
+    {
+      "name": "wr_gender",
+      "value": "1"
+    },
+    {
+      "name": "wr_skey",
+      "value": "fDWPt3Vp"
+    }
   ],
   "noteLocation": "book",
   "dailyNotesLocation": "/",
   "insertAfter": "<!-- start of weread -->",
   "insertBefore": "<!-- end of weread -->",
   "dailyNotesFormat": "YYYY-MM-DD",
-  "lastCookieTime": 1689517284425,
+  "lastCookieTime": 1691330638006,
   "isCookieValid": true,
   "user": "仲平",
   "userVid": "389106381",
-  "template": "---\n---\n\n## 简介\n\n- **书名**：《{{metaData.title}}》\n- **作者**： {{metaData.author}}\n- **分类**： {{metaData.category}}\n- **ISBN**：{{metaData.isbn}}\n- **出版社**：{{metaData.publisher}}\n\n## 概述\n\n{{metaData.intro}}\n\n## 划线 \n{% for chapter in chapterHighlights %}{% for highlight in chapter.highlights %}{% if not highlight.reviewContent %} \n\n> {{ highlight.markText | trim }}{% endif %}{% endfor %}{% endfor %}\n\n## 笔记\n{% for chapter in bookReview.chapterReviews %}{% if chapter.reviews or chapter.chapterReview %}{% if chapter.chapterReviews %}{% for chapterReview in chapter.chapterReviews %}\n\n> 💭{{ chapterReview.content }}{% endfor %}{% endif %}{% if chapter.reviews %}{% for review in chapter.reviews %}\n\n> {{ review.abstract | trim }}\n> 💭 {{review.content}}{% endfor %}{% endif %}{% endif %}{% endfor %}\n\n## 书评\n{% if bookReview.bookReviews %}{% for bookReview in bookReview.bookReviews %}\n> ✨{{ bookReview.mdContent }}{% endfor %}{% endif %}\n\n## 点评\n",
+  "template": "---\n---\n\n## 简介\n\n- **书名**：《{{metaData.title}}》\n- **作者**： {{metaData.author}}\n- **分类**： {{metaData.category}}\n- **ISBN**：{{metaData.isbn}}\n- **出版社**：{{metaData.publisher}}\n\n## 概述\n\n{{metaData.intro}}\n\n## 划线 \n{% for chapter in chapterHighlights %}{% for highlight in chapter.highlights %}{% if not highlight.reviewContent %} \n\n> {{ highlight.markText | trim }}{% endif %}{% endfor %}{% endfor %}\n\n## 笔记\n{% for chapter in bookReview.chapterReviews %}{% if chapter.reviews or chapter.chapterReview %}{% if chapter.chapterReviews %}{% for chapterReview in chapter.chapterReviews %}\n\n💭{{ chapterReview.content }}{% endfor %}{% endif %}{% if chapter.reviews %}{% for review in chapter.reviews %}\n\n> {{ review.abstract | trim }}\n\n💭 {{review.content}}{% endfor %}{% endif %}{% endif %}{% endfor %}\n\n## 书评\n{% if bookReview.bookReviews %}{% for bookReview in bookReview.bookReviews %}\n> ✨{{ bookReview.mdContent }}{% endfor %}{% endif %}\n\n## 点评\n",
   "noteCountLimit": -1,
   "subFolderType": "category",
   "fileNameType": "BOOK_NAME",

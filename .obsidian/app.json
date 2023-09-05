@@ -3,7 +3,7 @@
   "livePreview": true,
   "showLineNumber": true,
   "spellcheck": false,
-  "spellcheckLanguages": [],
+  "spellcheckLanguages": null,
   "trashOption": "system",
   "promptDelete": true,
   "communityPluginSortOrder": "download",
@@ -14,8 +14,9 @@
     "templates/"
   ],
   "newFileLocation": "current",
-  "defaultViewMode": "source",
+  "defaultViewMode": "preview",
   "showFrontmatter": true,
   "vimMode": false,
-  "newLinkFormat": "absolute"
+  "newLinkFormat": "absolute",
+  "propertiesInDocument": "visible"
 }

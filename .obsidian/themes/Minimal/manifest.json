@@ -1,7 +1,8 @@
 {
 	"name": "Minimal",
-	"version": "6.1.10",
-	"minAppVersion": "0.16.0",
+	"version": "7.2.1",
+	"minAppVersion": "1.1.9",
 	"author": "@kepano",
-	"authorUrl": "https://twitter.com/kepano"
+	"authorUrl": "https://twitter.com/kepano",
+	"fundingUrl": "https://www.buymeacoffee.com/kepano"
 }

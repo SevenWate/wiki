@@ -26,5 +26,6 @@
   "publish": false,
   "sync": false,
   "canvas": true,
-  "bookmarks": false
+  "bookmarks": false,
+  "properties": true
 }
