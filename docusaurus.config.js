@@ -273,6 +273,19 @@ const config = {
     [
       "@docusaurus/plugin-content-docs",
       {
+        id: "front-end-engineer",
+        path: "work/front-end-engineer",
+        routeBasePath: "front-end-engineer",
+        sidebarPath: require.resolve("./sidebars.js"),
+        editUrl: "https://git.7wate.org/zhouzhongping/wiki/src/branch/master",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+        breadcrumbs: false,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
         id: "sre-engineer",
         path: "work/sre-engineer",
         routeBasePath: "sre-engineer",
@@ -406,6 +419,10 @@ const config = {
               {
                 label: "Data 工程师",
                 to: "/data-engineer",
+              },
+              {
+                label: "Front-End 工程师",
+                to: "/front-end-engineer",
               },
             ]
           },
