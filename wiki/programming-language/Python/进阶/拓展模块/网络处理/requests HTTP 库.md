@@ -8,7 +8,6 @@ keywords:
 tags:
   - requests
   - Python
-sidebar_position: 3
 author: 7Wate
 date: 2023-10-19
 ---

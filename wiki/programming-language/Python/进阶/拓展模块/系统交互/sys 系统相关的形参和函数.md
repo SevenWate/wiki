@@ -9,7 +9,6 @@ tags:
   - Python
   - 系统交互
   - sys
-sidebar_position: 2
 author: 7Wate
 date: 2023-09-07
 ---

@@ -2,12 +2,11 @@
 title: urllib URL 处理模块
 description: urllib URL 处理模块
 keywords:
-- python
-- urllib
+  - python
+  - urllib
 tags:
-- python
-- 标准库
-sidebar_position: 1
+  - python
+  - 标准库
 author: 7Wate
 date: 2023-08-29
 ---

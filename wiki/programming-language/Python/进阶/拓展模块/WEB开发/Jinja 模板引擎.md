@@ -7,7 +7,6 @@ keywords:
 tags:
   - Python
   - WEB
-sidebar_position: 1
 author: 7Wate
 date: 2023-10-18
 ---

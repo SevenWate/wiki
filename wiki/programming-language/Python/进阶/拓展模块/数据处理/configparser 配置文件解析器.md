@@ -2,12 +2,11 @@
 title: configparser 配置文件解析器
 description: python 内置标准库 configparser 配置文件解析器
 keywords:
-- python
-- configparser
+  - python
+  - configparser
 tags:
-- python
-- configparser
-sidebar_position: 1
+  - python
+  - configparser
 author: 7Wate
 date: 2023-10-20
 ---

@@ -1,17 +1,16 @@
 ---
-title： logging 日志记录工具
-description： 全面介绍了Python标准库logging模块的用法，包括理论知识和代码示例
-keywords：
-- Python
-- logging
-- 日志
-tags：
-- Python
-- logging 
-- 日志处理
-sidebar_position： 4
-author： 7Wate
-date： 2023-10-20
+title: logging 日志记录工具
+description: 全面介绍了Python标准库logging模块的用法，包括理论知识和代码示例
+keywords:
+  - Python
+  - logging
+  - 日志
+tags:
+  - Python
+  - logging
+  - 日志处理
+author: 7Wate
+date: 2023-10-20
 ---
 
 ## 简介

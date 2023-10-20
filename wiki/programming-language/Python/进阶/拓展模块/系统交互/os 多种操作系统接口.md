@@ -2,13 +2,12 @@
 title: os 多种操作系统接口
 description: os 多种操作系统接口
 keywords:
-- python
-- os
-- 多种操作系统接口
+  - python
+  - os
+  - 多种操作系统接口
 tags:
-- python
-- 标准库
-sidebar_position: 1
+  - python
+  - 标准库
 author: 7Wate
 date: 2023-08-04
 ---
