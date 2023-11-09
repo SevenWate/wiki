@@ -1,0 +1,206 @@
+{
+  "main": {
+    "id": "1f445337c2d6e92a",
+    "type": "split",
+    "children": [
+      {
+        "id": "438e496f583ca23f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "383e49ad0c9a648f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Blog/谈谈我的「数字文具盒」.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "807eda8c7f9d39d6",
+    "type": "split",
+    "children": [
+      {
+        "id": "127edee3cbe2de12",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "32e3954140b6c675",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0aacbc5bc1b33126",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f00a0008002e0f85",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 357.5
+  },
+  "right": {
+    "id": "b6d0f50ff4f93745",
+    "type": "split",
+    "children": [
+      {
+        "id": "72bfceaff7d9617c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "216a95b1562d56d5",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "9701940d4d2f1bc6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "c5fde77b8d301a14",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Blog/谈谈我的「数字文具盒」.md"
+              }
+            }
+          },
+          {
+            "id": "93a288f062a4606b",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "9f3925b38ed34aad",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Blog/谈谈我的「数字文具盒」.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "729841caad591361",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Blog/谈谈我的「数字文具盒」.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 440.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-weread-plugin:Weread": false,
+      "canvas:新建白板": false,
+      "command-palette:打开命令面板": false,
+      "workspaces:管理工作区布局": false,
+      "templater-obsidian:Templater": false,
+      "graph:查看关系图谱": false,
+      "periodic-notes:Open today": false
+    }
+  },
+  "active": "383e49ad0c9a648f",
+  "lastOpenFiles": [
+    "Blog/谈谈我的「数字文具盒」 - 心得体会.md",
+    "Blog/谈谈我的「数字文具盒」.md",
+    "Canvas",
+    "blog/「转载」怎么平衡工作与生活？.md",
+    "blog/唯有热爱可抵岁月漫长.md",
+    "blog/VIVO IQOO Neo3 开箱测评.md",
+    "blog/YubiKey 漂流记.md",
+    "blog/Redemption 主题 0.2.1 版本.md",
+    "blog/Redemption.md",
+    "blog/Obsidian 使用 Templater 插件的个性化脚本.md",
+    "blog/Hello Halo.md",
+    "blog/Halo 主题 Redemption 首发版.md",
+    "blog/Don`t Starve-饥荒.md",
+    "blog/Docusaurus 搭建.md",
+    "blog/BombSquad-炸弹人小分队.md",
+    "blog/罪恶应该被遗传么.md",
+    "blog/最近在折腾什么…….md",
+    "blog/最近的生活.md",
+    "blog/最近半年的生活.md",
+    "blog/自律的痛苦······.md",
+    "blog/注定不平凡的一年.md",
+    "blog/种下了一些瓜果蔬菜.md",
+    "blog/中国传统历法.md",
+    "blog/真·长安游记.md",
+    "blog/这个周末.md",
+    "blog/长安游记.md",
+    "blog/长安三万里.md",
+    "Book",
+    "Static/wttr_weather.js",
+    "Static/jinrishici.js",
+    "Static/hitokoto.js",
+    "Static",
+    "Templates/wttr_weather.js",
+    "Templates/jinrishici.js",
+    "Templates/hitokoto.js",
+    "src/js/wttr_weather.js"
+  ]
+}

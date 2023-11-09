@@ -2,9 +2,9 @@
   "file-explorer": true,
   "global-search": true,
   "switcher": false,
-  "graph": false,
-  "backlink": false,
-  "outgoing-link": false,
+  "graph": true,
+  "backlink": true,
+  "outgoing-link": true,
   "tag-pane": true,
   "page-preview": true,
   "daily-notes": false,
@@ -26,6 +26,6 @@
   "publish": false,
   "sync": false,
   "canvas": true,
-  "bookmarks": false,
+  "bookmarks": true,
   "properties": true
 }

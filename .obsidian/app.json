@@ -5,7 +5,7 @@
   "spellcheck": false,
   "spellcheckLanguages": null,
   "trashOption": "system",
-  "promptDelete": true,
+  "promptDelete": false,
   "communityPluginSortOrder": "download",
   "attachmentFolderPath": "static/upload",
   "userIgnoreFilters": [
@@ -14,7 +14,7 @@
     "templates/"
   ],
   "newFileLocation": "current",
-  "defaultViewMode": "preview",
+  "defaultViewMode": "source",
   "showFrontmatter": true,
   "vimMode": false,
   "newLinkFormat": "absolute",
