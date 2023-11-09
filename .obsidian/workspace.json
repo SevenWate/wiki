@@ -4,18 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "438e496f583ca23f",
+        "id": "8bef9a985362d7c5",
         "type": "tabs",
         "children": [
           {
-            "id": "383e49ad0c9a648f",
+            "id": "165322d278f95d06",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blog/谈谈我的「数字文具盒」.md",
+                "file": "Tech/programming-language/home.md",
                 "mode": "source",
-                "backlinks": true,
+                "backlinks": false,
                 "source": false
               }
             }
@@ -70,7 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 357.5
+    "width": 312.5
   },
   "right": {
     "id": "b6d0f50ff4f93745",
@@ -105,7 +105,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blog/谈谈我的「数字文具盒」.md"
+                "file": "Tech/programming-language/home.md"
               }
             }
           },
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blog/谈谈我的「数字文具盒」.md",
+                "file": "Tech/programming-language/home.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blog/谈谈我的「数字文具盒」.md",
+                "file": "Tech/programming-language/home.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,11 +147,11 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 440.5
+    "width": 378.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -164,10 +164,26 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "383e49ad0c9a648f",
+  "active": "165322d278f95d06",
   "lastOpenFiles": [
-    "Blog/谈谈我的「数字文具盒」 - 心得体会.md",
+    "Tech/structures-algorithms/home.md",
+    "Tech/programming-language/home.md",
+    "index.md",
+    "Work/data-engineer/home.md",
+    "Work/full-stack/home.md",
+    "Work/roadmap/home.md",
+    "Work/sre-engineer/home.md",
+    "Tech/getting-started/Shell/Shell 是什么.md",
+    "Tech/getting-started/Shell/Shell 必备锦囊.md",
+    "Tech/getting-started/Shell/命令行的艺术.md",
+    "Blog/Index.md.md",
+    "Blog/写博客的正确姿势.md",
+    "未命名",
+    "Blog/写十万字的博客是一种什么感觉.md",
+    "Blog/写博客的正确姿势 - 测试版.md",
+    "Blog/写博客的正确姿势 - 先行版.md",
     "Blog/谈谈我的「数字文具盒」.md",
+    "Blog/谈谈我的「数字文具盒」 - 心得体会.md",
     "Canvas",
     "blog/「转载」怎么平衡工作与生活？.md",
     "blog/唯有热爱可抵岁月漫长.md",
@@ -178,21 +194,6 @@
     "blog/Obsidian 使用 Templater 插件的个性化脚本.md",
     "blog/Hello Halo.md",
     "blog/Halo 主题 Redemption 首发版.md",
-    "blog/Don`t Starve-饥荒.md",
-    "blog/Docusaurus 搭建.md",
-    "blog/BombSquad-炸弹人小分队.md",
-    "blog/罪恶应该被遗传么.md",
-    "blog/最近在折腾什么…….md",
-    "blog/最近的生活.md",
-    "blog/最近半年的生活.md",
-    "blog/自律的痛苦······.md",
-    "blog/注定不平凡的一年.md",
-    "blog/种下了一些瓜果蔬菜.md",
-    "blog/中国传统历法.md",
-    "blog/真·长安游记.md",
-    "blog/这个周末.md",
-    "blog/长安游记.md",
-    "blog/长安三万里.md",
     "Book",
     "Static/wttr_weather.js",
     "Static/jinrishici.js",
@@ -200,7 +201,6 @@
     "Static",
     "Templates/wttr_weather.js",
     "Templates/jinrishici.js",
-    "Templates/hitokoto.js",
-    "src/js/wttr_weather.js"
+    "Templates/hitokoto.js"
   ]
 }

@@ -1,5 +1,6 @@
 ---
 title: 求职之路
+date: 2023-11-09
 ---
 
 ![无产阶级](https://static.7wate.com/img/2022/07/11/3d7269b20b6e3.png)

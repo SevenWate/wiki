@@ -1,6 +1,8 @@
 ---
 title: 数据工程师（data-engineer）
+date: 2023-11-09
 ---
+
 ## 数据工程师（data-engineer）
 
 数据工程师（data-engineer）是现代数据驱动的企业中的核心角色，他们专注于设计、构建和维护能够处理各种规模数据集的系统，从 GB 级别到 PB 级别。这些系统通常用于数据存储、查询和分析，支持企业的决策制定、产品创新和运营优化。
@@ -16,7 +18,7 @@ title: 数据工程师（data-engineer）
 
 **必备技能与知识：**
 
-1. **数据技术栈**：熟悉数据库技术（如MySQL、PostgreSQL）、Hadoop 生态系统（如HDFS、MapReduce、Hive）和 Spark。
+1. **数据技术栈**：熟悉数据库技术（如 MySQL、PostgreSQL）、Hadoop 生态系统（如 HDFS、MapReduce、Hive）和 Spark。
 2. **分布式系统**：理解分布式系统的原理和挑战，如数据一致性、分区容错等。
 3. **编程与脚本**：如 Java、Scala、Python 等，用于数据处理和自动化任务。
 4. **数据建模与设计**：能够设计高效、可扩展的数据模型和架构。
