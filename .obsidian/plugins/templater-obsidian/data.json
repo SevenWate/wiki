@@ -1,23 +1,10 @@
 {
-  "command_timeout": 5,
+  "command_timeout": 10,
   "templates_folder": "Templates",
-  "templates_pairs": [
-    [
-      "getWord",
-      "curl2 \"v1.hitokoto.cn/?c=d&c=e&c=h&c=i&c=k&c=j&encode=text&charset=utf-8\""
-    ],
-    [
-      "getWeather",
-      "curl2 -H \"Accept-Language: zh\" \"wttr.in/%E9%83%91%E5%B7%9E?format=%l+%t+%c\""
-    ],
-    [
-      "getMoon",
-      "curl2 -H \"Accept-Language: zh\" \"wttr.in/%E9%83%91%E5%B7%9E?format=%m\""
-    ]
-  ],
+  "templates_pairs": [],
   "trigger_on_file_creation": true,
   "auto_jump_to_cursor": false,
-  "enable_system_commands": false,
+  "enable_system_commands": true,
   "shell_path": "",
   "user_scripts_folder": "Static",
   "enable_folder_templates": true,

@@ -9,7 +9,8 @@
   "hideSearchSuggestions": false,
   "hideSearchCounts": false,
   "hideInstructions": false,
-  "hideMeta": false,
+  "hidePropertiesReading": false,
   "hideVault": true,
+  "hideMeta": false,
   "frameless": false
 }

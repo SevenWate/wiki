@@ -4,8 +4,8 @@
   "interfaceFontFamily": "",
   "baseFontSize": 18,
   "translucency": false,
-  "textFontFamily": "霞鹜文楷等宽",
-  "monospaceFontFamily": "霞鹜文楷等宽",
+  "textFontFamily": "",
+  "monospaceFontFamily": "",
   "baseFontSizeAction": true,
   "accentColor": "",
   "nativeMenus": false
