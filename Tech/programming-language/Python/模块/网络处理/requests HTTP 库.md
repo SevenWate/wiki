@@ -272,7 +272,7 @@ Requests 的异常类型主要分为以下几类：
 - **数据解析错误**：JSONDecodeError 和 DecodeError 表示响应数据解析错误。
 - **其他**：ConnectionError、InvalidURL 等其他异常。
 
-可以通过 try except 语句捕获这些异常：
+可以通过 try except 语句捕获这些 [异常](Tech/programming-language/Python/进阶/异常处理.md)：
 
 ```python
 import requests

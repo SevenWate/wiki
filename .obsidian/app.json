@@ -18,5 +18,6 @@
   "showFrontmatter": true,
   "vimMode": false,
   "newLinkFormat": "absolute",
-  "propertiesInDocument": "visible"
+  "propertiesInDocument": "visible",
+  "useMarkdownLinks": true
 }
