@@ -1,3 +1,18 @@
+---
+title: 文件和IO操作
+description: Python 文件和IO操作，主要涉及基础的文件操作和拓展库，以及文件系统的操作。
+keywords:
+  - Python
+  - 文件操作
+  - IO操作
+  - 文件系统
+  - 性能优化
+tags:
+  - Python/进阶
+author: 仲平
+date: 2023-11-14
+---
+
 ## Python 文件操作基础
 
 ### 文件和 IO 的基本概念
