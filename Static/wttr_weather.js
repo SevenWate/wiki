@@ -10,7 +10,7 @@ function getWeather(city = 'Shanghai', params = 'format=3') {
     return new Promise((resolve, reject) => {
         const timeout = setTimeout(() => {
             reject(new Error('Request timed out'));
-        }, 5000);  // 设置5秒的请求超时
+        }, 15000);  // 设置15秒的请求超时
 
         https.get(`https://wttr.in/${encodeURIComponent(city)}?${params}`, (resp) => {
             let data = '';
