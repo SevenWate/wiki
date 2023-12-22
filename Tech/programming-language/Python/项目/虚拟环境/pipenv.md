@@ -58,13 +58,13 @@ $ pip3 install --user pipenv
 ```mermaid
 graph LR
     A[开始] --> B[克隆/创建项目]
-    B --> C[安装依赖: pipenv sync]
-    C --> D[添加包: pipenv install <package>]
-    D --> E[更新全部依赖: pipenv update]
-    E --> F[更新特定包: pipenv update <package>]
-    F --> G[检查过时包: pipenv update --outdated]
-    G --> H[确定虚拟环境路径: pipenv --venv]
-    H --> I[激活 Pipenv shell: pipenv shell]
+    B --> C[安装依赖]
+    C --> D[添加包]
+    D --> E[更新全部依赖]
+    E --> F[更新特定包]
+    F --> G[检查过时包]
+    G --> H[确定虚拟环境路径]
+    H --> I[激活 Pipenv shell]
 ```
 
 ``````shell
@@ -132,6 +132,7 @@ pipenv sync
 | 命令                               | 用途                                             |
 | ---------------------------------- | ------------------------------------------------ |
 | pipenv install                     | 安装项目所需的包                                 |
+| pipenv install --python [version]  | 安装项目指定的 python 版本（使用 pyenv）         |
 | pipenv install [package]           | 安装特定的包                                     |
 | pipenv install --dev [package]     | 安装用于开发环境的包                             |
 | pipenv uninstall [package]         | 卸载特定的包                                     |
