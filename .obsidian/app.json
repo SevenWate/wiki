@@ -2,7 +2,7 @@
   "legacyEditor": false,
   "livePreview": true,
   "showLineNumber": true,
-  "spellcheck": true,
+  "spellcheck": false,
   "spellcheckLanguages": null,
   "trashOption": "system",
   "promptDelete": false,
