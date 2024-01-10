@@ -1,0 +1,57 @@
+name: Build and Deploy Quartz Site
+
+on:
+  push:
+    branches: [ dev ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+
+    # 使用 Git 克隆 Quartz 仓库到指定目录
+    - name: Clone Quartz repository (quartz)
+      run: git clone https://${{ secrets.GIT_PUSH_PULL_TOKEN }}@git.7wate.com/zhouzhongping/quartz-wiki.git /wiki/quartz
+    
+    # 克隆 Wiki 仓库到 Quartz 项目的 content 目录
+    - name: Check out repository (Wiki)
+      run: git clone https://${{ secrets.GIT_PUSH_PULL_TOKEN }}@git.7wate.com/zhouzhongping/wiki.git /wiki/quartz/content
+
+    # 设置 Node.js 环境
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '20'
+
+    - name: Install Quartz dependencies and Build site
+      run: |
+
+        # 进入 Quartz 项目目录，安装依赖并构建网站
+        cd /wiki/quartz
+        npm ci
+        npx quartz build
+
+        # 创建 public 目录并复制构建结果到此目录
+        mkdir -p /wiki/public/ && cp -r public/* /wiki/public/
+
+    - name: Deploy to HTML branch of current repository (A仓库)
+      run: |
+
+        # 设置 Git 用户名和邮箱
+        git config --global user.name "Actions"
+        git config --global user.email "Actions@7wate.com"
+
+        # 在 public 目录下初始化 git 仓库
+        cd /wiki/public/
+        git init
+        # 添加远程仓库地址
+        git remote add origin https://${{ secrets.GIT_PUSH_PULL_TOKEN }}@git.7wate.com/zhouzhongping/wiki.git
+
+        # 添加所有文件并提交
+        git add .
+        # 获取当天日期作为提交信息
+        DATE=`date '+%Y-%m-%d'`
+        git commit -m "Deploy HTML files - $DATE"
+
+        # 强制推送到远程的 html 分支
+        git push origin quartz --force

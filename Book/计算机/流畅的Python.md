@@ -37,9 +37,9 @@ date: 2023-07-17
 
 > 在Python中，函数用*args来获取不确定数量的参数算是一种经典写法了。 
 
-> seq[start:stop:step]进行求值的时候，Python会调用seq.__getitem__(slice(start, stop, step))。 
+> `seq[start:stop:step]`进行求值的时候，Python会调用`seq.__getitem__(slice(start, stop, step))`。 
 
-> 如果在a * n这个语句中，序列a里的元素是对其他可变对象的引用的话，你就需要格外注意了，因为这个式子的结果可能会出乎意料。比如，你想用my_list=[[]] * 3来初始化一个由列表组成的列表，但是你得到的列表里包含的3个元素其实是3个引用，而且这3个引用指向的都是同一个列表。这可能不是你想要的效果。 
+> 如果在a * n这个语句中，序列a里的元素是对其他可变对象的引用的话，你就需要格外注意了，因为这个式子的结果可能会出乎意料。比如，你想用`my_list=[[]] * 3`来初始化一个由列表组成的列表，但是你得到的列表里包含的3个元素其实是3个引用，而且这3个引用指向的都是同一个列表。这可能不是你想要的效果。 
 
 > Python Tutor是一个对Python运行原理进行可视化分析的工具 
 
@@ -65,7 +65,7 @@ date: 2023-07-17
 
 > 接受函数为参数，或者把函数作为结果返回的函数是高阶函数（higher-order function） 
 
-> all(iterable)如果iterable的每个元素都是真值，返回True；all([])返回True。any(iterable)只要iterable中有元素是真值，就返回True；any([])返回False。 
+> all(iterable)如果iterable的每个元素都是真值，返回True；`all([])`返回True。any(iterable)只要iterable中有元素是真值，就返回True；`any([])`返回False。 
 
 > Python简单的句法限制了lambda函数的定义体只能使用纯表达式。换句话说，lambda函数的定义体中不能赋值，也不能使用while和try等Python语句。 
 
