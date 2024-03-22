@@ -6,7 +6,6 @@ keywords:
   - 文件管理
 tags:
   - Linux/基础
-sidebar_position: 3
 author: 7Wate
 date: 2023-03-30
 ---

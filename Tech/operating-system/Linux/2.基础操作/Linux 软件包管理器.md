@@ -6,7 +6,6 @@ keywords:
   - 软件包管理器
 tags:
   - Linux/基础
-sidebar_position: 6
 author: 7Wate
 date: 2023-03-30
 ---

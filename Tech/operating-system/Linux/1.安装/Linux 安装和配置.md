@@ -6,10 +6,9 @@ keywords:
   - 安装
   - 配置
 tags:
-  - Linux/基础
-sidebar_position: 1
+  - Linux/安装
 author: 7Wate
-date: 2023-03-21
+date: 2024-03-22
 ---
 
 ## GNU/Linux 发行版的选择和下载

@@ -7,7 +7,6 @@ keywords:
   - 权限
 tags:
   - Linux/基础
-sidebar_position: 4
 author: 7Wate
 date: 2023-03-30
 ---
