@@ -5,7 +5,7 @@ keywords:
   - Linux
   - 日志管理
 tags:
-  - Linux/进阶
+  - Linux/系统管理
 author: 仲平
 date: 2024-03-20
 ---

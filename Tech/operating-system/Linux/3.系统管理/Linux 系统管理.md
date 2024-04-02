@@ -5,8 +5,7 @@ keywords:
   - Linux
   - 系统管理
 tags:
-  - Linux/进阶
-sidebar_position: 1
+  - Linux/系统管理
 author: 7Wate
 date: 2023-06-30
 ---
