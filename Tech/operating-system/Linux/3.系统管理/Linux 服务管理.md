@@ -485,7 +485,7 @@ sudo journalctl --vacuum-size=1G
 
 通过这样的配置，`systemd` 确保只有在网络完全可用的情况下才执行该任务。这种方法提高了任务执行的可靠性，避免了因依赖条件未满足而导致的失败。
 
-## 第十章：高级 Systemd 特性
+## 高级 Systemd 特性
 
 ### 容器和 Systemd
 
