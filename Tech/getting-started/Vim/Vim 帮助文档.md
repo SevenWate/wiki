@@ -2,11 +2,11 @@
 title: Vim 帮助文档
 description: Vim 帮助文档
 keywords:
-- Vim
-- 文档
+  - Vim
+  - 文档
 tags:
-- Vim
-sidebar_position: 2
+  - Vim
+  - 技术/入门
 author: 7Wate
 date: 2022-11-16
 ---

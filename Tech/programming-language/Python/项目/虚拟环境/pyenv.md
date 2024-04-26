@@ -7,6 +7,7 @@ keywords:
   - Python
 tags:
   - Python/虚拟环境
+  - 技术/程序语言
 author: 仲平
 date: 2023-12-22
 ---

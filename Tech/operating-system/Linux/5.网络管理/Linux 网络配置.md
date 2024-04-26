@@ -7,7 +7,7 @@ keywords:
   - 管理
 tags:
   - Linux/进阶
-sidebar_position: 2
+  - 技术/操作系统
 author: 7Wate
 date: 2023-04-10
 ---

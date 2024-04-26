@@ -2,11 +2,11 @@
 title: Vim 快速入门
 description: Vim 快速入门
 keywords:
-- Vim 
-- 入门
+  - Vim
+  - 入门
 tags:
-- Vim
-sidebar_position: 1
+  - Vim
+  - 技术/入门
 author: 7Wate
 date: 2022-11-16
 ---

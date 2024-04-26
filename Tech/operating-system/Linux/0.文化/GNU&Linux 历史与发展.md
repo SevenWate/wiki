@@ -8,7 +8,7 @@ keywords:
   - 发展
 tags:
   - Linux/文化
-sidebar_position: 1
+  - 技术/操作系统
 author: 7Wate
 date: 2023-03-15
 ---

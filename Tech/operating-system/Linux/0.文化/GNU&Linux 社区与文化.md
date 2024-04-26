@@ -8,7 +8,7 @@ keywords:
   - 文化
 tags:
   - Linux/文化
-sidebar_position: 2
+  - 技术/操作系统
 author: 7Wate
 date: 2023-06-21
 ---

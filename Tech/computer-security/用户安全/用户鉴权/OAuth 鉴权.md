@@ -6,7 +6,7 @@ keywords:
   - 鉴权
 tags:
   - 计算机安全/用户安全
-sidebar_position: 6
+  - 技术/计算机安全
 author: 7Wate
 date: 2022-08-31
 ---

@@ -11,6 +11,7 @@ keywords:
   - 安全管理
 tags:
   - Linux/系统管理
+  - 技术/操作系统
 author: 仲平
 date: 2024-04-10
 ---

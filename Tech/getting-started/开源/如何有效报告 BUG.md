@@ -1,10 +1,10 @@
 ---
 id: 如何有效报告 BUG
 title: 如何有效报告 BUG
-sidebar_position: 3
 data: 2022年5月30日
 tags:
   - 社区/开源
+  - 技术/入门
 ---
 
 作者：Simon Tatham 专业的自由软件程序员

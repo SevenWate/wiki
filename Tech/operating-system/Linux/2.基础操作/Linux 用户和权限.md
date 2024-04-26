@@ -7,6 +7,7 @@ keywords:
   - 权限
 tags:
   - Linux/基础
+  - 技术/操作系统
 author: 7Wate
 date: 2023-03-30
 ---

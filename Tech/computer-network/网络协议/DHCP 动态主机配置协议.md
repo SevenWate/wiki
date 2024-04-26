@@ -6,6 +6,7 @@ keywords:
   - 动态主机配置协议
 tags:
   - 计算机网络/DHCP协议
+  - 技术/计算机网络
 sidebar_position: 2
 author: 7Wate
 date: 2023-06-28

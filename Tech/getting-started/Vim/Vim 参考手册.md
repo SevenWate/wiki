@@ -2,11 +2,11 @@
 title: Vim 参考手册
 description: Vim 参考手册
 keywords:
-- Vim
-- 参考手册
+  - Vim
+  - 参考手册
 tags:
-- Vim
-sidebar_position: 3
+  - Vim
+  - 技术/入门
 author: 7Wate
 date: 2022-11-16
 ---

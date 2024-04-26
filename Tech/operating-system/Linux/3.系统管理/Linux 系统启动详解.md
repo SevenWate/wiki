@@ -6,6 +6,7 @@ keywords:
   - 系统管理
 tags:
   - Linux/系统管理
+  - 技术/操作系统
 author: 7Wate
 date: 2023-06-30
 ---

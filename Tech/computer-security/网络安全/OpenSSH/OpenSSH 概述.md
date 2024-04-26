@@ -6,7 +6,7 @@ keywords:
   - 简介
 tags:
   - 计算机安全/网络安全
-sidebar_position: 1
+  - 技术/计算机安全
 author: 7Wate
 date: 2023-06-26
 ---

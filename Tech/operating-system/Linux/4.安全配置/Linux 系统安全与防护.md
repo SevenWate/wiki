@@ -7,7 +7,7 @@ keywords:
   - 安全防护
 tags:
   - Linux/进阶
-sidebar_position: 4
+  - 技术/操作系统
 author: 7Wate
 date: 2023-04-10
 ---

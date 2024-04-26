@@ -1,10 +1,14 @@
 ---
 title: Linux 服务管理
-description: 描述
+description: 在现代 Linux 发行版中，系统和服务管理器是核心组件之一，负责初始化系统、管理系统进程和服务。这些管理器确保系统服务按正确的顺序启动、监控它们的运行状态，并在服务出现故障时进行恢复。传统上，这一角色由 SysV init 系统承担，但在过去几年中，更多现代化的解决方案如 systemd 和 Upstart 开始主导。
 keywords:
-  - 关键字
+  - Linux
+  - 服务管理
+  - SysV
+  - systemd
 tags:
-  - 标签
+  - Linux/系统管理
+  - 技术/操作系统
 author: 仲平
 date: 2024-04-12
 ---

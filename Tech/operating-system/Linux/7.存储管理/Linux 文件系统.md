@@ -8,7 +8,7 @@ keywords:
   - 文件系统
 tags:
   - Linux/进阶
-sidebar_position: 1.5
+  - 技术/操作系统
 author: 7Wate
 date: 2023-04-10
 ---

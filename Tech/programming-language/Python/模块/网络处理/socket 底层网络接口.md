@@ -6,6 +6,7 @@ keywords:
   - socket
 tags:
   - Python/标准库
+  - 技术/程序语言
 author: 7Wate
 date: 2023-09-09
 ---

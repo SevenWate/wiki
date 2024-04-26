@@ -2,11 +2,11 @@
 title: Shell 是什么
 description: Shell 是什么
 keywords:
-- Shell
-- 简介
+  - Shell
+  - 简介
 tags:
-- Shell
-sidebar_position: 1
+  - Shell
+  - 技术/入门
 author: 7Wate
 date: 2022-11-16
 ---

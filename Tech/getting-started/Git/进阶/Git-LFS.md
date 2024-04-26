@@ -6,7 +6,7 @@ keywords:
   - LFS
 tags:
   - Git/进阶
-sidebar_position: 6
+  - 技术/入门
 author: 7Wate
 date: 2022-11-16
 ---

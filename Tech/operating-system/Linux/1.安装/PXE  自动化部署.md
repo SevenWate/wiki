@@ -7,6 +7,7 @@ keywords:
   - 网络启动
 tags:
   - Linux/安装
+  - 技术/操作系统
 author: 仲平
 date: 2024-04-02
 ---

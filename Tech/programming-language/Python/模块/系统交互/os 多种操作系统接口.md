@@ -7,6 +7,7 @@ keywords:
   - 多种操作系统接口
 tags:
   - Python/标准库
+  - 技术/程序语言
 author: 7Wate
 date: 2023-08-04
 ---

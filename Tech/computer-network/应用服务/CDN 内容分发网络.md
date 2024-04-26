@@ -6,6 +6,7 @@ keywords:
   - 概述
 tags:
   - 计算机网络/CDN应用
+  - 技术/计算机网络
 sidebar_position: 1
 author: 7Wate
 date: 2023-06-27

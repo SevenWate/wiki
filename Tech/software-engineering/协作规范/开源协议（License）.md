@@ -7,7 +7,7 @@ keywords:
   - 协作规范
 tags:
   - 软件工程/Git协作
-sidebar_position: 7
+  - 技术/软件工程
 author: 7Wate
 date: 2023-06-26
 ---

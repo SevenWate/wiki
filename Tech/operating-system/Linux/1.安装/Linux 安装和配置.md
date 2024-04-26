@@ -7,6 +7,7 @@ keywords:
   - 配置
 tags:
   - Linux/安装
+  - 技术/操作系统
 author: 7Wate
 date: 2024-03-22
 ---

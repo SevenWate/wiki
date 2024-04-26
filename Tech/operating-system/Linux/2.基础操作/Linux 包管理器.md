@@ -6,6 +6,7 @@ keywords:
   - 包管理器
 tags:
   - Linux/基础
+  - 技术/操作系统
 author: 仲平
 date: 2024-03-26
 ---

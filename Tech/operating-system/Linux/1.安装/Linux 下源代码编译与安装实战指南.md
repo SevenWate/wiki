@@ -6,7 +6,7 @@ keywords:
   - 源代码编译
 tags:
   - Linux/高级
-sidebar_position: 1
+  - 技术/操作系统
 author: 7Wate
 date: 2023-09-09
 ---

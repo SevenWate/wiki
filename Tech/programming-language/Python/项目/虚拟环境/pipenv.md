@@ -7,7 +7,7 @@ keywords:
   - 虚拟环境
 tags:
   - Python/虚拟环境
-sidebar_position: 5
+  - 技术/程序语言
 author: 7Wate
 date: 2023-01-18
 ---

@@ -8,6 +8,7 @@ keywords:
 tags:
   - Shell
   - Linux/基础
+  - 技术/入门
 author: 7Wate
 date: 2023-03-22
 ---

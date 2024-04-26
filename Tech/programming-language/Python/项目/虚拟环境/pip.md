@@ -7,7 +7,7 @@ keywords:
   - 软件包管理器
 tags:
   - Python/虚拟环境
-sidebar_position: 2
+  - 技术/程序语言
 author: 7Wate
 date: 2023-10-26
 ---

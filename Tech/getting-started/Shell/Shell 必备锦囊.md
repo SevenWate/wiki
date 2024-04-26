@@ -2,11 +2,11 @@
 title: Shell 必备锦囊
 description: Shell 必备锦囊
 keywords:
-- Shell 
-- 必备锦囊
+  - Shell
+  - 必备锦囊
 tags:
-- Shell
-sidebar_position: 2
+  - Shell
+  - 技术/入门
 author: 7Wate
 date: 2022-12-04
 ---
