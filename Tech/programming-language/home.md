@@ -146,7 +146,7 @@ date: 2023-02-15
 ![lang](https://static.7wate.com/img/2022/10/19/db314c6f8221b.svg)
 
 > SVG 格式图片，新窗口打开可以无失真缩放查看。
-> 
+>
 > 来源：[Computer Languages History](https://www.levenez.com/lang/)；非商业引用，著作权归作者所有。
 
 ## 程序设计语言生命周期

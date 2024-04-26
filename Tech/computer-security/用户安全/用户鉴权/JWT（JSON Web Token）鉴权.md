@@ -11,11 +11,12 @@ tags:
 author: 7Wate
 date: 2022-08-31
 ---
+
 ## JWT（JSON Web Token）鉴权
 
 通过第三节，我们知道了 Token 的使用方式以及组成，我们不难发现，服务端验证客户端发送过来的 Token 时，还需要查询数据库获取用户基本信息，然后验证 Token 是否有效；这样每次请求验证都要查询数据库，增加了查库带来的延迟等性能消耗。
 
-**那么这时候业界常用的  JWT 就应运而生了！！！**
+**那么这时候业界常用的 JWT 就应运而生了！！！**
 
 ### JWT 的定义
 
@@ -47,7 +48,7 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4
 
 #### Payload 负载
 
-它包含一些声明 Claim（实体的描述，通常是一个 User 信息，还包括一些其他的元数据），用来存放实际需要传递的数据，JWT 规定了7个官方字段：
+它包含一些声明 Claim（实体的描述，通常是一个 User 信息，还包括一些其他的元数据），用来存放实际需要传递的数据，JWT 规定了 7 个官方字段：
 
 - iss（issuer）：签发人
 - exp（expiration time）：过期时间

@@ -28,31 +28,31 @@ Shell（壳层）在计算机科学中指**为用户提供用户界面**的软�
 - DOS Shell
 - Macintosh Finder
 - Microsoft Windows 环境：Aston shell、BB4Win、Emerge Desktop、Geoshell、Litestep、程序管理器、Secure Desktop、SharpE、Windows Explorer、UserShell。
-- X Window System 环境或 Wayland 环境（主要用于类Unix操作系统）
-  - 独立的X窗口管理器，例如 Blackbox 与Fluxbox。
-  - 依靠窗口管理器的完整桌面环境，例如：CDE、GNOME、Unity（以GNOME作内核）、KDE、XFCE。
+- X Window System 环境或 Wayland 环境（主要用于类 Unix 操作系统）
+  - 独立的 X 窗口管理器，例如 Blackbox 与 Fluxbox。
+  - 依靠窗口管理器的完整桌面环境，例如：CDE、GNOME、Unity（以 GNOME 作内核）、KDE、XFCE。
 
 ## 命令行界面（CLI）
 
 ### Unix
 
-#### Bourne shell 兼容
+#### Bourne Shell 兼容
 
 - **Bourne shell（sh）**史蒂夫·伯恩在贝尔实验室时编写。1978 年随 Version 7 Unix 首次发布。
   - Almquist shell（ash）由肯尼斯·艾昆斯特（Kenneth Almquist）在 SVR4 上建立了这个分支。
-  - **Bourne-Again shell（bash）**由布莱恩·福克斯在 1987 年为了GNU计划而编写。
-  - Debian Almquist shell（dash）由赫伯特·许（Herbert Xu）1997 年移植到Linux上后改名为 dash。
-  - Korn shell（ksh）David Korn在贝尔实验室时编写。
-  - Z shell（zsh）是 macOS（2019年起） 一款可用作交互式登录的shell及脚本编写的命令解释器。
+  - **Bourne-Again shell（bash）**由布莱恩·福克斯在 1987 年为了 GNU 计划而编写。
+  - Debian Almquist shell（dash）由赫伯特·许（Herbert Xu）1997 年移植到 Linux 上后改名为 dash。
+  - Korn shell（ksh）David Korn 在贝尔实验室时编写。
+  - Z shell（zsh）是 macOS（2019 年起） 一款可用作交互式登录的 shell 及脚本编写的命令解释器。
 
-#### C shell 兼容
+#### C Shell 兼容
 
-- C shell（csh）比尔·乔伊在加州大学伯克利分校时编写。1979年随BSD首次发布。
-  - TENEX C shell（tcsh） 一个向下兼容c shell的Unix shell，目前作为FreeBSD和其延伸发行版的默认shell。
+- C shell（csh）比尔·乔伊在加州大学伯克利分校时编写。1979 年随 BSD 首次发布。
+  - TENEX C shell（tcsh） 一个向下兼容 c shell 的 Unix shell，目前作为 FreeBSD 和其延伸发行版的默认 shell。
 
-### 非Unix
+### 非 Unix
 
-- 4DOS, 4OS2, 4NT – JP Software 公司可在在 DOS, OS/2，及 Windows NT 下使用的壳层。Take Command程序则是 GUI 方式的兼容程序。
+- 4DOS, 4OS2, 4NT – JP Software 公司可在在 DOS, OS/2，及 Windows NT 下使用的壳层。Take Command 程序则是 GUI 方式的兼容程序。
 - Amiga CLI/Amiga 壳层是称为 Workbench 的 AmigaOS 图形界面的另一选择。
 - BASIC-PLUS – RSTS/E
 - Beemos（BEEMos）–在 Windows XP 上执行的一个小型项目，提供设置、应用程序等功能，感觉起来像是在另一个操作系统下。
@@ -69,8 +69,8 @@ Shell（壳层）在计算机科学中指**为用户提供用户界面**的软�
 - iSeries QSHELL – IBM OS/400 上的 Unix 风格壳层
 - Macintosh Programmer's Workshop –古典 Mac OS 软件开发用的老式指令行环境
 - Microsoft BASIC –一些古老 8 位电脑上的主要作业环境
-- Rexx – IBM的脚本语言（scripting language）
+- Rexx – IBM 的脚本语言（scripting language）
 - Singularity shell – Singularity 的标准壳层
 - **Windows PowerShell** –命令提示字符的新一代面向对象后继者（旧称 Monad 或 Microsoft Shell (MSH)）
 - Windows 修复主控台– Windows 2000、Windows XP、Windows 2003 操作系统的一项功能
-- YouShell –用于YouOS，基于JavaScript的指令处理器
+- YouShell –用于 YouOS，基于 JavaScript 的指令处理器
