@@ -6,6 +6,7 @@ keywords:
   - 炸弹人小分队
 tags:
   - 游戏/炸弹人小分队
+  - 博客/原创
 authors:
   - 7Wate
 date: 2018-12-06

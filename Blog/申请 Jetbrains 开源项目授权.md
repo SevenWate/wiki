@@ -7,6 +7,7 @@ keywords:
   - 开源项目
 tags:
   - 生产力工具/Jetbrains
+  - 博客/原创
 authors:
   - 7Wate
 date: 2021-02-26

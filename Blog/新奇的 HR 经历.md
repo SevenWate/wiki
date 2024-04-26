@@ -7,6 +7,7 @@ keywords:
   - 求职
 tags:
   - 博客/原创
+  - 工作/面试
 authors:
   - 仲平
 date: 2024-02-18

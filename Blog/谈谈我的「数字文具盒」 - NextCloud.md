@@ -8,6 +8,7 @@ keywords:
 tags:
   - 开源项目/数字文具盒
   - 生产力工具/NextCloud
+  - 博客/原创
 authors:
   - 7Wate
 date: 2022-11-30

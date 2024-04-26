@@ -7,7 +7,8 @@ keywords:
   - 生态
   - 经验
 tags:
-  - Linux/Ubuntu
+  - 博客/原创
+  - Linux/安装
 authors:
   - 7Wate
 date: 2023-09-28

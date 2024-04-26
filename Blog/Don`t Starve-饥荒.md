@@ -8,6 +8,7 @@ keywords:
   - 邀请
 tags:
   - 游戏/饥荒
+  - 博客/原创
 authors:
   - 7Wate
 date: 2020-09-03

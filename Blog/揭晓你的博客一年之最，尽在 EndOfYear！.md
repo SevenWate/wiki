@@ -8,6 +8,7 @@ keywords:
   - 博客
 tags:
   - 开源项目/EndOfYear
+  - 博客/原创
 authors:
   - 7Wate
 date: 2023-10-30

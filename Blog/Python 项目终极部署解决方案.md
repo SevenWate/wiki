@@ -7,6 +7,7 @@ keywords:
   - 解决方案
 tags:
   - 博客/原创
+  - Python/项目
 authors:
   - 仲平
 date: 2024-01-24

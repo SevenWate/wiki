@@ -6,6 +6,7 @@ keywords:
   - Fedora
 tags:
   - 博客/原创
+  - Linux/安装
 authors:
   - 仲平
 date: 2024-03-05

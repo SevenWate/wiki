@@ -9,6 +9,7 @@ keywords:
   - 部署
 tags:
   - 开源项目/数字文具盒
+  - 博客/原创
 authors:
   - 7Wate
 date: 2022-07-27

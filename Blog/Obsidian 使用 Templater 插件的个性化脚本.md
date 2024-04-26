@@ -8,6 +8,7 @@ keywords:
 tags:
   - 生产力工具/Obsidian
   - 开源项目/数字文具盒
+  - 博客/原创
 authors:
   - 7Wate
 date: 2023-09-05

@@ -7,6 +7,7 @@ keywords:
   - Redemption
 tags:
   - 开源项目/Redemption
+  - 博客/原创
 authors:
   - 7Wate
 date: 2022-09-14
