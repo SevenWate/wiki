@@ -17,9 +17,9 @@ keywords:
   - 贝特西·拜尔等
 tags:
   - 阅读/计算机-计算机综合
-date: <% tp.date.now("YYYY-MM-DD") %>
+  - 阅读/笔记
+date: 2024-03-17
 finishedDate: 2024-03-17
-
 ---
 
 ## 简介

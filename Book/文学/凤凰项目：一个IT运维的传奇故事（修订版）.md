@@ -12,6 +12,7 @@ keywords:
   - 吉恩·金 凯文·贝尔 乔治·斯帕福德
 tags:
   - 阅读/文学-散文杂著
+  - 阅读/笔记
 date: <% tp.date.now("YYYY-MM-DD") %>
 readingStatus: 读完
 progress: 100%
@@ -19,7 +20,6 @@ totalReadDay: 16
 readingTime: 6小时40分钟
 readingDate: 2022-11-28
 finishedDate: 2023-12-13
-
 ---
 
 ## 简介
