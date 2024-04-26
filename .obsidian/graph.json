@@ -6,17 +6,46 @@
   "hideUnresolved": false,
   "showOrphans": false,
   "collapse-color-groups": true,
-  "colorGroups": [],
+  "colorGroups": [
+    {
+      "query": "tag:#博客",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "tag:#阅读",
+      "color": {
+        "a": 1,
+        "rgb": 10967200
+      }
+    },
+    {
+      "query": "tag:#技术  ",
+      "color": {
+        "a": 1,
+        "rgb": 5417696
+      }
+    },
+    {
+      "query": "tag:#工作  ",
+      "color": {
+        "a": 1,
+        "rgb": 5397472
+      }
+    }
+  ],
   "collapse-display": true,
   "showArrow": false,
-  "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 1,
-  "lineSizeMultiplier": 1,
+  "textFadeMultiplier": 2,
+  "nodeSizeMultiplier": 1.99588853018665,
+  "lineSizeMultiplier": 2.99574381238636,
   "collapse-forces": true,
-  "centerStrength": 0.518713248970312,
-  "repelStrength": 10,
-  "linkStrength": 1,
-  "linkDistance": 250,
-  "scale": 0.21045014194326922,
+  "centerStrength": 0.50168837433671,
+  "repelStrength": 20,
+  "linkStrength": 0.75,
+  "linkDistance": 400,
+  "scale": 0.0921986904013263,
   "close": true
 }
