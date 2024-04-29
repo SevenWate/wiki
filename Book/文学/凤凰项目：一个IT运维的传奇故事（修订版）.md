@@ -5,6 +5,12 @@ author: 仲平
 cover: https://cdn.weread.qq.com/weread/cover/74/YueWen_27337404/t7_YueWen_27337404.jpg
 reviewCount: 2
 noteCount: 117
+readingStatus: 读完
+progress: 100%
+totalReadDay: 16
+readingTime: 6小时40分钟
+readingDate: 2022-11-28
+finishedDate: 2023-12-13
 title: 凤凰项目：一个IT运维的传奇故事（修订版）
 description: 本书讲述了一位IT经理临危受命，在未来董事的帮助和自己“三步工作法”理念的支撑下，最终挽救了一家具有悠久历史的汽车配件制造商的故事。小说揭示了管理现代IT组织与管理传统工厂的共通之处，让读者不仅能对如何管理IT组织心领神会，更重要的是将以完全不同于以往的视角来看待自己的工作环境。
 keywords:
@@ -13,13 +19,8 @@ keywords:
 tags:
   - 阅读/文学-散文杂著
   - 阅读/笔记
-date: <% tp.date.now("YYYY-MM-DD") %>
-readingStatus: 读完
-progress: 100%
-totalReadDay: 16
-readingTime: 6小时40分钟
-readingDate: 2022-11-28
-finishedDate: 2023-12-13
+date: 2024-04-29
+
 ---
 
 ## 简介

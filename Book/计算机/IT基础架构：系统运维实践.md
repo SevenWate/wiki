@@ -5,6 +5,12 @@ author: 仲平
 cover: https://wfqqreader-1252317822.image.myqcloud.com/cover/889/933889/t7_933889.jpg
 reviewCount: 1
 noteCount: 16
+readingStatus: 读完
+progress: 100%
+totalReadDay: 15
+readingTime: 5小时13分钟
+readingDate: 2023-10-06
+finishedDate: 2023-11-26
 title: IT基础架构：系统运维实践
 description: 本书涵盖了数据中心规划、基础服务、系统运维等多个方面。作者以十多年的经验告诉各位读者，弯路一定是会走的，但是如何能够尽早避免，并通过行之有效的方法进行解决，才是运维管理的王道。虽然IT界一直在不停地变化，但是运维的核心精神并没有变。本书就是作者多年的运维经验的积累和沉淀，总结出一套颇具心得的IT基础架构管理法。
 keywords:
@@ -13,8 +19,7 @@ keywords:
 tags:
   - 阅读/计算机-理论知识
   - 阅读/笔记
-date: 2023-12-10
----
+date: 2024-04-29
 
 ---
 

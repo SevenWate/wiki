@@ -5,6 +5,12 @@ author: 仲平
 cover: https://cdn.weread.qq.com/weread/cover/41/YueWen_26943492/t7_YueWen_26943492.jpg
 reviewCount: 0
 noteCount: 16
+readingStatus: 读完
+progress: 99%
+totalReadDay: 3
+readingTime: 1小时16分钟
+readingDate: 2023-01-17
+finishedDate: 2023-07-29
 title: 每天5分钟玩转Docker容器技术
 description: Docker和容器技术是当下最火的IT技术，无论是互联网还是传统企业都在研究和实践如何用容器构建自己的 IT 基础设施。学习本书能够让读者少走弯路，系统地学习、掌握和实践 Docker 和容器技术。 本书共分为三部分。第一部分介绍容器技术生态环境。第二部分是容器核心知识，包括架构、镜像、容器、网络和存储。第三部分是容器进阶知识，包括多主机管理、跨主机网络方案、监控、日志管理和数据管理。读者在学习的过程中，可以跟着教程进行操作，在实践中掌握 Docker 容器技术的核心技能。在之后的工作中，可以将本教程作为参考书，按需查找相关知识点。 本书主要面向微服务软件开发人员，以及 IT 实施和运维工程师等相关人员，也适合高等院校和培训学校相关专业的师生教学参考。
 keywords:
@@ -13,8 +19,7 @@ keywords:
 tags:
   - 阅读/计算机-计算机综合
   - 阅读/笔记
-date: 2023-12-10
----
+date: 2024-04-29
 
 ---
 

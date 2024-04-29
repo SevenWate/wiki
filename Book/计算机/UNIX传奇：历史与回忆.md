@@ -1,14 +1,26 @@
 ---
+doc_type: weread-highlights-reviews
+bookId: "38493609"
+author: 仲平
+cover: https://cdn.weread.qq.com/weread/cover/94/YueWen_38493609/t7_YueWen_38493609.jpg
+reviewCount: 9
+noteCount: 107
+readingStatus: 读完
+progress: 99%
+totalReadDay: 4
+readingTime: 4小时28分钟
+readingDate: 2022-11-24
+finishedDate: 2023-01-12
 title: UNIX传奇：历史与回忆
-description: 自1969年在贝尔实验室的阁楼上诞生以来，Unix操作系统的发展远远超出其创造者们的想象。它带动了许多创新软件的开发，影响了无数程序员，改变了整个计算机技术的发展轨迹。本书不但书写Unix的历史，而且记录作者的回忆，一探Unix的起源，试图解释什么是Uni
+description: 自1969年在贝尔实验室的阁楼上诞生以来，Unix操作系统的发展远远超出其创造者们的想象。它带动了许多创新软件的开发，影响了无数程序员，改变了整个计算机技术的发展轨迹。本书不但书写Unix的历史，而且记录作者的回忆，一探Unix的起源，试图解释什么是Unix，Unix是如何产生的，以及Unix为何如此重要。除此之外，本书以轻松的口吻讲述了一群在贝尔实验室工作的发明天才的有趣往事，本书中每一个故事都是鲜为人知却又值得传播的宝贵资源。本书适合对计算机或相关历史感兴趣的人阅读。读者不需要有太多的专业技术背景，就可以欣赏Unix背后的思想，了解它的重要性。
 keywords:
   - UNIX传奇：历史与回忆
-  - 计算机
+  - 布莱恩·W.克尼汉
 tags:
-  - 阅读/计算机
+  - 阅读/计算机-计算机综合
   - 阅读/笔记
-author: 7Wate
-date: 2023-07-17
+date: 2024-04-29
+
 ---
 
 ## 简介

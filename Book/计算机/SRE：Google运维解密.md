@@ -10,6 +10,7 @@ progress: 98%
 totalReadDay: 21
 readingTime: 5小时53分钟
 readingDate: 2023-04-09
+finishedDate: 2024-03-17
 title: SRE：Google运维解密
 description: 在本书中，不仅展示了 Google 是如何运用各种计算机工具软件、硬件以持续部署和监控一些世界上最大的软件系统的。还展示了在运维过程中，Google 工程师团队是如何学习、成长、反复修改，最后定义出一套完整的工具和科技体系的过程。本书适合各种水平的运维工程师参考使用。
 keywords:
@@ -18,8 +19,8 @@ keywords:
 tags:
   - 阅读/计算机-计算机综合
   - 阅读/笔记
-date: 2024-03-17
-finishedDate: 2024-03-17
+date: 2024-04-29
+
 ---
 
 ## 简介

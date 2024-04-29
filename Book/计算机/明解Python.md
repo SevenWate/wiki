@@ -1,14 +1,26 @@
 ---
+doc_type: weread-highlights-reviews
+bookId: "3300039597"
+author: 仲平
+cover: https://cdn.weread.qq.com/weread/cover/24/cpPlatform_kyu2vLKhuzR95AxgeyvDxn/t7_cpPlatform_kyu2vLKhuzR95AxgeyvDxn.jpg
+reviewCount: 1
+noteCount: 21
+readingStatus: 读完
+progress: 100%
+totalReadDay: 4
+readingTime: 1小时20分钟
+readingDate: 2022-12-24
+finishedDate: 2023-01-17
 title: 明解Python
-description: 本书图文并茂、示例丰富，采用全彩印刷方式，通过299段代码和165幅图表，系统地讲解了Python的基础语法和编程知识，内容涉及分支/循环语句、对象、字符串、列表、集合、函数、类、模块、异常处理和文件处理等。针对初学人士难以理解和容易误解的地方，本书均采用
+description: 本书图文并茂、示例丰富，采用全彩印刷方式，通过299段代码和165幅图表，系统地讲解了Python的基础语法和编程知识，内容涉及分支/循环语句、对象、字符串、列表、集合、函数、类、模块、异常处理和文件处理等。针对初学人士难以理解和容易误解的地方，本书均采用平实的语言，辅以精心设计的版式，循序渐进、清晰直观地进行了讲解。跟随本书的讲解，读者可以扎实掌握Python的基础知识，并具备实际使用Python进行编程的能力。
 keywords:
   - 明解Python
-  - 计算机
+  - 柴田望洋
 tags:
-  - 阅读/计算机
+  - 阅读/计算机-编程设计
   - 阅读/笔记
-author: 7Wate
-date: 2023-07-17
+date: 2024-04-29
+
 ---
 
 ## 简介

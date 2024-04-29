@@ -5,6 +5,12 @@ author: 仲平
 cover: https://wfqqreader-1252317822.image.myqcloud.com/cover/685/34336685/t7_34336685.jpg
 reviewCount: 0
 noteCount: 26
+readingStatus: 读完
+progress: 99%
+totalReadDay: 4
+readingTime: 1小时36分钟
+readingDate: 2023-08-14
+finishedDate: 2023-08-17
 title: SQL必知必会（第5版）
 description: SQL是使用最为广泛的数据库语言，几乎所有重要的DBMS都支持SQL。本书是麻省理工学院、伊利诺伊大学等众多大学的参考教材，由浅入深地讲解了SQL的基本概念和语法，涉及数据的排序、过滤和分组，以及表、视图、联结、子查询、游标、存储过程和触发器等内容，实例丰富，便于查阅。与其他同类图书不同，本书没有过多阐述数据库基础理论，而是专门针对一线软件开发人员，直接从SQLSELECT开始，讲述实际工作环境中最常用和最必需的SQL知识，实用性极强。新版对书中的案例进行了全面的更新，并增加了章后挑战题，便于读者巩固所学知识。
 keywords:
@@ -13,8 +19,7 @@ keywords:
 tags:
   - 阅读/计算机-数据库
   - 阅读/笔记
-date: 2023-12-10
----
+date: 2024-04-29
 
 ---
 

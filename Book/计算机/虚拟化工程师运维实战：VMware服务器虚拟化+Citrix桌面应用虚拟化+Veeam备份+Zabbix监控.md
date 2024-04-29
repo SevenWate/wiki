@@ -1,14 +1,26 @@
 ---
+doc_type: weread-highlights-reviews
+bookId: "39130662"
+author: 仲平
+cover: https://cdn.weread.qq.com/weread/cover/50/YueWen_39130662/t7_YueWen_39130662.jpg
+reviewCount: 0
+noteCount: 13
+readingStatus: 读完
+progress: 99%
+totalReadDay: 5
+readingTime: 2小时33分钟
+readingDate: 2022-11-28
+finishedDate: 2022-12-08
 title: 虚拟化工程师运维实战：VMware服务器虚拟化+Citrix桌面/应用虚拟化+Veeam备份+Zabbix监控
-description: 《虚拟化工程师运维实战：VMware服务器虚拟化+Citrix桌面/应用虚拟化+Veeam备份+Zabbix监控》详细介绍了实际运维工作中虚拟化工程师应该熟练掌握的虚拟化技术。全书共7章，分别是虚拟化技术概述、虚拟化工程师应知必会的六件事、部署IT基础架构
+description: 《虚拟化工程师运维实战：VMware服务器虚拟化+Citrix桌面/应用虚拟化+Veeam备份+Zabbix监控》详细介绍了实际运维工作中虚拟化工程师应该熟练掌握的虚拟化技术。全书共7章，分别是虚拟化技术概述、虚拟化工程师应知必会的六件事、部署IT基础架构服务器、实现服务器虚拟化—基于VMwarevSphere、实现桌面/应用虚拟化—基于CitrixVirtualAppsandDesktops、虚拟化备份—基于VeeamBackup&Replication，实现对虚拟化环境的灵活监控。本书图文并茂，步骤详细，介绍了大量的实用知识，能够让读者清晰地理解虚拟化项目部署中的操作细节。本书适合于从事企业信息化运维工作的虚拟化工程师学习，也可以作为项目管理人员实施企业虚拟化项目的参考书，还可作为高等院校虚拟化技术相关课程的教材。
 keywords:
   - 虚拟化工程师运维实战：VMware服务器虚拟化+Citrix桌面/应用虚拟化+Veeam备份+Zabbix监控
-  - 计算机
+  - 孟鹏编著
 tags:
-  - 阅读/计算机
+  - 阅读/计算机-编程设计
   - 阅读/笔记
-author: 7Wate
-date: 2023-07-17
+date: 2024-04-29
+
 ---
 
 ## 简介

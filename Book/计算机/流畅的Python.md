@@ -1,14 +1,25 @@
 ---
+doc_type: weread-highlights-reviews
+bookId: "22806910"
+author: 仲平
+cover: https://wfqqreader-1252317822.image.myqcloud.com/cover/910/22806910/t7_22806910.jpg
+reviewCount: 1
+noteCount: 33
+readingStatus: 读过
+progress: 33%
+totalReadDay: 11
+readingTime: 3小时58分钟
+readingDate: 2022-10-23
 title: 流畅的Python
-description: 本书致力于帮助Python开发人员挖掘这门语言及相关程序库的优秀特性，避免重复劳动，同时写出简洁、流畅、易读、易维护，并且具有地道Python风格的代码。本书尤其深入探讨了Python语言的高级用法，涵盖数据结构、Python风格的对象、并行与并发，以及元
+description: 本书致力于帮助Python开发人员挖掘这门语言及相关程序库的优秀特性，避免重复劳动，同时写出简洁、流畅、易读、易维护，并且具有地道Python风格的代码。本书尤其深入探讨了Python语言的高级用法，涵盖数据结构、Python风格的对象、并行与并发，以及元编程等不同的方面。
 keywords:
   - 流畅的Python
-  - 计算机
+  - 卢西亚诺·拉马略
 tags:
-  - 阅读/计算机
+  - 阅读/计算机-编程设计
   - 阅读/笔记
-author: 7Wate
-date: 2023-07-17
+date: 2024-04-29
+
 ---
 
 ## 简介
@@ -38,9 +49,9 @@ date: 2023-07-17
 
 > 在Python中，函数用*args来获取不确定数量的参数算是一种经典写法了。 
 
-> `seq[start:stop:step]`进行求值的时候，Python会调用`seq.__getitem__(slice(start, stop, step))`。 
+> seq[start:stop:step]进行求值的时候，Python会调用seq.__getitem__(slice(start, stop, step))。 
 
-> 如果在a * n这个语句中，序列a里的元素是对其他可变对象的引用的话，你就需要格外注意了，因为这个式子的结果可能会出乎意料。比如，你想用`my_list=[[]] * 3`来初始化一个由列表组成的列表，但是你得到的列表里包含的3个元素其实是3个引用，而且这3个引用指向的都是同一个列表。这可能不是你想要的效果。 
+> 如果在a * n这个语句中，序列a里的元素是对其他可变对象的引用的话，你就需要格外注意了，因为这个式子的结果可能会出乎意料。比如，你想用my_list=[[]] * 3来初始化一个由列表组成的列表，但是你得到的列表里包含的3个元素其实是3个引用，而且这3个引用指向的都是同一个列表。这可能不是你想要的效果。 
 
 > Python Tutor是一个对Python运行原理进行可视化分析的工具 
 
@@ -66,7 +77,7 @@ date: 2023-07-17
 
 > 接受函数为参数，或者把函数作为结果返回的函数是高阶函数（higher-order function） 
 
-> all(iterable)如果iterable的每个元素都是真值，返回True；`all([])`返回True。any(iterable)只要iterable中有元素是真值，就返回True；`any([])`返回False。 
+> all(iterable)如果iterable的每个元素都是真值，返回True；all([])返回True。any(iterable)只要iterable中有元素是真值，就返回True；any([])返回False。 
 
 > Python简单的句法限制了lambda函数的定义体只能使用纯表达式。换句话说，lambda函数的定义体中不能赋值，也不能使用while和try等Python语句。 
 

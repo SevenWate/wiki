@@ -5,6 +5,12 @@ author: 仲平
 cover: https://cdn.weread.qq.com/weread/cover/33/3300024033/t7_3300024033.jpg
 reviewCount: 2
 noteCount: 17
+readingStatus: 读完
+progress: 100%
+totalReadDay: 6
+readingTime: 3小时21分钟
+readingDate: 2022-12-24
+finishedDate: 2023-08-13
 title: Python编程轻松进阶
 description: 本书分为三大部分，共计17章。第一部分（第1~2章）介绍了基础知识，包括如何配置开发环境和在网上寻求帮助。第二部分（第3~14章）介绍了Python编程的最佳实践、实用工具和技巧，不仅涵盖了如何编写高质量的Python代码、什么是高级的Python语法、如何使用专业开发者所用的命令行工具，还介绍了性能测量和大O算法分析，并用游戏实例演示了什么是最佳实践。第三部分（第15~17章）介绍了面向对象的Python，内容包括如何编写类、什么是类的继承，以及Python独有的面向对象功能。
 keywords:
@@ -13,8 +19,7 @@ keywords:
 tags:
   - 阅读/计算机-编程设计
   - 阅读/笔记
-date: 2023-12-10
----
+date: 2024-04-29
 
 ---
 

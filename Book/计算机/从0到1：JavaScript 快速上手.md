@@ -1,14 +1,26 @@
 ---
+doc_type: weread-highlights-reviews
+bookId: "30070660"
+author: 仲平
+cover: https://cdn.weread.qq.com/weread/cover/4/YueWen_30070660/t7_YueWen_30070660.jpg
+reviewCount: 0
+noteCount: 14
+readingStatus: 读完
+progress: 99%
+totalReadDay: 2
+readingTime: 1小时18分钟
+readingDate: 2023-01-20
+finishedDate: 2023-01-23
 title: 从0到1：JavaScript 快速上手
-description: 本书分为2大部分：第1部分是Javascript基本语法，主要介绍流程控制、函数、字符串、数组等基本语法；第2部分是Javascript核心技术，主要介绍DOM操作、事件操作、window对象、document对象等核心技术。为了让读者更好地掌握，本书还结
+description: 本书分为2大部分：第1部分是Javascript基本语法，主要介绍流程控制、函数、字符串、数组等基本语法；第2部分是Javascript核心技术，主要介绍DOM操作、事件操作、window对象、document对象等核心技术。为了让读者更好地掌握，本书还结合实际工作以及前端面试，精心挑选了大量高质量的练习题。此外，本书还专门配套了课件PPT以及各种工具手册，以便各大高校老师教学使用。
 keywords:
   - 从0到1：JavaScript 快速上手
-  - 计算机
+  - 莫振杰
 tags:
-  - 阅读/计算机
+  - 阅读/计算机-数据库
   - 阅读/笔记
-author: 7Wate
-date: 2023-07-17
+date: 2024-04-29
+
 ---
 
 ## 简介

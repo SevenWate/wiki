@@ -1,14 +1,26 @@
 ---
+doc_type: weread-highlights-reviews
+bookId: "30070658"
+author: 仲平
+cover: https://cdn.weread.qq.com/weread/cover/81/YueWen_30070658/t7_YueWen_30070658.jpg
+reviewCount: 0
+noteCount: 10
+readingStatus: 读完
+progress: 100%
+totalReadDay: 1
+readingTime: 1小时27分钟
+readingDate: 2023-01-20
+finishedDate: 2023-01-20
 title: 从0到1：HTML+CSS快速上手
-description: 作者根据自己多年的网站开发及教学经验，站在零基础读者的角度，详细介绍了HTML和CSS的基础知识，以及大量的前端开发技巧。 全书分为2大部分：第1部分是HTML基础，主要介绍各种标签的使用；第二部分是CSS基础，主要介绍样式布局操作。此外，作者还结合实际工
+description: 作者根据自己多年的网站开发及教学经验，站在零基础读者的角度，详细介绍了HTML和CSS的基础知识，以及大量的前端开发技巧。 全书分为2大部分：第1部分是HTML基础，主要介绍各种标签的使用；第二部分是CSS基础，主要介绍样式布局操作。此外，作者还结合实际工作及前端面试，精心挑选了大量高质量的练习题放在每章最后，读者可以边学边练，更好地掌握本书内容。 本书提供了所有案例的源代码、配套视频课程，以及各种工具手册。另外，为方便老师教学，还提供了配套的PPT教学课件。 本书适合零基础的初学者使用，可以作为前端开发人员的参考书，也可作为培训学校、大中专院校相关专业的教学参考书。
 keywords:
   - 从0到1：HTML+CSS快速上手
-  - 计算机
+  - 莫振杰
 tags:
-  - 阅读/计算机
+  - 阅读/计算机-编程设计
   - 阅读/笔记
-author: 7Wate
-date: 2023-07-17
+date: 2024-04-29
+
 ---
 
 ## 简介
