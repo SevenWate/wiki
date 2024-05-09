@@ -21,10 +21,11 @@ jobs:
 
     - name: Install Quartz dependencies and Build site
       run: |
+        # 移除 Quartz 项目 content 目录下的 README 文件
+        rm -f /wiki/quartz/content/README.md
+        
         # 进入 Quartz 项目目录，安装依赖并构建网站
-        cd /wiki/quartz
-        npm ci
-        npx quartz build
+        cd /wiki/quartz && npm ci && npx quartz build
 
         # 创建 public 目录并复制构建结果到此目录
         mkdir -p /wiki/public/ && cp -r public/* /wiki/public/
@@ -33,7 +34,7 @@ jobs:
       run: |
         # 设置 Git 用户名和邮箱
         git config --global user.name "Actions"
-        git config --global user.email "Actions@7wate.com"
+        git config --global user.email "actions@7wate.com"
 
         # 在 public 目录下初始化 git 仓库
         cd /wiki/public/ && git init && git add .
@@ -46,5 +47,4 @@ jobs:
         git remote add origin https://${{ secrets.GIT_PUSH_PULL_TOKEN }}@git.7wate.com/zhouzhongping/wiki.git
 
         # 强制推送到远程的 html 分支
-        git checkout -b quartz
-        git push origin quartz --force
+        git checkout -b quartz && git push origin quartz --force
